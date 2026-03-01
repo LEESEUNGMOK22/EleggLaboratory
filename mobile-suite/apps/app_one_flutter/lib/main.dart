@@ -10,46 +10,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App One Asset Demo',
-      theme: ThemeData(colorSchemeSeed: Colors.green, useMaterial3: true),
-      home: const AssetDemoPage(),
+      title: 'App One',
+      theme: ThemeData(colorSchemeSeed: Colors.teal, useMaterial3: true),
+      home: const SharedAssetDemoPage(),
     );
   }
 }
 
-class AssetDemoPage extends StatelessWidget {
-  const AssetDemoPage({super.key});
+class SharedAssetDemoPage extends StatelessWidget {
+  const SharedAssetDemoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('App One · Asset Demo')),
+      appBar: AppBar(title: const Text('App One · Shared Assets')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: const [
-          Text('공용 리소스 연동 샘플', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          Text('공용 에셋 재사용 데모', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           SizedBox(height: 12),
-          Text('이미지 1: kenney_ui-pack preview'),
-          SizedBox(height: 8),
-          ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
-            child: Image(
-              image: AssetImage('assets/ui/kenney_ui_preview.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
-          SizedBox(height: 16),
-          Text('이미지 2: emotes preview'),
-          SizedBox(height: 8),
-          ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
-            child: Image(
-              image: AssetImage('assets/ui/emotes_preview.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
-          SizedBox(height: 16),
-          Text('오디오 샘플도 assets/audio/click_a.ogg 로 포함됨(재생 로직은 다음 단계에서 추가).'),
+          Image(image: AssetImage('assets/shared/kenney_ui_preview.png')),
+          SizedBox(height: 12),
+          Image(image: AssetImage('assets/shared/emotes_preview.png')),
+          SizedBox(height: 12),
+          Text('오디오 파일 포함: assets/audio/click_a.ogg'),
         ],
       ),
     );
