@@ -1,0 +1,96 @@
+{
+  "title": "OpenClaw + Vibe Coding Deep Research",
+  "date": "2026-03-02",
+  "scope": {
+    "primary_sources": [
+      "local_openclaw_docs"
+    ],
+    "secondary_sources": [
+      "docs.openclaw.ai",
+      "github.com/openclaw/openclaw",
+      "wikipedia_vibe_coding",
+      "simonwillison_llms_tag"
+    ],
+    "limitations": [
+      "web_search_unavailable_without_brave_api_key"
+    ]
+  },
+  "findings": {
+    "openclaw_model": [
+      "message-first gateway with tool orchestration",
+      "tool policy (allow/deny/profile) is the main risk-control plane",
+      "exec/process provide strong automation with approval controls",
+      "subagent (native) and acp (external harness) should be used for different intents"
+    ],
+    "constraints": {
+      "technical": [
+        "api-key dependencies for web_search",
+        "remote chat vs local GUI visibility gap",
+        "long-running process management overhead",
+        "policy mismatch can cause unexpected behavior"
+      ],
+      "operational": [
+        "auth bottlenecks for git/channel/api actions",
+        "personal-assistant trust model is not hostile multi-tenant isolation",
+        "secret leakage risk in chat/logs"
+      ],
+      "quality": [
+        "cognitive debt from unreviewed generated code",
+        "maintenance and test debt",
+        "security flaws if verification is skipped"
+      ]
+    },
+    "vibe_coding": {
+      "strengths": [
+        "rapid prototyping",
+        "fast iteration loop",
+        "good for small/internal apps"
+      ],
+      "weaknesses": [
+        "opaque code ownership",
+        "fragile architecture drift",
+        "higher risk in critical production paths"
+      ],
+      "best_fit": [
+        "prototype",
+        "internal tools",
+        "automation scripts",
+        "small product experiments"
+      ],
+      "not_best_fit_without_hardening": [
+        "payment/auth core paths",
+        "high-compliance domains",
+        "large long-lived complex systems"
+      ]
+    }
+  },
+  "recommended_workflow": [
+    "validate environment and toolchain",
+    "start with small template/sample",
+    "apply minimal scoped changes",
+    "run analyze/test/run on each step",
+    "record execution evidence/log summary",
+    "commit with rationale",
+    "apply security checks before push"
+  ],
+  "deliverables": [
+    "research markdown",
+    "structured json summary",
+    "test/build/run evidence",
+    "repro command list",
+    "risk register"
+  ],
+  "risk_controls": [
+    "least-privilege tool profile",
+    "sandboxing + workspace access control",
+    "pairing/allowlist/mention gating",
+    "regular openclaw security audit",
+    "secret handling policy"
+  ],
+  "next_actions": [
+    "convert research into team SOP",
+    "embed checklist into project template",
+    "add CI quality gates",
+    "standardize per-agent permission profiles"
+  ]
+}
