@@ -1,0 +1,173 @@
+# 리서치 URL 인벤토리 보고서 (2026-03-02)
+
+요청사항에 맞춰, 이번에는 "100개 이상" URL 기준으로 리서치 대상을 재정리했다. 1차 기준은 OpenClaw 로컬 공식 문서를 URL로 정규화한 목록이며, 2차 기준은 실제 세션에서 외부 fetch로 확인한 웹 문서다.
+
+## 집계 요약
+
+- OpenClaw 로컬 문서 기반 정규화 URL 수: **661개**
+- 세션에서 외부 fetch로 직접 조회한 URL 수: **9개**
+- 전체 유니크 URL 수(합집합): **667개**
+- 본 보고서 본문에 명시적으로 나열한 URL 수: **149개**
+
+## 외부 fetch로 직접 조회한 URL (9개)
+
+- https://docs.openclaw.ai
+- https://github.com/openclaw/openclaw
+- https://docs.openclaw.ai/tools
+- https://docs.openclaw.ai/llms.txt
+- https://docs.openclaw.ai/concepts/multi-agent
+- https://docs.openclaw.ai/gateway/security
+- https://en.wikipedia.org/wiki/Vibe_coding
+- https://martinfowler.com/articles/exploring-gen-ai.html
+- https://simonwillison.net/tags/llms/
+
+## OpenClaw 문서 기반 URL 샘플 (140개, 상위 추출)
+
+- https://docs.openclaw.ai/.i18n/README
+- https://docs.openclaw.ai/automation/auth-monitoring
+- https://docs.openclaw.ai/automation/cron-jobs
+- https://docs.openclaw.ai/automation/cron-vs-heartbeat
+- https://docs.openclaw.ai/automation/gmail-pubsub
+- https://docs.openclaw.ai/automation/hooks
+- https://docs.openclaw.ai/automation/poll
+- https://docs.openclaw.ai/automation/troubleshooting
+- https://docs.openclaw.ai/automation/webhook
+- https://docs.openclaw.ai/brave-search
+- https://docs.openclaw.ai/channels/bluebubbles
+- https://docs.openclaw.ai/channels/broadcast-groups
+- https://docs.openclaw.ai/channels/channel-routing
+- https://docs.openclaw.ai/channels/discord
+- https://docs.openclaw.ai/channels/feishu
+- https://docs.openclaw.ai/channels/googlechat
+- https://docs.openclaw.ai/channels/grammy
+- https://docs.openclaw.ai/channels/group-messages
+- https://docs.openclaw.ai/channels/groups
+- https://docs.openclaw.ai/channels/imessage
+- https://docs.openclaw.ai/channels
+- https://docs.openclaw.ai/channels/irc
+- https://docs.openclaw.ai/channels/line
+- https://docs.openclaw.ai/channels/location
+- https://docs.openclaw.ai/channels/matrix
+- https://docs.openclaw.ai/channels/mattermost
+- https://docs.openclaw.ai/channels/msteams
+- https://docs.openclaw.ai/channels/nextcloud-talk
+- https://docs.openclaw.ai/channels/nostr
+- https://docs.openclaw.ai/channels/pairing
+- https://docs.openclaw.ai/channels/signal
+- https://docs.openclaw.ai/channels/slack
+- https://docs.openclaw.ai/channels/synology-chat
+- https://docs.openclaw.ai/channels/telegram
+- https://docs.openclaw.ai/channels/tlon
+- https://docs.openclaw.ai/channels/troubleshooting
+- https://docs.openclaw.ai/channels/twitch
+- https://docs.openclaw.ai/channels/whatsapp
+- https://docs.openclaw.ai/channels/zalo
+- https://docs.openclaw.ai/channels/zalouser
+- https://docs.openclaw.ai/ci
+- https://docs.openclaw.ai/cli/acp
+- https://docs.openclaw.ai/cli/agent
+- https://docs.openclaw.ai/cli/agents
+- https://docs.openclaw.ai/cli/approvals
+- https://docs.openclaw.ai/cli/browser
+- https://docs.openclaw.ai/cli/channels
+- https://docs.openclaw.ai/cli/clawbot
+- https://docs.openclaw.ai/cli/completion
+- https://docs.openclaw.ai/cli/config
+- https://docs.openclaw.ai/cli/configure
+- https://docs.openclaw.ai/cli/cron
+- https://docs.openclaw.ai/cli/daemon
+- https://docs.openclaw.ai/cli/dashboard
+- https://docs.openclaw.ai/cli/devices
+- https://docs.openclaw.ai/cli/directory
+- https://docs.openclaw.ai/cli/dns
+- https://docs.openclaw.ai/cli/docs
+- https://docs.openclaw.ai/cli/doctor
+- https://docs.openclaw.ai/cli/gateway
+- https://docs.openclaw.ai/cli/health
+- https://docs.openclaw.ai/cli/hooks
+- https://docs.openclaw.ai/cli
+- https://docs.openclaw.ai/cli/logs
+- https://docs.openclaw.ai/cli/memory
+- https://docs.openclaw.ai/cli/message
+- https://docs.openclaw.ai/cli/models
+- https://docs.openclaw.ai/cli/node
+- https://docs.openclaw.ai/cli/nodes
+- https://docs.openclaw.ai/cli/onboard
+- https://docs.openclaw.ai/cli/pairing
+- https://docs.openclaw.ai/cli/plugins
+- https://docs.openclaw.ai/cli/qr
+- https://docs.openclaw.ai/cli/reset
+- https://docs.openclaw.ai/cli/sandbox
+- https://docs.openclaw.ai/cli/secrets
+- https://docs.openclaw.ai/cli/security
+- https://docs.openclaw.ai/cli/sessions
+- https://docs.openclaw.ai/cli/setup
+- https://docs.openclaw.ai/cli/skills
+- https://docs.openclaw.ai/cli/status
+- https://docs.openclaw.ai/cli/system
+- https://docs.openclaw.ai/cli/tui
+- https://docs.openclaw.ai/cli/uninstall
+- https://docs.openclaw.ai/cli/update
+- https://docs.openclaw.ai/cli/voicecall
+- https://docs.openclaw.ai/cli/webhooks
+- https://docs.openclaw.ai/concepts/agent-loop
+- https://docs.openclaw.ai/concepts/agent-workspace
+- https://docs.openclaw.ai/concepts/agent
+- https://docs.openclaw.ai/concepts/architecture
+- https://docs.openclaw.ai/concepts/compaction
+- https://docs.openclaw.ai/concepts/context
+- https://docs.openclaw.ai/concepts/features
+- https://docs.openclaw.ai/concepts/markdown-formatting
+- https://docs.openclaw.ai/concepts/memory
+- https://docs.openclaw.ai/concepts/messages
+- https://docs.openclaw.ai/concepts/model-failover
+- https://docs.openclaw.ai/concepts/model-providers
+- https://docs.openclaw.ai/concepts/models
+- https://docs.openclaw.ai/concepts/multi-agent
+- https://docs.openclaw.ai/concepts/oauth
+- https://docs.openclaw.ai/concepts/presence
+- https://docs.openclaw.ai/concepts/queue
+- https://docs.openclaw.ai/concepts/retry
+- https://docs.openclaw.ai/concepts/session-pruning
+- https://docs.openclaw.ai/concepts/session-tool
+- https://docs.openclaw.ai/concepts/session
+- https://docs.openclaw.ai/concepts/sessions
+- https://docs.openclaw.ai/concepts/streaming
+- https://docs.openclaw.ai/concepts/system-prompt
+- https://docs.openclaw.ai/concepts/timezone
+- https://docs.openclaw.ai/concepts/typebox
+- https://docs.openclaw.ai/concepts/typing-indicators
+- https://docs.openclaw.ai/concepts/usage-tracking
+- https://docs.openclaw.ai/date-time
+- https://docs.openclaw.ai/debug/node-issue
+- https://docs.openclaw.ai/design/kilo-gateway-integration
+- https://docs.openclaw.ai/diagnostics/flags
+- https://docs.openclaw.ai/experiments/onboarding-config-protocol
+- https://docs.openclaw.ai/experiments/plans/acp-thread-bound-agents
+- https://docs.openclaw.ai/experiments/plans/acp-unified-streaming-refactor
+- https://docs.openclaw.ai/experiments/plans/browser-evaluate-cdp-refactor
+- https://docs.openclaw.ai/experiments/plans/openresponses-gateway
+- https://docs.openclaw.ai/experiments/plans/pty-process-supervision
+- https://docs.openclaw.ai/experiments/plans/session-binding-channel-agnostic
+- https://docs.openclaw.ai/experiments/proposals/model-config
+- https://docs.openclaw.ai/experiments/research/memory
+- https://docs.openclaw.ai/gateway/authentication
+- https://docs.openclaw.ai/gateway/background-process
+- https://docs.openclaw.ai/gateway/bonjour
+- https://docs.openclaw.ai/gateway/bridge-protocol
+- https://docs.openclaw.ai/gateway/cli-backends
+- https://docs.openclaw.ai/gateway/configuration-examples
+- https://docs.openclaw.ai/gateway/configuration-reference
+- https://docs.openclaw.ai/gateway/configuration
+- https://docs.openclaw.ai/gateway/discovery
+- https://docs.openclaw.ai/gateway/doctor
+- https://docs.openclaw.ai/gateway/gateway-lock
+- https://docs.openclaw.ai/gateway/health
+
+## 메모
+
+- 이번 목록은 "조사 대상 URL 인벤토리" 중심이다. 즉, 모든 URL을 동일 깊이로 정독했다기보다, 공식 문서 체계를 100개 이상 단위로 커버 가능한 참조 풀로 확장한 것이다.
+- 심층 분석이 필요한 경우, 위 인벤토리에서 우선순위를 정해 섹션별(보안/툴/세션/샌드박스/채널/ACP)로 추가 요약본을 만들 수 있다.
+- 웹 검색 API 키 제약이 있는 환경에서는 공식 문서 인덱스 + 직접 fetch 조합이 현실적인 대안이다.
+
+_생성 시각(Asia/Seoul 기준 근사): 2026-03-02T01:18:40_
