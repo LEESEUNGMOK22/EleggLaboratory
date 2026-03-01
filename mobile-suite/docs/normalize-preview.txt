@@ -1,0 +1,203 @@
+ROOT=/home/sml/.openclaw/workspace/mobile-suite/common
+CANDIDATES=1705
+조군 개발새발 V2/CHOGOONChickenScratchV2-Medium.otf -> 조군 개발새발 V2/chogoonchickenscratchv2_medium.otf
+조군 개발새발 V2/CHOGOONChickenScratchV2-Medium.ttf -> 조군 개발새발 V2/chogoonchickenscratchv2_medium.ttf
+kenney_music-jingles/Preview.ogg -> kenney_music-jingles/preview.ogg
+kenney_ui-pack/Sample.png -> kenney_ui-pack/sample.png
+kenney_ui-pack/Preview.png -> kenney_ui-pack/preview.png
+DatingGameUI/License.jpg -> DatingGameUI/license.jpg
+kenney_new-platformer-pack-1.1/Preview (Tiles).png -> kenney_new-platformer-pack-1.1/preview_tiles.png
+kenney_new-platformer-pack-1.1/Sample A.png -> kenney_new-platformer-pack-1.1/sample_a.png
+kenney_new-platformer-pack-1.1/Preview (Backgrounds).png -> kenney_new-platformer-pack-1.1/preview_backgrounds.png
+kenney_new-platformer-pack-1.1/Sample B.png -> kenney_new-platformer-pack-1.1/sample_b.png
+kenney_new-platformer-pack-1.1/Preview (Characters).png -> kenney_new-platformer-pack-1.1/preview_characters.png
+kenney_emotes-pack/Preview.png -> kenney_emotes-pack/preview.png
+kenney_pattern-pack/Preview.png -> kenney_pattern-pack/preview.png
+kenney_rpg-audio/Preview.ogg -> kenney_rpg-audio/preview.ogg
+kenney_voiceover-pack/Preview (Male).ogg -> kenney_voiceover-pack/preview_male.ogg
+kenney_voiceover-pack/Preview.ogg -> kenney_voiceover-pack/preview.ogg
+kenney_voiceover-pack/Preview (Female).ogg -> kenney_voiceover-pack/preview_female.ogg
+kenney_shape-characters/Sample.png -> kenney_shape-characters/sample.png
+kenney_shape-characters/Preview.png -> kenney_shape-characters/preview.png
+kenney_ui-audio/Preview.ogg -> kenney_ui-audio/preview.ogg
+kenney_voiceover-pack-fighter/Preview.ogg -> kenney_voiceover-pack-fighter/preview.ogg
+kenney_digital-audio/Preview.ogg -> kenney_digital-audio/preview.ogg
+kenney_development-essentials/Preview.png -> kenney_development-essentials/preview.png
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL12.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel12.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL14.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel14.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL02.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel02.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL03.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel03.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL15.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel15.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL06.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel06.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL10.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel10.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL16.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel16.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL05.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel05.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL11.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel11.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL07.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel07.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL04.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel04.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL08.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel08.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL09.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel09.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL13.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel13.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL01.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel01.ogg
+kenney_music-jingles/Audio/Steel jingles/jingles_STEEL00.ogg -> kenney_music-jingles/Audio/Steel jingles/jingles_steel00.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT01.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit01.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT04.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit04.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT05.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit05.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT12.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit12.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT02.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit02.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT10.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit10.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT14.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit14.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT06.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit06.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT03.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit03.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT11.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit11.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT07.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit07.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT08.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit08.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT16.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit16.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT00.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit00.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT15.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit15.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT09.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit09.ogg
+kenney_music-jingles/Audio/Hit jingles/jingles_HIT13.ogg -> kenney_music-jingles/Audio/Hit jingles/jingles_hit13.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI03.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi03.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI14.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi14.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI02.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi02.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI05.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi05.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI04.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi04.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI08.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi08.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI07.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi07.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI00.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi00.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI13.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi13.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI01.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi01.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI06.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi06.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI10.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi10.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI12.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi12.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI15.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi15.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI09.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi09.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI16.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi16.ogg
+kenney_music-jingles/Audio/Pizzicato jingles/jingles_PIZZI11.ogg -> kenney_music-jingles/Audio/Pizzicato jingles/jingles_pizzi11.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX16.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax16.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX08.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax08.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX00.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax00.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX13.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax13.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX02.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax02.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX10.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax10.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX05.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax05.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX14.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax14.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX06.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax06.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX07.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax07.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX09.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax09.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX01.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax01.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX03.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax03.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX15.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax15.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX11.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax11.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX04.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax04.ogg
+kenney_music-jingles/Audio/Sax jingles/jingles_SAX12.ogg -> kenney_music-jingles/Audio/Sax jingles/jingles_sax12.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES08.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes08.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES09.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes09.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES04.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes04.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES11.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes11.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES03.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes03.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES05.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes05.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES02.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes02.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES10.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes10.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES12.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes12.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES16.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes16.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES06.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes06.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES00.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes00.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES14.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes14.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES01.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes01.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES13.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes13.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES07.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes07.ogg
+kenney_music-jingles/Audio/8-Bit jingles/jingles_NES15.ogg -> kenney_music-jingles/Audio/8-Bit jingles/jingles_nes15.ogg
+kenney_kenney-fonts/Fonts/Kenney Mini Square Mono.ttf -> kenney_kenney-fonts/Fonts/kenney_mini_square_mono.ttf
+kenney_kenney-fonts/Fonts/Kenney Mini Square.ttf -> kenney_kenney-fonts/Fonts/kenney_mini_square.ttf
+kenney_kenney-fonts/Fonts/Kenney Pixel Square.ttf -> kenney_kenney-fonts/Fonts/kenney_pixel_square.ttf
+kenney_kenney-fonts/Fonts/Kenney High.ttf -> kenney_kenney-fonts/Fonts/kenney_high.ttf
+kenney_kenney-fonts/Fonts/Kenney Blocks.ttf -> kenney_kenney-fonts/Fonts/kenney_blocks.ttf
+kenney_kenney-fonts/Fonts/Kenney Future Narrow.ttf -> kenney_kenney-fonts/Fonts/kenney_future_narrow.ttf
+kenney_kenney-fonts/Fonts/Kenney Pixel.ttf -> kenney_kenney-fonts/Fonts/kenney_pixel.ttf
+kenney_kenney-fonts/Fonts/Kenney Rocket.ttf -> kenney_kenney-fonts/Fonts/kenney_rocket.ttf
+kenney_kenney-fonts/Fonts/Kenney High Square.ttf -> kenney_kenney-fonts/Fonts/kenney_high_square.ttf
+kenney_kenney-fonts/Fonts/Kenney Rocket Square.ttf -> kenney_kenney-fonts/Fonts/kenney_rocket_square.ttf
+kenney_kenney-fonts/Fonts/Kenney Future.ttf -> kenney_kenney-fonts/Fonts/kenney_future.ttf
+kenney_kenney-fonts/Fonts/Kenney Mini.ttf -> kenney_kenney-fonts/Fonts/kenney_mini.ttf
+Garden cozy kit/Post/Assets/Backgound/Background_Yellow.png -> Garden cozy kit/Post/Assets/Backgound/background_yellow.png
+Garden cozy kit/Post/Assets/Backgound/Background_pink.png -> Garden cozy kit/Post/Assets/Backgound/background_pink.png
+Garden cozy kit/Post/Assets/Backgound/Background_Green.png -> Garden cozy kit/Post/Assets/Backgound/background_green.png
+Garden cozy kit/Post/Assets/Backgound/Background_Blue.png -> Garden cozy kit/Post/Assets/Backgound/background_blue.png
+Garden cozy kit/Post/Assets/Reward/Coin-9.png -> Garden cozy kit/Post/Assets/Reward/coin_9.png
+Garden cozy kit/Post/Assets/Reward/Flower-vase.png -> Garden cozy kit/Post/Assets/Reward/flower_vase.png
+Garden cozy kit/Post/Assets/Reward/Coin-1.png -> Garden cozy kit/Post/Assets/Reward/coin_1.png
+Garden cozy kit/Post/Assets/Reward/Claquete.png -> Garden cozy kit/Post/Assets/Reward/claquete.png
+Garden cozy kit/Post/Assets/Reward/Coin-3.png -> Garden cozy kit/Post/Assets/Reward/coin_3.png
+Garden cozy kit/Post/Assets/Bar/Pieces-bar-4.png -> Garden cozy kit/Post/Assets/Bar/pieces_bar_4.png
+Garden cozy kit/Post/Assets/Bar/Square.png -> Garden cozy kit/Post/Assets/Bar/square.png
+Garden cozy kit/Post/Assets/Bar/Square-2.png -> Garden cozy kit/Post/Assets/Bar/square_2.png
+Garden cozy kit/Post/Assets/Bar/Press-big-bar.png -> Garden cozy kit/Post/Assets/Bar/press_big_bar.png
+Garden cozy kit/Post/Assets/Bar/Grass-4.png -> Garden cozy kit/Post/Assets/Bar/grass_4.png
+Garden cozy kit/Post/Assets/Bar/Press-pieces-bar-1.png -> Garden cozy kit/Post/Assets/Bar/press_pieces_bar_1.png
+Garden cozy kit/Post/Assets/Bar/Pieces-bar-5.png -> Garden cozy kit/Post/Assets/Bar/pieces_bar_5.png
+Garden cozy kit/Post/Assets/Bar/Grass-2.png -> Garden cozy kit/Post/Assets/Bar/grass_2.png
+Garden cozy kit/Post/Assets/Bar/Pieces-bar-1.png -> Garden cozy kit/Post/Assets/Bar/pieces_bar_1.png
+Garden cozy kit/Post/Assets/Bar/Press-pieces-bar-4.png -> Garden cozy kit/Post/Assets/Bar/press_pieces_bar_4.png
+Garden cozy kit/Post/Assets/Bar/Grass-button.png -> Garden cozy kit/Post/Assets/Bar/grass_button.png
+Garden cozy kit/Post/Assets/Bar/Clear-Press-button.png -> Garden cozy kit/Post/Assets/Bar/clear_press_button.png
+Garden cozy kit/Post/Assets/Bar/Pieces-bar-2.png -> Garden cozy kit/Post/Assets/Bar/pieces_bar_2.png
+Garden cozy kit/Post/Assets/Bar/Pieces-bar-3.png -> Garden cozy kit/Post/Assets/Bar/pieces_bar_3.png
+Garden cozy kit/Post/Assets/Bar/Grass-1.png -> Garden cozy kit/Post/Assets/Bar/grass_1.png
+Garden cozy kit/Post/Assets/Bar/Big-bar.png -> Garden cozy kit/Post/Assets/Bar/big_bar.png
+Garden cozy kit/Post/Assets/Bar/Small-bar.png -> Garden cozy kit/Post/Assets/Bar/small_bar.png
+Garden cozy kit/Post/Assets/Bar/Press-pieces-bar-2.png -> Garden cozy kit/Post/Assets/Bar/press_pieces_bar_2.png
+Garden cozy kit/Post/Assets/Bar/Press-small-bar.png -> Garden cozy kit/Post/Assets/Bar/press_small_bar.png
+Garden cozy kit/Post/Assets/Bar/Press-grass-button.png -> Garden cozy kit/Post/Assets/Bar/press_grass_button.png
+Garden cozy kit/Post/Assets/Bar/Grass-3.png -> Garden cozy kit/Post/Assets/Bar/grass_3.png
+Garden cozy kit/Post/Assets/Bar/Clear-Button.png -> Garden cozy kit/Post/Assets/Bar/clear_button.png
+Garden cozy kit/Post/Assets/Bar/Press-pieces-bar-5.png -> Garden cozy kit/Post/Assets/Bar/press_pieces_bar_5.png
+Garden cozy kit/Post/Assets/Bar/Press-pieces-bar-3.png -> Garden cozy kit/Post/Assets/Bar/press_pieces_bar_3.png
+Garden cozy kit/Post/Assets/Icons/Empty-skull.png -> Garden cozy kit/Post/Assets/Icons/empty_skull.png
+Garden cozy kit/Post/Assets/Icons/Empty-heart.png -> Garden cozy kit/Post/Assets/Icons/empty_heart.png
+Garden cozy kit/Post/Assets/Icons/Money.png -> Garden cozy kit/Post/Assets/Icons/money.png
+Garden cozy kit/Post/Assets/Icons/Ray.png -> Garden cozy kit/Post/Assets/Icons/ray.png
+Garden cozy kit/Post/Assets/Icons/Star.png -> Garden cozy kit/Post/Assets/Icons/star.png
+Garden cozy kit/Post/Assets/Icons/Empty-ray.png -> Garden cozy kit/Post/Assets/Icons/empty_ray.png
+Garden cozy kit/Post/Assets/Icons/Empty-coin.png -> Garden cozy kit/Post/Assets/Icons/empty_coin.png
+Garden cozy kit/Post/Assets/Icons/Skull.png -> Garden cozy kit/Post/Assets/Icons/skull.png
+Garden cozy kit/Post/Assets/Icons/Empty-star.png -> Garden cozy kit/Post/Assets/Icons/empty_star.png
+Garden cozy kit/Post/Assets/Icons/Heart.png -> Garden cozy kit/Post/Assets/Icons/heart.png
+Garden cozy kit/Post/Assets/Icons/Coin.png -> Garden cozy kit/Post/Assets/Icons/coin.png
+Garden cozy kit/Post/Assets/Icons/Empty-money.png -> Garden cozy kit/Post/Assets/Icons/empty_money.png
+Garden cozy kit/Post/Assets/Collectibles/Diamond-porple.png -> Garden cozy kit/Post/Assets/Collectibles/diamond_porple.png
+Garden cozy kit/Post/Assets/Collectibles/Diamond-blue.png -> Garden cozy kit/Post/Assets/Collectibles/diamond_blue.png
+Garden cozy kit/Post/Assets/Collectibles/Sphire-purple.png -> Garden cozy kit/Post/Assets/Collectibles/sphire_purple.png
+Garden cozy kit/Post/Assets/Collectibles/Emerald-red.png -> Garden cozy kit/Post/Assets/Collectibles/emerald_red.png
+Garden cozy kit/Post/Assets/Collectibles/Empty-diamond.png -> Garden cozy kit/Post/Assets/Collectibles/empty_diamond.png
+Garden cozy kit/Post/Assets/Collectibles/Empty-sphire.png -> Garden cozy kit/Post/Assets/Collectibles/empty_sphire.png
+Garden cozy kit/Post/Assets/Collectibles/Emerald-green.png -> Garden cozy kit/Post/Assets/Collectibles/emerald_green.png
+Garden cozy kit/Post/Assets/Collectibles/Empty-emerald.png -> Garden cozy kit/Post/Assets/Collectibles/empty_emerald.png
+Garden cozy kit/Post/Assets/Collectibles/Sphire-red.png -> Garden cozy kit/Post/Assets/Collectibles/sphire_red.png
+Garden cozy kit/Post/Assets/Collectibles/Emerald-blue.png -> Garden cozy kit/Post/Assets/Collectibles/emerald_blue.png
+Garden cozy kit/Post/Assets/Collectibles/Sphire-green.png -> Garden cozy kit/Post/Assets/Collectibles/sphire_green.png
+Garden cozy kit/Post/Assets/Collectibles/Ruby-green.png -> Garden cozy kit/Post/Assets/Collectibles/ruby_green.png
+Garden cozy kit/Post/Assets/Collectibles/Ruby-red.png -> Garden cozy kit/Post/Assets/Collectibles/ruby_red.png
+Garden cozy kit/Post/Assets/Collectibles/Diamond-red.png -> Garden cozy kit/Post/Assets/Collectibles/diamond_red.png
+Garden cozy kit/Post/Assets/Collectibles/Emerald-purple.png -> Garden cozy kit/Post/Assets/Collectibles/emerald_purple.png
+Garden cozy kit/Post/Assets/Collectibles/Sphire-blue.png -> Garden cozy kit/Post/Assets/Collectibles/sphire_blue.png
+Garden cozy kit/Post/Assets/Collectibles/Empty-ruby.png -> Garden cozy kit/Post/Assets/Collectibles/empty_ruby.png
+Garden cozy kit/Post/Assets/Collectibles/Diamond-green.png -> Garden cozy kit/Post/Assets/Collectibles/diamond_green.png
+Garden cozy kit/Post/Assets/Collectibles/Ruby-purple.png -> Garden cozy kit/Post/Assets/Collectibles/ruby_purple.png
+Garden cozy kit/Post/Assets/Collectibles/Ruby-blue.png -> Garden cozy kit/Post/Assets/Collectibles/ruby_blue.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-1.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_1.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-3.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_3.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-5.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_5.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-6.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_6.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-9.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_9.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-11.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_11.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-4.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_4.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-7.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_7.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-2.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_2.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-10.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_10.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-8.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_8.png
+Garden cozy kit/Post/Assets/Butterfly/Butterfly-12.png -> Garden cozy kit/Post/Assets/Butterfly/butterfly_12.png
+Garden cozy kit/Post/Assets/Buttons/Cell-phone.png -> Garden cozy kit/Post/Assets/Buttons/cell_phone.png
+Garden cozy kit/Post/Assets/Buttons/Controle.png -> Garden cozy kit/Post/Assets/Buttons/controle.png
+Garden cozy kit/Post/Assets/Buttons/Config.png -> Garden cozy kit/Post/Assets/Buttons/config.png
+DRY_RUN_ONLY (use --apply to rename)
