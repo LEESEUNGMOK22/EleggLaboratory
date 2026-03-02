@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../data/balance_table.dart';
 import '../data/element_tables.dart';
 import 'logbook.dart';
 import 'offline_summary.dart';
@@ -18,7 +19,7 @@ class BoardGameState {
 
   factory BoardGameState.fromMap(Map<String, dynamic> map, {Random? random}) {
     final s = BoardGameState(random: random);
-    s.boardSlots = (map['boardSlots'] as num?)?.toInt() ?? size;
+    s.boardSlots = (map['boardSlots'] as num?)?.toInt() ?? 24;
     s.essence = (map['essence'] as num?)?.toDouble() ?? 0;
     s.residue = (map['residue'] as num?)?.toInt() ?? 0;
     s.tickets = (map['tickets'] as num?)?.toInt() ?? 10;
@@ -35,6 +36,11 @@ class BoardGameState {
     s.autoTapRemainSec = (map['autoTapRemainSec'] as num?)?.toDouble() ?? 0;
     s.autoTapCooldownSec = (map['autoTapCooldownSec'] as num?)?.toDouble() ?? 0;
     s.tapCount = (map['tapCount'] as num?)?.toInt() ?? 0;
+    s.mergeCount = (map['mergeCount'] as num?)?.toInt() ?? 0;
+    final disc = map['discovered'];
+    if (disc is List) {
+      s.discovered.addAll(disc.cast<String>());
+    }
 
     final purchasedMap = map['purchased'];
     if (purchasedMap is Map) {
@@ -63,7 +69,7 @@ class BoardGameState {
   static const int rows = 5;
   static const int cols = 6;
   static const int size = rows * cols;
-  int boardSlots = size;
+  int boardSlots = 24;
 
   final Random _random;
   final List<BoardTile?> board = List<BoardTile?>.filled(size, null);
@@ -82,6 +88,8 @@ class BoardGameState {
   double autoTapCooldownSec = 0;
   int tapCount = 0;
   int residue = 0;
+  int mergeCount = 0;
+  final Set<String> discovered = {};
   int tickets = 10;
   int ticketCap = 30;
   int ticketRemainderSec = 0;
@@ -115,6 +123,8 @@ class BoardGameState {
       'autoTapRemainSec': autoTapRemainSec,
       'autoTapCooldownSec': autoTapCooldownSec,
       'tapCount': tapCount,
+      'mergeCount': mergeCount,
+      'discovered': discovered.toList(),
       'purchased': purchased,
       'board': board
           .map((t) => t == null
@@ -126,6 +136,18 @@ class BoardGameState {
                 })
           .toList(),
     };
+  }
+
+
+  Map<String, int> last24hTypeCounts() {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final cutoff = now - const Duration(hours: 24).inMilliseconds;
+    final out = <String, int>{};
+    for (final e in logs) {
+      if (e.timestampMs < cutoff) continue;
+      out[e.type.name] = (out[e.type.name] ?? 0) + 1;
+    }
+    return out;
   }
 
   List<LogEvent> getRecentLogs({LogType? type, int limit = 60}) {
@@ -169,6 +191,7 @@ class BoardGameState {
       residueGained: residue - residueBefore,
       ticketsGained: tickets - ticketsBefore,
       transformCount: grouped.values.fold(0, (a,b)=>a+b),
+      transformGroups: grouped,
     );
 
     logs.add(LogEvent(
@@ -253,6 +276,7 @@ class BoardGameState {
     tickets -= 1;
     final form = summonPool[_random.nextInt(summonPool.length)];
     board[empty] = BoardTile(form: form, tier: 1);
+    discovered.add('${form.name}:T1');
     logs.add(
       LogEvent(
         timestampMs: DateTime.now().millisecondsSinceEpoch,
@@ -274,6 +298,8 @@ class BoardGameState {
     board[from] = null;
     b.tier += 1;
     b.transformElapsedSec = 0;
+    mergeCount += 1;
+    discovered.add('${b.form.name}:T${b.tier}');
 
     logs.add(
       LogEvent(
@@ -286,11 +312,20 @@ class BoardGameState {
   }
 
 
-  bool buyUpgrade(UpgradeDef def) {
+  String? cannotBuyReason(UpgradeDef def) {
     final level = purchased[def.id] ?? 0;
-    if (level >= def.maxLevel) return false;
-    if (essence < def.cost) return false;
+    if (level >= def.maxLevel) return '이미 구매 완료';
+    if (def.id == 'prod_board_expand_1' && mergeCount < 200) return '총 머지 200회 필요';
+    if (def.id == 'click_tap_2' && discovered.length < 8) return '도감 8종 발견 필요';
+    if (essence < def.cost) return 'Essence 부족';
+    return null;
+  }
 
+  bool buyUpgrade(UpgradeDef def) {
+    final reason = cannotBuyReason(def);
+    if (reason != null) return false;
+
+    final level = purchased[def.id] ?? 0;
     essence -= def.cost;
     purchased[def.id] = level + 1;
 
@@ -400,6 +435,7 @@ class BoardGameState {
         tile.transformElapsedSec = 0;
         final from = tile.form;
         tile.form = rule.to;
+        discovered.add('${tile.form.name}:T${tile.tier}');
         final gain = (_transformResidue(tile.tier, rule.baseResidue) * residueMultiplier).round();
         residue += gain;
 
@@ -428,25 +464,7 @@ class BoardGameState {
   }
 
   static double _tileIncome(BoardTile tile) {
-    final base = switch (tile.form) {
-      ElementForm.flame => 4.0,
-      ElementForm.smoke => 2.0,
-      ElementForm.ash => 1.0,
-      ElementForm.soot => 0.5,
-      ElementForm.water => 4.0,
-      ElementForm.vapor => 2.0,
-      ElementForm.cloud => 1.0,
-      ElementForm.dew => 0.5,
-      ElementForm.soil => 4.0,
-      ElementForm.mud => 2.0,
-      ElementForm.clay => 1.0,
-      ElementForm.stone => 0.5,
-      ElementForm.air => 4.0,
-      ElementForm.breeze => 2.0,
-      ElementForm.gust => 1.0,
-      ElementForm.storm => 0.5,
-    };
-
+    final base = kBaseIncome[tile.form] ?? 1.0;
     return base * pow(2, tile.tier - 1);
   }
 

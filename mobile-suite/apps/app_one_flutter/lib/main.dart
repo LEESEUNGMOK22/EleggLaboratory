@@ -297,10 +297,11 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
         const SizedBox(height: 8),
         ...kUpgradeDefs.map((u) {
           final purchased = (game.purchased[u.id] ?? 0) > 0;
+          final reason = game.cannotBuyReason(u);
           return Card(
             child: ListTile(
               title: Text(u.name),
-              subtitle: Text('${u.category.name} · cost ${u.cost.toStringAsFixed(0)}'),
+              subtitle: Text('${u.category.name} · cost ${u.cost.toStringAsFixed(0)}${reason != null && !purchased ? ' · $reason' : ''}'),
               trailing: FilledButton(
                 onPressed: purchased
                     ? null
@@ -388,12 +389,15 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       context: context,
       builder: (_) => AlertDialog(
         title: const Text('오프라인 정산'),
-        content: Text(
-          '경과: ${s.elapsedSec}s\n'
-          'Essence: +${s.essenceGained.toStringAsFixed(1)}\n'
-          'Residue: +${s.residueGained}\n'
-          'Tickets: +${s.ticketsGained}\n'
-          'Transform: ${s.transformCount}회',
+        content: SingleChildScrollView(
+          child: Text(
+            '경과: ${s.elapsedSec}s\n'
+            'Essence: +${s.essenceGained.toStringAsFixed(1)}\n'
+            'Residue: +${s.residueGained}\n'
+            'Tickets: +${s.ticketsGained}\n'
+            'Transform: ${s.transformCount}회\n\n'
+            '상세: ${s.transformGroups.entries.map((e) => '${e.key} x${e.value}').join(', ')}',
+          ),
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context), child: const Text('확인')),

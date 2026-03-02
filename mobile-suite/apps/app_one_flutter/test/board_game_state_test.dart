@@ -34,11 +34,13 @@ void main() {
 
   test('board expansion upgrade increases slots', () {
     final g = BoardGameState();
+    g.boardSlots = 24;
+    g.mergeCount = 200;
     g.essence = 999;
     final up = kUpgradeDefs.firstWhere((u) => u.id == 'prod_board_expand_1');
     final ok = g.buyUpgrade(up);
     expect(ok, isTrue);
-    expect(g.boardSlots, BoardGameState.size);
+    expect(g.boardSlots, 30);
   });
 
   test('tap burst starts every 50 taps when upgrade bought', () {
@@ -60,5 +62,13 @@ void main() {
     final ok = g.triggerAutoTap();
     expect(ok, isTrue);
     expect(g.autoTapRemainSec, greaterThan(0));
+  });
+
+  test('upgrade gate blocks board expansion before 200 merges', () {
+    final g = BoardGameState();
+    g.essence = 9999;
+    final up = kUpgradeDefs.firstWhere((u) => u.id == 'prod_board_expand_1');
+    expect(g.cannotBuyReason(up), isNotNull);
+    expect(g.buyUpgrade(up), isFalse);
   });
 }
