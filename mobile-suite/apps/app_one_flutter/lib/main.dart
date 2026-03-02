@@ -125,7 +125,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
 
   Widget _tabBody() {
     return switch (tabIndex) {
-      0 => Column(children: [_actions(), const SizedBox(height: 8), _boardTools(), const SizedBox(height: 10), Expanded(child: _board())]),
+      0 => Column(children: [_actions(), if (_currentStepId == 'merge_1') const Padding(padding: EdgeInsets.only(top:6), child: Text('같은 원소 타일 2개를 순서대로 눌러 머지해보세요', style: TextStyle(color: Colors.orange))), const SizedBox(height: 8), _boardTools(), const SizedBox(height: 10), Expanded(child: _board())]),
       1 => _upgrades(),
       _ => _logs(),
     };
@@ -212,6 +212,16 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     }
   }
 
+
+  String? get _currentStepId {
+    var idx = tutorialIndex;
+    while (idx < kTutorialSteps.length && _isStepDone(kTutorialSteps[idx].id)) {
+      idx += 1;
+    }
+    if (idx >= kTutorialSteps.length) return null;
+    return kTutorialSteps[idx].id;
+  }
+
   Widget _actions() {
     return Row(
       children: [
@@ -223,6 +233,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
               });
               _saveState();
             },
+            style: FilledButton.styleFrom(backgroundColor: _currentStepId == 'summon_3' ? Colors.orange : null),
             child: const Text('Summon x1'),
           ),
         ),
@@ -249,6 +260,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
               });
               _saveState();
             },
+            style: OutlinedButton.styleFrom(side: BorderSide(color: _currentStepId == 'merge_1' ? Colors.orange : Colors.grey)),
             child: const Text('Tap'),
           ),
         ),
@@ -358,31 +370,47 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   }
 
   Widget _upgrades() {
+    Widget section(UpgradeCategory cat, String title) {
+      final list = kUpgradeDefs.where((u) => u.category == cat).toList();
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+          ),
+          ...list.map((u) {
+            final purchased = (game.purchased[u.id] ?? 0) > 0;
+            final reason = game.cannotBuyReason(u);
+            return Card(
+              child: ListTile(
+                title: Text(u.name),
+                subtitle: Text('${u.category.name} · cost ${u.cost.toStringAsFixed(0)}${reason != null && !purchased ? ' · $reason' : ''}'),
+                trailing: FilledButton(
+                  onPressed: purchased
+                      ? null
+                      : () {
+                          setState(() {
+                            game.buyUpgrade(u);
+                          });
+                          _saveState();
+                        },
+                  child: Text(purchased ? 'Done' : 'Buy'),
+                ),
+              ),
+            );
+          }),
+        ],
+      );
+    }
+
     return ListView(
       children: [
         const Text('Upgrades (v1)', style: TextStyle(fontWeight: FontWeight.bold)),
-        const SizedBox(height: 8),
-        ...kUpgradeDefs.map((u) {
-          final purchased = (game.purchased[u.id] ?? 0) > 0;
-          final reason = game.cannotBuyReason(u);
-          return Card(
-            child: ListTile(
-              title: Text(u.name),
-              subtitle: Text('${u.category.name} · cost ${u.cost.toStringAsFixed(0)}${reason != null && !purchased ? ' · $reason' : ''}'),
-              trailing: FilledButton(
-                onPressed: purchased
-                    ? null
-                    : () {
-                        setState(() {
-                          game.buyUpgrade(u);
-                        });
-                        _saveState();
-                      },
-                child: Text(purchased ? 'Done' : 'Buy'),
-              ),
-            ),
-          );
-        }),
+        section(UpgradeCategory.summon, 'Summon'),
+        section(UpgradeCategory.production, 'Production'),
+        section(UpgradeCategory.transform, 'Transform'),
+        section(UpgradeCategory.clicker, 'Clicker'),
       ],
     );
   }
@@ -443,6 +471,15 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             itemCount: items.length,
             itemBuilder: (context, i) {
               final e = items[i];
+              if (e.type == LogType.offlineSummary) {
+                return Card(
+                  color: Colors.indigo.shade50,
+                  child: ListTile(
+                    title: const Text('Offline Summary'),
+                    subtitle: Text(e.payload.toString()),
+                  ),
+                );
+              }
               return ListTile(
                 dense: true,
                 title: Text(e.type.name),
