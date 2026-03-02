@@ -1,9 +1,12 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shared_ui/shared_ui.dart';
 
 import 'core/board_game_state.dart';
+import 'core/logbook.dart';
 import 'core/offline_summary.dart';
 import 'core/upgrades.dart';
 import 'data/element_tables.dart';
@@ -34,16 +37,20 @@ class IdleMergeBoardPage extends StatefulWidget {
 
 class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     with WidgetsBindingObserver {
-  final game = BoardGameState();
+  static const _saveKey = 'app_one_state_v1';
+
+  BoardGameState game = BoardGameState();
   Timer? timer;
   int? selected;
   int tabIndex = 0;
   DateTime? pausedAt;
+  LogType? logFilter;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    _loadState();
     timer = Timer.periodic(const Duration(milliseconds: 200), (_) {
       setState(() => game.tick(0.2));
     });
@@ -55,6 +62,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
         state == AppLifecycleState.inactive ||
         state == AppLifecycleState.detached) {
       pausedAt = DateTime.now();
+      _saveState();
       return;
     }
 
@@ -63,6 +71,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       pausedAt = null;
       if (sec > 1) {
         final summary = game.applyOffline(sec);
+        _saveState();
         if (mounted) {
           WidgetsBinding.instance.addPostFrameCallback((_) {
             _showOfflineSummary(summary);
@@ -75,6 +84,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   @override
   void dispose() {
     timer?.cancel();
+    _saveState();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
@@ -139,29 +149,38 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       children: [
         Expanded(
           child: FilledButton(
-            onPressed: () => setState(() {
-              game.summonOne();
-            }),
+            onPressed: () {
+              setState(() {
+                game.summonOne();
+              });
+              _saveState();
+            },
             child: const Text('Summon x1'),
           ),
         ),
         const SizedBox(width: 8),
         Expanded(
           child: OutlinedButton(
-            onPressed: () => setState(() {
-              for (var i = 0; i < 10; i++) {
-                if (!game.summonOne()) break;
-              }
-            }),
+            onPressed: () {
+              setState(() {
+                for (var i = 0; i < 10; i++) {
+                  if (!game.summonOne()) break;
+                }
+              });
+              _saveState();
+            },
             child: const Text('Summon x10'),
           ),
         ),
         const SizedBox(width: 8),
         Expanded(
           child: OutlinedButton(
-            onPressed: () => setState(() {
-              game.essence += game.tapValue;
-            }),
+            onPressed: () {
+              setState(() {
+                game.essence += game.tapValue;
+              });
+              _saveState();
+            },
             child: const Text('Tap'),
           ),
         ),
@@ -193,6 +212,9 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             if (selected != null && selected != index) {
               final merged = game.merge(selected!, index);
               selected = merged ? null : index;
+              if (merged) {
+                _saveState();
+              }
             }
           }),
           child: Container(
@@ -233,9 +255,12 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
               trailing: FilledButton(
                 onPressed: purchased
                     ? null
-                    : () => setState(() {
+                    : () {
+                        setState(() {
                           game.buyUpgrade(u);
-                        }),
+                        });
+                        _saveState();
+                      },
                 child: Text(purchased ? 'Done' : 'Buy'),
               ),
             ),
@@ -246,11 +271,34 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   }
 
   Widget _logs() {
-    final items = game.logs.reversed.take(60).toList();
+    final items = game.getRecentLogs(type: logFilter, limit: 80);
+    final byType = <LogType, int>{};
+    for (final e in game.logs) {
+      byType[e.type] = (byType[e.type] ?? 0) + 1;
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text('Logbook', style: TextStyle(fontWeight: FontWeight.bold)),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 6,
+          children: [
+            ChoiceChip(
+              label: const Text('전체'),
+              selected: logFilter == null,
+              onSelected: (_) => setState(() => logFilter = null),
+            ),
+            ...LogType.values.map(
+              (t) => ChoiceChip(
+                label: Text('${t.name} (${byType[t] ?? 0})'),
+                selected: logFilter == t,
+                onSelected: (_) => setState(() => logFilter = t),
+              ),
+            ),
+          ],
+        ),
         const SizedBox(height: 8),
         Expanded(
           child: ListView.builder(
@@ -261,6 +309,10 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
                 dense: true,
                 title: Text(e.type.name),
                 subtitle: Text(e.payload.toString()),
+                trailing: Text(
+                  e.isOffline ? 'offline' : '',
+                  style: const TextStyle(fontSize: 11),
+                ),
               );
             },
           ),
@@ -295,5 +347,25 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       ElementForm.soil || ElementForm.mud || ElementForm.clay || ElementForm.stone => Colors.brown.shade200,
       _ => Colors.cyan.shade200,
     };
+  }
+
+  Future<void> _loadState() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_saveKey);
+    if (raw == null || raw.isEmpty) return;
+    try {
+      final map = jsonDecode(raw) as Map<String, dynamic>;
+      if (!mounted) return;
+      setState(() {
+        game = BoardGameState.fromMap(map);
+      });
+    } catch (_) {
+      // ignore broken save
+    }
+  }
+
+  Future<void> _saveState() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_saveKey, jsonEncode(game.toMap()));
   }
 }

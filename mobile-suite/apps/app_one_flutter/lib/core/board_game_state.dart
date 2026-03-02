@@ -16,6 +16,44 @@ class BoardTile {
 class BoardGameState {
   BoardGameState({Random? random}) : _random = random ?? Random();
 
+  factory BoardGameState.fromMap(Map<String, dynamic> map, {Random? random}) {
+    final s = BoardGameState(random: random);
+    s.essence = (map['essence'] as num?)?.toDouble() ?? 0;
+    s.residue = (map['residue'] as num?)?.toInt() ?? 0;
+    s.tickets = (map['tickets'] as num?)?.toInt() ?? 10;
+    s.ticketCap = (map['ticketCap'] as num?)?.toInt() ?? 30;
+    s.ticketRemainderSec = (map['ticketRemainderSec'] as num?)?.toInt() ?? 0;
+    s.ticketIntervalSec = (map['ticketIntervalSec'] as num?)?.toInt() ?? 600;
+    s.tapValue = (map['tapValue'] as num?)?.toDouble() ?? 1;
+    s.productionMultiplier = (map['productionMultiplier'] as num?)?.toDouble() ?? 1;
+    s.offlineMultiplier = (map['offlineMultiplier'] as num?)?.toDouble() ?? 1;
+    s.residueMultiplier = (map['residueMultiplier'] as num?)?.toDouble() ?? 1;
+    s.transformSpeedMultiplier = (map['transformSpeedMultiplier'] as num?)?.toDouble() ?? 1;
+
+    final purchasedMap = map['purchased'];
+    if (purchasedMap is Map) {
+      for (final e in purchasedMap.entries) {
+        s.purchased[e.key.toString()] = (e.value as num).toInt();
+      }
+    }
+
+    final boardList = map['board'];
+    if (boardList is List) {
+      for (var i = 0; i < boardList.length && i < s.board.length; i++) {
+        final t = boardList[i];
+        if (t is Map<String, dynamic>) {
+          s.board[i] = BoardTile(
+            form: ElementForm.values.byName(t['form'] as String),
+            tier: (t['tier'] as num).toInt(),
+            transformElapsedSec: (t['elapsed'] as num).toDouble(),
+          );
+        }
+      }
+    }
+
+    return s;
+  }
+
   static const int rows = 5;
   static const int cols = 6;
   static const int size = rows * cols;
@@ -45,6 +83,37 @@ class BoardGameState {
   ];
 
   int get filledCount => board.whereType<BoardTile>().length;
+
+  Map<String, dynamic> toMap() {
+    return {
+      'essence': essence,
+      'residue': residue,
+      'tickets': tickets,
+      'ticketCap': ticketCap,
+      'ticketRemainderSec': ticketRemainderSec,
+      'ticketIntervalSec': ticketIntervalSec,
+      'tapValue': tapValue,
+      'productionMultiplier': productionMultiplier,
+      'offlineMultiplier': offlineMultiplier,
+      'residueMultiplier': residueMultiplier,
+      'transformSpeedMultiplier': transformSpeedMultiplier,
+      'purchased': purchased,
+      'board': board
+          .map((t) => t == null
+              ? null
+              : {
+                  'form': t.form.name,
+                  'tier': t.tier,
+                  'elapsed': t.transformElapsedSec,
+                })
+          .toList(),
+    };
+  }
+
+  List<LogEvent> getRecentLogs({LogType? type, int limit = 60}) {
+    final src = logs.reversed.where((e) => type == null || e.type == type).take(limit);
+    return src.toList();
+  }
 
   void tick(double deltaSec) {
     _chargeTickets(deltaSec);
