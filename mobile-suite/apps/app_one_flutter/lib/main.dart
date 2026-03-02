@@ -41,6 +41,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     with WidgetsBindingObserver {
   static const _saveKey = 'app_one_state_v1';
   static const _logFilterKey = 'app_one_log_filter_v1';
+  static const _logQueryKey = 'app_one_log_query_v1';
 
   BoardGameState game = BoardGameState();
   Timer? timer;
@@ -152,12 +153,12 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
           Expanded(
             child: TextField(
               decoration: const InputDecoration(isDense: true, hintText: '로그 검색'),
-              onChanged: (v) => setState(() => logQuery = v),
+              onChanged: (v) { setState(() => logQuery = v); _saveState(); },
             ),
           ),
           const SizedBox(width: 8),
           IconButton(
-            onPressed: () => setState(() => logDesc = !logDesc),
+            onPressed: () { setState(() => logDesc = !logDesc); _saveState(); },
             icon: Icon(logDesc ? Icons.south : Icons.north),
             tooltip: '정렬 토글',
           ),
@@ -191,7 +192,22 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(color: Colors.amber.shade50, borderRadius: BorderRadius.circular(8)),
-      child: Text('미션 ${tutorialIndex + 1}/${kTutorialSteps.length} · ${step.title} - ${step.desc}'),
+      child: Row(
+        children: [
+          Expanded(child: Text('미션 ${tutorialIndex + 1}/${kTutorialSteps.length} · ${step.title} - ${step.desc}')),
+          const SizedBox(width: 8),
+          FilledButton.tonal(
+            onPressed: () {
+              setState(() {
+                if (step.id == 'upgrade_1') tabIndex = 1;
+                if (step.id == 'log_open') tabIndex = 2;
+                if (step.id == 'summon_3' || step.id == 'merge_1' || step.id == 'transform_1') tabIndex = 0;
+              });
+            },
+            child: const Text('이동'),
+          ),
+        ],
+      ),
     );
   }
 
@@ -543,6 +559,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       }
       tutorialIndex = prefs.getInt('app_one_tutorial_idx') ?? 0;
       logDesc = prefs.getBool('app_one_log_desc') ?? true;
+      logQuery = prefs.getString(_logQueryKey) ?? '';
       tutorialRewarded.addAll((prefs.getStringList('app_one_tutorial_rewarded') ?? const []));
     } catch (_) {
       // ignore broken save
@@ -570,6 +587,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     await prefs.setString(_logFilterKey, logFilter?.name ?? '');
     await prefs.setInt('app_one_tutorial_idx', tutorialIndex);
     await prefs.setBool('app_one_log_desc', logDesc);
+    await prefs.setString(_logQueryKey, logQuery);
     await prefs.setStringList('app_one_tutorial_rewarded', tutorialRewarded.toList());
   }
 }
