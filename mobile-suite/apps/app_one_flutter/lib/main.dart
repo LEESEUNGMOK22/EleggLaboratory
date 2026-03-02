@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shared_ui/shared_ui.dart';
 
@@ -38,6 +39,7 @@ class IdleMergeBoardPage extends StatefulWidget {
 class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     with WidgetsBindingObserver {
   static const _saveKey = 'app_one_state_v1';
+  static const _logFilterKey = 'app_one_log_filter_v1';
 
   BoardGameState game = BoardGameState();
   Timer? timer;
@@ -51,6 +53,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _loadState();
+    _loadBalancePreset();
     timer = Timer.periodic(const Duration(milliseconds: 200), (_) {
       setState(() => game.tick(0.2));
     });
@@ -351,13 +354,13 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             ChoiceChip(
               label: const Text('전체'),
               selected: logFilter == null,
-              onSelected: (_) => setState(() => logFilter = null),
+              onSelected: (_) { setState(() => logFilter = null); _saveState(); },
             ),
             ...LogType.values.map(
               (t) => ChoiceChip(
                 label: Text('${t.name} (${byType[t] ?? 0})'),
                 selected: logFilter == t,
-                onSelected: (_) => setState(() => logFilter = t),
+                onSelected: (_) { setState(() => logFilter = t); _saveState(); },
               ),
             ),
           ],
@@ -396,7 +399,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             'Residue: +${s.residueGained}\n'
             'Tickets: +${s.ticketsGained}\n'
             'Transform: ${s.transformCount}회\n\n'
-            '상세: ${s.transformGroups.entries.map((e) => '${e.key} x${e.value}').join(', ')}',
+            '상세:\n${s.transformGroups.entries.map((e) => '- ${e.key} x${e.value}').join('\n')}',
           ),
         ),
         actions: [
@@ -425,13 +428,33 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       setState(() {
         game = BoardGameState.fromMap(map);
       });
+      final f = prefs.getString(_logFilterKey);
+      if (f != null && f.isNotEmpty) {
+        logFilter = LogType.values.firstWhere((e) => e.name == f, orElse: () => LogType.summon);
+      }
     } catch (_) {
       // ignore broken save
+    }
+  }
+
+
+  Future<void> _loadBalancePreset() async {
+    try {
+      final raw = await rootBundle.loadString('assets/config/balance_preset.json');
+      final json = jsonDecode(raw) as Map<String, dynamic>;
+      final interval = (json['ticketIntervalSec'] as num?)?.toInt();
+      final cap = (json['ticketCap'] as num?)?.toInt();
+      if (interval != null && interval > 0) game.ticketIntervalSec = interval;
+      if (cap != null && cap > 0) game.ticketCap = cap;
+      if (mounted) setState(() {});
+    } catch (_) {
+      // ignore preset load failures
     }
   }
 
   Future<void> _saveState() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_saveKey, jsonEncode(game.toMap()));
+    await prefs.setString(_logFilterKey, logFilter?.name ?? '');
   }
 }

@@ -5,6 +5,7 @@ class OfflineSummary {
     required this.residueGained,
     required this.ticketsGained,
     required this.transformCount,
+    this.transformGroups = const {},
   });
 
   final int elapsedSec;
@@ -12,6 +13,7 @@ class OfflineSummary {
   final int residueGained;
   final int ticketsGained;
   final int transformCount;
+  final Map<String, int> transformGroups;
 }
 
 class TicketChargeResult {

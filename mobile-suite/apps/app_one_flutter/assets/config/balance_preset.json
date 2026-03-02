@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "ticketIntervalSec": 600,
+  "ticketCap": 30,
+  "baseIncome": {
+    "flame": 4.0,
+    "smoke": 2.0,
+    "ash": 1.0,
+    "soot": 0.5,
+    "water": 4.0,
+    "vapor": 2.0,
+    "cloud": 1.0,
+    "dew": 0.5,
+    "soil": 4.0,
+    "mud": 2.0,
+    "clay": 1.0,
+    "stone": 0.5,
+    "air": 4.0,
+    "breeze": 2.0,
+    "gust": 1.0,
+    "storm": 0.5
+  }
+}
