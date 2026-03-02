@@ -36,7 +36,10 @@ class BoardGameState {
     s.autoTapRemainSec = (map['autoTapRemainSec'] as num?)?.toDouble() ?? 0;
     s.autoTapCooldownSec = (map['autoTapCooldownSec'] as num?)?.toDouble() ?? 0;
     s.tapCount = (map['tapCount'] as num?)?.toInt() ?? 0;
+    s.summonCount = (map['summonCount'] as num?)?.toInt() ?? 0;
     s.mergeCount = (map['mergeCount'] as num?)?.toInt() ?? 0;
+    s.transformCountTotal = (map['transformCountTotal'] as num?)?.toInt() ?? 0;
+    s.upgradeCount = (map['upgradeCount'] as num?)?.toInt() ?? 0;
     final disc = map['discovered'];
     if (disc is List) {
       s.discovered.addAll(disc.cast<String>());
@@ -88,7 +91,10 @@ class BoardGameState {
   double autoTapCooldownSec = 0;
   int tapCount = 0;
   int residue = 0;
+  int summonCount = 0;
   int mergeCount = 0;
+  int transformCountTotal = 0;
+  int upgradeCount = 0;
   final Set<String> discovered = {};
   int tickets = 10;
   int ticketCap = 30;
@@ -123,7 +129,10 @@ class BoardGameState {
       'autoTapRemainSec': autoTapRemainSec,
       'autoTapCooldownSec': autoTapCooldownSec,
       'tapCount': tapCount,
+      'summonCount': summonCount,
       'mergeCount': mergeCount,
+      'transformCountTotal': transformCountTotal,
+      'upgradeCount': upgradeCount,
       'discovered': discovered.toList(),
       'purchased': purchased,
       'board': board
@@ -138,6 +147,9 @@ class BoardGameState {
     };
   }
 
+
+
+  bool get hasOpenedLog => logs.isNotEmpty;
 
   Map<String, int> last24hTypeCounts() {
     final now = DateTime.now().millisecondsSinceEpoch;
@@ -274,6 +286,7 @@ class BoardGameState {
     if (empty == -1) return false;
 
     tickets -= 1;
+    summonCount += 1;
     final form = summonPool[_random.nextInt(summonPool.length)];
     board[empty] = BoardTile(form: form, tier: 1);
     discovered.add('${form.name}:T1');
@@ -385,6 +398,7 @@ class BoardGameState {
         break;
     }
 
+    upgradeCount += 1;
     logs.add(LogEvent(
       timestampMs: DateTime.now().millisecondsSinceEpoch,
       type: LogType.upgrade,
@@ -434,6 +448,7 @@ class BoardGameState {
       if (tile.transformElapsedSec >= need) {
         tile.transformElapsedSec = 0;
         final from = tile.form;
+        transformCountTotal += 1;
         tile.form = rule.to;
         discovered.add('${tile.form.name}:T${tile.tier}');
         final gain = (_transformResidue(tile.tier, rule.baseResidue) * residueMultiplier).round();

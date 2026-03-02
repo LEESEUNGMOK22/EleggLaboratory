@@ -10,6 +10,7 @@ import 'core/board_game_state.dart';
 import 'core/logbook.dart';
 import 'core/offline_summary.dart';
 import 'core/upgrades.dart';
+import 'core/tutorial.dart';
 import 'data/element_tables.dart';
 
 void main() {
@@ -47,6 +48,9 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   int tabIndex = 0;
   DateTime? pausedAt;
   LogType? logFilter;
+  bool logDesc = true;
+  String logQuery = '';
+  int tutorialIndex = 0;
 
   @override
   void initState() {
@@ -142,10 +146,62 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             Text('AutoTap: ${game.autoTapEnabled ? 'ON' : 'OFF'} ${game.autoTapRemainSec > 0 ? '(run ${game.autoTapRemainSec.toStringAsFixed(1)}s)' : ''} ${game.autoTapCooldownSec > 0 ? '(cd ${game.autoTapCooldownSec.toStringAsFixed(1)}s)' : ''}'),
             Text('Tickets: ${game.tickets}/${game.ticketCap} · next in ${nextTicketSec}s'),
             Text('Board: ${game.filledCount}/${game.boardSlots}'),
+            const SizedBox(height: 6),
+        Row(children: [
+          Expanded(
+            child: TextField(
+              decoration: const InputDecoration(isDense: true, hintText: '로그 검색'),
+              onChanged: (v) => setState(() => logQuery = v),
+            ),
+          ),
+          const SizedBox(width: 8),
+          IconButton(
+            onPressed: () => setState(() => logDesc = !logDesc),
+            icon: Icon(logDesc ? Icons.south : Icons.north),
+            tooltip: '정렬 토글',
+          ),
+        ]),
+        const SizedBox(height: 6),
+            _tutorialCard(),
           ],
         ),
       ),
     );
+  }
+
+
+  Widget _tutorialCard() {
+    while (tutorialIndex < kTutorialSteps.length && _isStepDone(kTutorialSteps[tutorialIndex].id)) {
+      tutorialIndex += 1;
+    }
+
+    if (tutorialIndex >= kTutorialSteps.length) {
+      return const Text('튜토리얼 완료 ✅');
+    }
+
+    final step = kTutorialSteps[tutorialIndex];
+    return Container(
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(color: Colors.amber.shade50, borderRadius: BorderRadius.circular(8)),
+      child: Text('미션 ${tutorialIndex + 1}/${kTutorialSteps.length} · ${step.title} - ${step.desc}'),
+    );
+  }
+
+  bool _isStepDone(String id) {
+    switch (id) {
+      case 'summon_3':
+        return game.summonCount >= 3;
+      case 'merge_1':
+        return game.mergeCount >= 1;
+      case 'transform_1':
+        return game.transformCountTotal >= 1;
+      case 'upgrade_1':
+        return game.upgradeCount >= 1;
+      case 'log_open':
+        return tabIndex == 2;
+      default:
+        return false;
+    }
   }
 
   Widget _actions() {
@@ -324,7 +380,13 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   }
 
   Widget _logs() {
-    final items = game.getRecentLogs(type: logFilter, limit: 80);
+    var items = game.getRecentLogs(type: logFilter, limit: 120);
+    if (logQuery.isNotEmpty) {
+      items = items.where((e) => e.payload.toString().toLowerCase().contains(logQuery.toLowerCase())).toList();
+    }
+    if (!logDesc) {
+      items = items.reversed.toList();
+    }
     final byType = <LogType, int>{};
     for (final e in game.logs) {
       byType[e.type] = (byType[e.type] ?? 0) + 1;
@@ -432,6 +494,8 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       if (f != null && f.isNotEmpty) {
         logFilter = LogType.values.firstWhere((e) => e.name == f, orElse: () => LogType.summon);
       }
+      tutorialIndex = prefs.getInt('app_one_tutorial_idx') ?? 0;
+      logDesc = prefs.getBool('app_one_log_desc') ?? true;
     } catch (_) {
       // ignore broken save
     }
@@ -456,5 +520,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_saveKey, jsonEncode(game.toMap()));
     await prefs.setString(_logFilterKey, logFilter?.name ?? '');
+    await prefs.setInt('app_one_tutorial_idx', tutorialIndex);
+    await prefs.setBool('app_one_log_desc', logDesc);
   }
 }
