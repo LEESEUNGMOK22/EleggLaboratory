@@ -135,7 +135,8 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
           children: [
             Text('Essence: ${game.essence.toStringAsFixed(1)}'),
             Text('Residue: ${game.residue}'),
-            Text('Tap: ${game.tapValue.toStringAsFixed(1)}'),
+            Text('Tap: ${game.tapValue.toStringAsFixed(1)} ${game.clickBurstSec > 0 ? '(Burst ${game.clickBurstSec.toStringAsFixed(1)}s)' : ''}'),
+            Text('AutoTap: ${game.autoTapEnabled ? 'ON' : 'OFF'}'),
             Text('Tickets: ${game.tickets}/${game.ticketCap} · next in ${nextTicketSec}s'),
             Text('Board: ${game.filledCount}/${game.boardSlots}'),
           ],
@@ -177,7 +178,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
           child: OutlinedButton(
             onPressed: () {
               setState(() {
-                game.essence += game.tapValue;
+                game.tap();
               });
               _saveState();
             },

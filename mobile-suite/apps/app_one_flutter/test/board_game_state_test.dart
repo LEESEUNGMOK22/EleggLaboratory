@@ -31,4 +31,24 @@ void main() {
     expect(ok, isTrue);
     expect(g.purchased[kUpgradeDefs.first.id], 1);
   });
+
+  test('board expansion upgrade increases slots', () {
+    final g = BoardGameState();
+    g.essence = 999;
+    final up = kUpgradeDefs.firstWhere((u) => u.id == 'prod_board_expand_1');
+    final ok = g.buyUpgrade(up);
+    expect(ok, isTrue);
+    expect(g.boardSlots, BoardGameState.size);
+  });
+
+  test('tap burst starts every 50 taps when upgrade bought', () {
+    final g = BoardGameState();
+    g.essence = 999;
+    final up = kUpgradeDefs.firstWhere((u) => u.id == 'click_burst_1');
+    g.buyUpgrade(up);
+    for (var i = 0; i < 50; i++) {
+      g.tap();
+    }
+    expect(g.clickBurstSec, greaterThan(0));
+  });
 }

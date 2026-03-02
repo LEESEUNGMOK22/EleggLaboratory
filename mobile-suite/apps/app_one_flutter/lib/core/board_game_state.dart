@@ -30,6 +30,9 @@ class BoardGameState {
     s.offlineMultiplier = (map['offlineMultiplier'] as num?)?.toDouble() ?? 1;
     s.residueMultiplier = (map['residueMultiplier'] as num?)?.toDouble() ?? 1;
     s.transformSpeedMultiplier = (map['transformSpeedMultiplier'] as num?)?.toDouble() ?? 1;
+    s.clickBurstSec = (map['clickBurstSec'] as num?)?.toDouble() ?? 0;
+    s.autoTapEnabled = (map['autoTapEnabled'] as bool?) ?? false;
+    s.tapCount = (map['tapCount'] as num?)?.toInt() ?? 0;
 
     final purchasedMap = map['purchased'];
     if (purchasedMap is Map) {
@@ -71,6 +74,9 @@ class BoardGameState {
   double offlineMultiplier = 1;
   double residueMultiplier = 1;
   double transformSpeedMultiplier = 1;
+  double clickBurstSec = 0;
+  bool autoTapEnabled = false;
+  int tapCount = 0;
   int residue = 0;
   int tickets = 10;
   int ticketCap = 30;
@@ -100,6 +106,9 @@ class BoardGameState {
       'offlineMultiplier': offlineMultiplier,
       'residueMultiplier': residueMultiplier,
       'transformSpeedMultiplier': transformSpeedMultiplier,
+      'clickBurstSec': clickBurstSec,
+      'autoTapEnabled': autoTapEnabled,
+      'tapCount': tapCount,
       'purchased': purchased,
       'board': board
           .map((t) => t == null
@@ -122,6 +131,12 @@ class BoardGameState {
     _chargeTickets(deltaSec);
     _produceEssence(deltaSec, useOfflineMultiplier: false);
     _progressTransform(deltaSec, grouped: null, offline: false);
+    if (autoTapEnabled) {
+      essence += tapValue * deltaSec;
+    }
+    if (clickBurstSec > 0) {
+      clickBurstSec = (clickBurstSec - deltaSec).clamp(0, 99999);
+    }
   }
 
   OfflineSummary applyOffline(int elapsedSec) {
@@ -157,6 +172,21 @@ class BoardGameState {
     ));
 
     return summary;
+  }
+
+
+  void tap() {
+    final tapMult = clickBurstSec > 0 ? 2.0 : 1.0;
+    essence += tapValue * tapMult;
+    tapCount += 1;
+    if ((purchased['click_burst_1'] ?? 0) > 0 && tapCount % 50 == 0) {
+      clickBurstSec = 10;
+      logs.add(LogEvent(
+        timestampMs: DateTime.now().millisecondsSinceEpoch,
+        type: LogType.upgrade,
+        payload: {'event': 'tap_burst_start', 'durationSec': 10},
+      ));
+    }
   }
 
   bool summonOne() {
@@ -255,7 +285,7 @@ class BoardGameState {
         tapValue += 1;
         break;
       case 'click_auto_1':
-        tapValue += 1;
+        autoTapEnabled = true;
         break;
       case 'click_ticket_gauge':
         ticketRemainderSec += 60;
