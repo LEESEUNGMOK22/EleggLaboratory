@@ -2,6 +2,8 @@ import 'dart:math';
 
 import '../data/element_tables.dart';
 import 'logbook.dart';
+import 'offline_summary.dart';
+import 'upgrades.dart';
 
 class BoardTile {
   BoardTile({required this.form, this.tier = 1, this.transformElapsedSec = 0});
@@ -21,8 +23,14 @@ class BoardGameState {
   final Random _random;
   final List<BoardTile?> board = List<BoardTile?>.filled(size, null);
   final List<LogEvent> logs = [];
+  final Map<String, int> purchased = {};
 
   double essence = 0;
+  double tapValue = 1;
+  double productionMultiplier = 1;
+  double offlineMultiplier = 1;
+  double residueMultiplier = 1;
+  double transformSpeedMultiplier = 1;
   int residue = 0;
   int tickets = 10;
   int ticketCap = 30;
@@ -40,8 +48,43 @@ class BoardGameState {
 
   void tick(double deltaSec) {
     _chargeTickets(deltaSec);
-    _produceEssence(deltaSec);
+    _produceEssence(deltaSec, useOfflineMultiplier: false);
     _progressTransform(deltaSec);
+  }
+
+  OfflineSummary applyOffline(int elapsedSec) {
+    if (elapsedSec <= 0) {
+      return const OfflineSummary(elapsedSec: 0, essenceGained: 0, residueGained: 0, ticketsGained: 0, transformCount: 0);
+    }
+
+    final essenceBefore = essence;
+    final residueBefore = residue;
+    final ticketsBefore = tickets;
+    final logsBefore = logs.length;
+
+    _chargeTickets(elapsedSec.toDouble());
+    _produceEssence(elapsedSec.toDouble(), useOfflineMultiplier: true);
+    _progressTransform(elapsedSec.toDouble());
+
+    final summary = OfflineSummary(
+      elapsedSec: elapsedSec,
+      essenceGained: essence - essenceBefore,
+      residueGained: residue - residueBefore,
+      ticketsGained: tickets - ticketsBefore,
+      transformCount: logs.skip(logsBefore).where((e) => e.type == LogType.transform).length,
+    );
+
+    logs.add(LogEvent(
+      timestampMs: DateTime.now().millisecondsSinceEpoch,
+      type: LogType.offlineSummary,
+      deltaEssence: summary.essenceGained,
+      deltaResidue: summary.residueGained,
+      deltaTickets: summary.ticketsGained,
+      payload: {'elapsedSec': elapsedSec, 'transformCount': summary.transformCount},
+      isOffline: true,
+    ));
+
+    return summary;
   }
 
   bool summonOne() {
@@ -84,6 +127,53 @@ class BoardGameState {
     return true;
   }
 
+
+  bool buyUpgrade(UpgradeDef def) {
+    final level = purchased[def.id] ?? 0;
+    if (level >= def.maxLevel) return false;
+    if (essence < def.cost) return false;
+
+    essence -= def.cost;
+    purchased[def.id] = level + 1;
+
+    switch (def.id) {
+      case 'summon_charge_1':
+        ticketIntervalSec = (ticketIntervalSec * 0.9).round();
+        break;
+      case 'summon_cap_1':
+        ticketCap += 10;
+        break;
+      case 'prod_all_1':
+        productionMultiplier *= 1.10;
+        break;
+      case 'prod_offline_1':
+        offlineMultiplier *= 1.10;
+        break;
+      case 'trans_residue_1':
+        residueMultiplier *= 1.15;
+        break;
+      case 'trans_speed_1':
+        transformSpeedMultiplier *= 1.10;
+        break;
+      case 'click_tap_1':
+        tapValue += 1;
+        break;
+      case 'click_tap_2':
+        tapValue += 2;
+        break;
+      default:
+        break;
+    }
+
+    logs.add(LogEvent(
+      timestampMs: DateTime.now().millisecondsSinceEpoch,
+      type: LogType.upgrade,
+      payload: {'id': def.id, 'name': def.name},
+    ));
+
+    return true;
+  }
+
   int _firstEmptyIndex() {
     for (var i = 0; i < board.length; i++) {
       if (board[i] == null) return i;
@@ -101,13 +191,14 @@ class BoardGameState {
     tickets = min(ticketCap, tickets + gained);
   }
 
-  void _produceEssence(double deltaSec) {
+  void _produceEssence(double deltaSec, {required bool useOfflineMultiplier}) {
     var income = 0.0;
     for (final tile in board) {
       if (tile == null) continue;
       income += _tileIncome(tile);
     }
-    essence += income * deltaSec;
+    final mult = productionMultiplier * (useOfflineMultiplier ? offlineMultiplier : 1.0);
+    essence += income * mult * deltaSec;
   }
 
   void _progressTransform(double deltaSec) {
@@ -118,13 +209,13 @@ class BoardGameState {
       if (rule == null) continue;
 
       tile.transformElapsedSec += deltaSec;
-      final need = _transformDuration(tile.tier, rule.baseDurationSec);
+      final need = _transformDuration(tile.tier, rule.baseDurationSec, transformSpeedMultiplier);
 
       if (tile.transformElapsedSec >= need) {
         tile.transformElapsedSec = 0;
         final from = tile.form;
         tile.form = rule.to;
-        final gain = _transformResidue(tile.tier, rule.baseResidue);
+        final gain = (_transformResidue(tile.tier, rule.baseResidue) * residueMultiplier).round();
         residue += gain;
 
         logs.add(
@@ -167,8 +258,9 @@ class BoardGameState {
     return base * pow(2, tile.tier - 1);
   }
 
-  static int _transformDuration(int tier, int baseDurationSec) {
-    return (baseDurationSec * (1 + (tier - 1) * 0.2)).round();
+  static int _transformDuration(int tier, int baseDurationSec, double speedMultiplier) {
+    final raw = (baseDurationSec * (1 + (tier - 1) * 0.2) / speedMultiplier).round();
+    return max(1, raw);
   }
 
   static int _transformResidue(int tier, int baseResidue) {

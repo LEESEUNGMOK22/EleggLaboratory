@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:app_one_flutter/core/board_game_state.dart';
+import 'package:app_one_flutter/core/upgrades.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -21,5 +22,13 @@ void main() {
     expect(merged, isTrue);
     expect(g.board[0], isNull);
     expect(g.board[1]!.tier, 2);
+  });
+
+  test('can buy upgrade with enough essence', () {
+    final g = BoardGameState();
+    g.essence = 999;
+    final ok = g.buyUpgrade(kUpgradeDefs.first);
+    expect(ok, isTrue);
+    expect(g.purchased[kUpgradeDefs.first.id], 1);
   });
 }
