@@ -51,6 +51,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
   bool logDesc = true;
   String logQuery = '';
   int tutorialIndex = 0;
+  final Set<String> tutorialRewarded = {};
 
   @override
   void initState() {
@@ -145,7 +146,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
             Text('Tap: ${game.tapValue.toStringAsFixed(1)} ${game.clickBurstSec > 0 ? '(Burst ${game.clickBurstSec.toStringAsFixed(1)}s)' : ''}'),
             Text('AutoTap: ${game.autoTapEnabled ? 'ON' : 'OFF'} ${game.autoTapRemainSec > 0 ? '(run ${game.autoTapRemainSec.toStringAsFixed(1)}s)' : ''} ${game.autoTapCooldownSec > 0 ? '(cd ${game.autoTapCooldownSec.toStringAsFixed(1)}s)' : ''}'),
             Text('Tickets: ${game.tickets}/${game.ticketCap} · next in ${nextTicketSec}s'),
-            Text('Board: ${game.filledCount}/${game.boardSlots}'),
+            Text('Board: ${game.filledCount}/${game.boardSlots} ${game.boardSlots < BoardGameState.size ? '(확장 가능)' : '(최대)'}'),
             const SizedBox(height: 6),
         Row(children: [
           Expanded(
@@ -172,7 +173,14 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
 
   Widget _tutorialCard() {
     while (tutorialIndex < kTutorialSteps.length && _isStepDone(kTutorialSteps[tutorialIndex].id)) {
+      final sid = kTutorialSteps[tutorialIndex].id;
+      if (!tutorialRewarded.contains(sid)) {
+        tutorialRewarded.add(sid);
+        game.tickets = (game.tickets + 1).clamp(0, game.ticketCap);
+        game.essence += 25;
+      }
       tutorialIndex += 1;
+      _saveState();
     }
 
     if (tutorialIndex >= kTutorialSteps.length) {
@@ -397,6 +405,8 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     final merge24 = recent24h.where((e) => e.type == LogType.merge).length;
     final trans24 = recent24h.where((e) => e.type == LogType.transform).length;
     final summon24 = recent24h.where((e) => e.type == LogType.summon).length;
+    final essence24 = recent24h.fold<double>(0, (a, e) => a + e.deltaEssence);
+    final residue24 = recent24h.fold<int>(0, (a, e) => a + e.deltaResidue);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -406,7 +416,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
         Card(
           child: Padding(
             padding: const EdgeInsets.all(10),
-            child: Text('24h 요약 · summon $summon24 / merge $merge24 / transform $trans24'),
+            child: Text('24h 요약 · summon $summon24 / merge $merge24 / transform $trans24 / essence ${essence24.toStringAsFixed(1)} / residue $residue24'),
           ),
         ),
         const SizedBox(height: 6),
@@ -496,6 +506,7 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
       }
       tutorialIndex = prefs.getInt('app_one_tutorial_idx') ?? 0;
       logDesc = prefs.getBool('app_one_log_desc') ?? true;
+      tutorialRewarded.addAll((prefs.getStringList('app_one_tutorial_rewarded') ?? const []));
     } catch (_) {
       // ignore broken save
     }
@@ -522,5 +533,6 @@ class _IdleMergeBoardPageState extends State<IdleMergeBoardPage>
     await prefs.setString(_logFilterKey, logFilter?.name ?? '');
     await prefs.setInt('app_one_tutorial_idx', tutorialIndex);
     await prefs.setBool('app_one_log_desc', logDesc);
+    await prefs.setStringList('app_one_tutorial_rewarded', tutorialRewarded.toList());
   }
 }
