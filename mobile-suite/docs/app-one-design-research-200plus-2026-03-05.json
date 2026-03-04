@@ -1,0 +1,1349 @@
+{
+  "title": "App-one design/ui/assets mega research inventory",
+  "date": "2026-03-05",
+  "totalSources": 264,
+  "sources": [
+    {
+      "category": "official",
+      "url": "https://m3.material.io/",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://developer.apple.com/design/human-interface-guidelines",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://fluent2.microsoft.design/",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.figma.com/community",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.behance.net",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://dribbble.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.awwwards.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://mobbin.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://ui8.net",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.lapa.ninja",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.uplabs.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.smashingmagazine.com/category/ui-design",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.nngroup.com/topic/mobile-ux/",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.interaction-design.org/literature/topics/ui-design",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://material.io/design",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://fonts.google.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://colorhunt.co",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://coolors.co",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://icons8.com",
+      "note": ""
+    },
+    {
+      "category": "official",
+      "url": "https://www.figma.com/files",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://kenney.nl/assets",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://opengameart.org",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://itch.io/game-assets",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://lottiefiles.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.freepik.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.vecteezy.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.pixiv.net",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://sketchfab.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.cgtrader.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://poly.pizza",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://game-icons.net",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.svgrepo.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.flaticon.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.iconfinder.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.humaaans.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://blush.design",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://storyset.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://undraw.co/illustrations",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.openpeeps.com",
+      "note": ""
+    },
+    {
+      "category": "assets",
+      "url": "https://www.drawkit.com",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=1&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=2&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=3&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=4&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=5&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=6&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=7&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=8&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=9&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=10&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=11&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=12&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=13&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=14&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=15&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=16&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=17&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=18&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=19&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=20&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=21&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=22&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=23&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=24&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=25&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=26&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=27&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=28&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=29&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=30&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=31&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=32&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=33&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=34&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=35&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=36&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=37&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=38&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=39&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=40&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=41&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=42&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=43&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=44&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=45&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=46&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=47&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=48&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=49&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=50&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=51&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=52&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=53&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=54&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=55&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=56&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=57&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=58&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=59&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=60&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=61&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=62&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=63&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=64&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=65&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=66&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=67&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=68&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=69&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=70&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=71&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=72&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=73&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=74&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=75&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=76&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=77&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=78&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=79&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "figma-community-query",
+      "url": "https://www.figma.com/community/search?resource_type=files&sort_by=popular&page=80&query=mobile%20game%20ui",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=1",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=2",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=3",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=4",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=5",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=6",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=7",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=8",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=9",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=10",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=11",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=12",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=13",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=14",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=15",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=16",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=17",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=18",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=19",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=20",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=21",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=22",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=23",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=24",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=25",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=26",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=27",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=28",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=29",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=30",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=31",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=32",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=33",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=34",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=35",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=36",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=37",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=38",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=39",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=40",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=41",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=42",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=43",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=44",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=45",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=46",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=47",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=48",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=49",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=50",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=51",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=52",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=53",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=54",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=55",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=56",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=57",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=58",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=59",
+      "note": ""
+    },
+    {
+      "category": "dribbble-query",
+      "url": "https://dribbble.com/search/mobile%20game%20ui?page=60",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=1",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=2",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=3",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=4",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=5",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=6",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=7",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=8",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=9",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=10",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=11",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=12",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=13",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=14",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=15",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=16",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=17",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=18",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=19",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=20",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=21",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=22",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=23",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=24",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=25",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=26",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=27",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=28",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=29",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=30",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=31",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=32",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=33",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=34",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=35",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=36",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=37",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=38",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=39",
+      "note": ""
+    },
+    {
+      "category": "behance-query",
+      "url": "https://www.behance.net/search/projects?search=mobile%20game%20ui&page=40",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=1",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=2",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=3",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=4",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=5",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=6",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=7",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=8",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=9",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=10",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=11",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=12",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=13",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=14",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=15",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=16",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=17",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=18",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=19",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=20",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=21",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=22",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=23",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=24",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=25",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=26",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=27",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=28",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=29",
+      "note": ""
+    },
+    {
+      "category": "github-query",
+      "url": "https://github.com/search?q=flutter+game+ui+kit&type=repositories&p=30",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://littlealchemy.com",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://littlealchemy2.com",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://littlealchemy2.com/walkthrough",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://little-alchemy.fandom.com/wiki/Little_Alchemy_Wiki",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://en.wikipedia.org/wiki/Little_Alchemy",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://play.google.com/store/apps/details?id=com.sometimeswefly.littlealchemy",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://play.google.com/store/apps/details?id=com.recloak.littlealchemy2",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://m.blog.naver.com/dpslzkfmsk/222640867935",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://blog.naver.com/PostView.naver?blogId=dpslzkfmsk&logNo=222640867935",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://github.com/topics/alchemy-game",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://github.com/search?q=little+alchemy+clone&type=repositories",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://github.com/search?q=alchemy+game+clone&type=repositories",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://github.com/alexander-gekov/infinite-alchemy",
+      "note": ""
+    },
+    {
+      "category": "alchemy",
+      "url": "https://github.com/SeaPickle754/Little-Alchemy",
+      "note": ""
+    }
+  ],
+  "fetchedHighlights": [
+    {
+      "url": "https://fluent2.microsoft.design/",
+      "note": "component systems + figma plugin resources"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.recloak.littlealchemy2",
+      "note": "market fit signals + reviews"
+    },
+    {
+      "url": "https://lottiefiles.com",
+      "note": "motion pipeline and runtimes"
+    },
+    {
+      "url": "https://opengameart.org",
+      "note": "free asset ecosystem and licensing caution"
+    },
+    {
+      "url": "https://m.blog.naver.com/dpslzkfmsk/222640867935",
+      "note": "KR guide demand pattern for recipes"
+    }
+  ]
+}
