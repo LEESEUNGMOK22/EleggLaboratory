@@ -72,7 +72,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '원소 숙성소',
-      theme: ThemeData(colorSchemeSeed: Colors.teal, useMaterial3: true),
+      theme: ThemeData(
+        colorSchemeSeed: Colors.teal,
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFF0B1220),
+        textTheme: const TextTheme(bodyMedium: TextStyle(color: Color(0xFFE5E7EB))),
+      ),
       home: const ElementalIdleHome(),
     );
   }
@@ -459,14 +464,23 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: switch (page) {
-        0 => _buildTimePage(),
-        1 => _buildGachaPage(),
-        2 => _buildHome(),
-        3 => _buildCodex(),
-        4 => _buildMega(),
-        _ => _buildAdsPage(),
-      },
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFF0B1220), Color(0xFF111827), Color(0xFF0F172A)],
+          ),
+        ),
+        child: switch (page) {
+          0 => _buildTimePage(),
+          1 => _buildGachaPage(),
+          2 => _buildHome(),
+          3 => _buildCodex(),
+          4 => _buildMega(),
+          _ => _buildAdsPage(),
+        },
+      ),
       bottomNavigationBar: _bottomNav(),
     );
   }
@@ -500,11 +514,12 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.all(8),
-                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint · 원소 ${elements.length}/$maxFieldElements'),
+                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint · 원소 ${elements.length}/$maxFieldElements', style: const TextStyle(color: Color(0xFFE5E7EB))),
                     ),
                   ),
                   const SizedBox(width: 8),
                   FilledButton.tonalIcon(
+                    style: FilledButton.styleFrom(backgroundColor: const Color(0x3314B8A6)),
                     onPressed: _autoArrangeElements,
                     icon: const Icon(Icons.auto_fix_high),
                     label: const Text('정렬'),
@@ -567,18 +582,34 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
               decoration: BoxDecoration(
                 color: _rarityColor(def.rarity),
                 borderRadius: BorderRadius.circular(isDragging ? 33.6 : 28),
+                boxShadow: [
+                  BoxShadow(
+                    color: _rarityColor(def.rarity).withValues(alpha: 0.45),
+                    blurRadius: def.rarity.index >= Rarity.legendary.index ? 14 : 6,
+                    spreadRadius: def.rarity.index >= Rarity.legendary.index ? 1.2 : 0.4,
+                  ),
+                ],
                 border: Border.all(
                   color: isDragging
                       ? Colors.black
-                      : (isHoverTarget ? Colors.amber : Colors.white),
+                      : (isHoverTarget ? Colors.amber : Colors.white.withValues(alpha: 0.9)),
                   width: isDragging ? 3 : 2,
                 ),
               ),
               child: Center(
-                child: Text(
-                  def.name,
-                  style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      def.name,
+                      style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      _rarityLabel(def.rarity),
+                      style: const TextStyle(fontSize: 7, fontWeight: FontWeight.w600),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -804,14 +835,33 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     final selected = page == idx;
     return InkWell(
       onTap: () => setState(() => page = idx),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: selected ? Colors.teal : Colors.grey),
-          Text(label, style: TextStyle(fontSize: 11, color: selected ? Colors.teal : Colors.grey)),
-        ],
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 2),
+        padding: const EdgeInsets.symmetric(vertical: 2),
+        decoration: BoxDecoration(
+          color: selected ? const Color(0x332CCFBF) : Colors.transparent,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 18, color: selected ? const Color(0xFF2CCFBF) : Colors.grey),
+            Text(label, style: TextStyle(fontSize: 10, color: selected ? const Color(0xFF2CCFBF) : Colors.grey)),
+          ],
+        ),
       ),
     );
+  }
+
+  String _rarityLabel(Rarity r) {
+    return switch (r) {
+      Rarity.common => '일반',
+      Rarity.rare => '희귀',
+      Rarity.special => '특수',
+      Rarity.legendary => '전설',
+      Rarity.finalTier => '최종',
+      Rarity.mythic => '신화',
+    };
   }
 
   Color _rarityColor(Rarity r) {
