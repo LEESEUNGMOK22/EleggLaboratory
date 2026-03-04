@@ -89,6 +89,8 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   static const _adDayKey = 'app1_ad_day';
   static const _adCountKey = 'app1_ad_count';
   static const _adExpireKey = 'app1_ad_expire_ms';
+  static const double holdSec = 2.0;
+  static const int maxFieldElements = 80;
 
   final random = Random();
   final elements = <FieldElement>[];
@@ -209,6 +211,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   void _spawnFromGacha({int count = 1}) {
     for (var i = 0; i < count; i++) {
       if (tickets <= 0) break;
+      if (elements.length >= maxFieldElements) break;
       tickets -= 1;
       final roll = random.nextDouble();
       String id;
@@ -226,13 +229,48 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _spawnElement(String id) {
-    final p = Offset(
-      20 + random.nextDouble() * (canvasSize.width - 80).clamp(40, 900),
-      70 + random.nextDouble() * (canvasSize.height - 160).clamp(80, 1200),
-    );
+    if (elements.length >= maxFieldElements) return;
+    final p = _findNonOverlappingSpawnPoint();
+
     final e = FieldElement(uid: '${DateTime.now().microsecondsSinceEpoch}_${random.nextInt(9999)}', elementId: id, position: p);
     elements.add(e);
     discovered.add(id);
+  }
+
+
+  Offset _findNonOverlappingSpawnPoint() {
+    for (var i = 0; i < 40; i++) {
+      final p = Offset(
+        20 + random.nextDouble() * (canvasSize.width - 80).clamp(40, 900),
+        70 + random.nextDouble() * (canvasSize.height - 160).clamp(80, 1200),
+      );
+      if (_isPositionFree(p, minDist: 54)) return p;
+    }
+    return const Offset(30, 100);
+  }
+
+  bool _isPositionFree(Offset p, {double minDist = 52}) {
+    for (final e in elements) {
+      if ((e.position - p).distance < minDist) return false;
+    }
+    return true;
+  }
+
+  void _pushAwayNearby(FieldElement moving) {
+    for (final e in elements) {
+      if (e.uid == moving.uid) continue;
+      final v = e.position - moving.position;
+      final d = v.distance;
+      if (d == 0) continue;
+      if (d < 54) {
+        final push = (54 - d) * 0.15;
+        final dir = Offset(v.dx / d, v.dy / d);
+        e.position = Offset(
+          (e.position.dx + dir.dx * push).clamp(0, canvasSize.width - 56),
+          (e.position.dy + dir.dy * push).clamp(0, canvasSize.height - 96),
+        );
+      }
+    }
   }
 
   bool _isCombinable(String a, String b) {
@@ -259,7 +297,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _commitMergeIfReady() {
-    if (dragging == null || hoverTargetUid == null || hoverSec < 3 || !hoverTargetCombinable) return;
+    if (dragging == null || hoverTargetUid == null || hoverSec < holdSec || !hoverTargetCombinable) return;
 
     final src = dragging!;
     final dst = elements.firstWhere((e) => e.uid == hoverTargetUid, orElse: () => src);
@@ -277,7 +315,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _commitTrashIfReady() {
-    if (dragging == null || trashHoldSec < 3) return;
+    if (dragging == null || trashHoldSec < holdSec) return;
     elements.removeWhere((e) => e.uid == dragging!.uid);
   }
 
@@ -421,7 +459,6 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('원소 숙성소')),
       body: switch (page) {
         0 => _buildTimePage(),
         1 => _buildGachaPage(),
@@ -440,6 +477,21 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         canvasSize = c.biggest;
         return Stack(
           children: [
+            if (dragging != null && hoverTargetUid != null)
+              Positioned(
+                top: 46,
+                left: 12,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(8)),
+                  child: Text(
+                    hoverTargetCombinable
+                        ? '${elementDefs[dragging!.elementId]?.name ?? dragging!.elementId} + ${elementDefs[elements.firstWhere((x) => x.uid == hoverTargetUid).elementId]?.name ?? ''}'
+                        : '합성불가',
+                    style: const TextStyle(color: Colors.white, fontSize: 12),
+                  ),
+                ),
+              ),
             Positioned(
               left: 8,
               top: 8,
@@ -448,7 +500,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.all(8),
-                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint'),
+                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint · 원소 ${elements.length}/$maxFieldElements'),
                     ),
                   ),
                   const SizedBox(width: 8),
@@ -478,9 +530,13 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
       top: e.position.dy,
       child: GestureDetector(
         onPanStart: (_) {
-          dragging = e;
-          hoverSec = 0;
-          trashHoldSec = 0;
+          setState(() {
+            dragging = e;
+            elements.removeWhere((x) => x.uid == e.uid);
+            elements.add(e);
+            hoverSec = 0;
+            trashHoldSec = 0;
+          });
         },
         onPanUpdate: (d) {
           setState(() {
@@ -488,6 +544,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
               (e.position.dx + d.delta.dx).clamp(0, canvasSize.width - 56),
               (e.position.dy + d.delta.dy).clamp(0, canvasSize.height - 96),
             );
+            _pushAwayNearby(e);
           });
         },
         onPanEnd: (_) {
@@ -505,11 +562,11 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           alignment: Alignment.center,
           children: [
             Container(
-              width: 56,
-              height: 56,
+              width: isDragging ? 67.2 : 56,
+              height: isDragging ? 67.2 : 56,
               decoration: BoxDecoration(
                 color: _rarityColor(def.rarity),
-                borderRadius: BorderRadius.circular(28),
+                borderRadius: BorderRadius.circular(isDragging ? 33.6 : 28),
                 border: Border.all(
                   color: isDragging
                       ? Colors.black
@@ -528,7 +585,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
             if (isDragging && hoverSec > 0)
               Positioned.fill(
                 child: CircularProgressIndicator(
-                  value: (hoverSec / 3).clamp(0.0, 1.0),
+                  value: (hoverSec / holdSec).clamp(0.0, 1.0),
                   strokeWidth: 3,
                 ),
               ),
@@ -545,7 +602,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   Widget _trashWidget() {
-    final progress = (trashHoldSec / 3).clamp(0.0, 1.0).toDouble();
+    final progress = (trashHoldSec / holdSec).clamp(0.0, 1.0).toDouble();
     return Positioned(
       right: 16,
       bottom: 16,
