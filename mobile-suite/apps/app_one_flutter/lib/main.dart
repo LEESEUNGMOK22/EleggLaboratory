@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(const MyApp());
@@ -81,6 +82,9 @@ class ElementalIdleHome extends StatefulWidget {
 }
 
 class _ElementalIdleHomeState extends State<ElementalIdleHome> {
+  static const _adDayKey = 'app1_ad_day';
+  static const _adCountKey = 'app1_ad_count';
+
   final random = Random();
   final elements = <FieldElement>[];
   final discovered = <String>{};
@@ -89,6 +93,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   int tickets = 20;
   int ticketCap = 30;
   int ticketRemainSec = 0;
+  int adRewardUsedToday = 0;
 
   Size canvasSize = const Size(380, 580);
 
@@ -103,6 +108,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   @override
   void initState() {
     super.initState();
+    _loadAdRewardState();
     loop = Timer.periodic(const Duration(milliseconds: 100), (_) {
       setState(() {
         _tick(0.1);
@@ -513,11 +519,70 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                   ),
                 ],
               ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  Expanded(
+                    child: FilledButton.tonal(
+                      onPressed: adRewardUsedToday < 3
+                          ? () async {
+                              await _rewardByAdPlaceholder();
+                              if (mounted) Navigator.pop(context);
+                            }
+                          : null,
+                      child: Text('광고 보고 +가챠권 10 (오늘 $adRewardUsedToday/3)'),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              const Text('※ 현재는 광고 API 미연동. 버튼 누르면 보상만 지급됩니다.', style: TextStyle(fontSize: 12)),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Future<void> _loadAdRewardState() async {
+    final prefs = await SharedPreferences.getInstance();
+    final now = DateTime.now();
+    final today = '$now.year-$now.month-$now.day';
+    final savedDay = prefs.getString(_adDayKey);
+    final savedCount = prefs.getInt(_adCountKey) ?? 0;
+
+    setState(() {
+      if (savedDay == today) {
+        adRewardUsedToday = savedCount;
+      } else {
+        adRewardUsedToday = 0;
+      }
+    });
+
+    if (savedDay != today) {
+      await prefs.setString(_adDayKey, today);
+      await prefs.setInt(_adCountKey, 0);
+    }
+  }
+
+  Future<void> _rewardByAdPlaceholder() async {
+    if (adRewardUsedToday >= 3) return;
+    final prefs = await SharedPreferences.getInstance();
+    final now = DateTime.now();
+    final today = '$now.year-$now.month-$now.day';
+
+    final savedDay = prefs.getString(_adDayKey);
+    if (savedDay != today) {
+      adRewardUsedToday = 0;
+      await prefs.setString(_adDayKey, today);
+    }
+
+    setState(() {
+      adRewardUsedToday += 1;
+      tickets = (tickets + 10).clamp(0, ticketCap);
+    });
+
+    await prefs.setInt(_adCountKey, adRewardUsedToday);
   }
 
   Color _rarityColor(Rarity r) {
