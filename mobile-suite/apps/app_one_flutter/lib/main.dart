@@ -75,6 +75,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorSchemeSeed: Colors.teal,
         useMaterial3: true,
+        fontFamily: 'ChogoonKR',
         scaffoldBackgroundColor: const Color(0xFF0B1220),
         textTheme: const TextTheme(bodyMedium: TextStyle(color: Color(0xFFE5E7EB))),
       ),
@@ -108,8 +109,15 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 
   int elementPoint = 0;
   int clickBase = 5;
+  double passivePointPerSec = 1;
+  int finalElementClickBonus = 2;
+  int ticketPointCost = 20;
 
   int adRewardUsedToday = 0;
+  int adDailyClaims = 3;
+  int adTicketRewardAmount = 10;
+  int adBuffHours = 16;
+  int adBuffMultiplier = 2;
   DateTime? adBuffExpiresAt;
 
   double gachaCommon = 0.72;
@@ -134,6 +142,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     super.initState();
     _loadAdRewardState();
     _loadDesignConfig();
+    _loadBalanceConfig();
     loop = Timer.periodic(const Duration(milliseconds: 100), (_) {
       setState(() => _tick(0.1));
     });
@@ -152,15 +161,16 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 
   int get _clickPower {
     final finalCount = discovered.where((id) => elementDefs[id]?.rarity == Rarity.finalTier).length;
-    final power = clickBase + finalCount * 2;
-    return (_isAdBuffActive ? power * 2 : power);
+    final power = clickBase + finalCount * finalElementClickBonus;
+    return (_isAdBuffActive ? power * adBuffMultiplier : power);
   }
 
   void _tick(double dt) {
-    // 1초당 1 원소포인트
-    final add = dt >= 1 ? 1 : (random.nextDouble() < dt ? 1 : 0);
+    // 초당 포인트
+    final perTick = passivePointPerSec * dt;
+    final add = perTick.floor() + (random.nextDouble() < (perTick % 1) ? 1 : 0);
     if (add > 0) {
-      elementPoint += (_isAdBuffActive ? add * 2 : add);
+      elementPoint += (_isAdBuffActive ? add * adBuffMultiplier : add);
     }
 
     if (_isAdBuffActive && DateTime.now().isAfter(adBuffExpiresAt!)) {
@@ -204,8 +214,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _buyTicket(int count) {
-    const pricePerTicket = 20;
-    final total = count * pricePerTicket;
+    final total = count * ticketPointCost;
     if (elementPoint < total) return;
     setState(() {
       elementPoint -= total;
@@ -408,6 +417,27 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     }
   }
 
+
+  Future<void> _loadBalanceConfig() async {
+    try {
+      final raw = await rootBundle.loadString('assets/config/app1_balance.json');
+      final j = jsonDecode(raw) as Map<String, dynamic>;
+      passivePointPerSec = (j['passivePointPerSec'] as num?)?.toDouble() ?? passivePointPerSec;
+      clickBase = (j['baseClick'] as num?)?.toInt() ?? clickBase;
+      finalElementClickBonus = (j['finalElementClickBonus'] as num?)?.toInt() ?? finalElementClickBonus;
+      ticketCap = (j['ticketCap'] as num?)?.toInt() ?? ticketCap;
+      ticketPointCost = (j['ticketPointCost'] as num?)?.toInt() ?? ticketPointCost;
+      final ad = j['ad'] as Map<String, dynamic>?;
+      if (ad != null) {
+        adDailyClaims = (ad['dailyTicketRewardClaims'] as num?)?.toInt() ?? adDailyClaims;
+        adTicketRewardAmount = (ad['dailyTicketRewardAmount'] as num?)?.toInt() ?? adTicketRewardAmount;
+        adBuffHours = (ad['buffHours'] as num?)?.toInt() ?? adBuffHours;
+        adBuffMultiplier = (ad['buffMultiplier'] as num?)?.toInt() ?? adBuffMultiplier;
+      }
+      if (mounted) setState(() {});
+    } catch (_) {}
+  }
+
   Future<void> _loadAdRewardState() async {
     final prefs = await SharedPreferences.getInstance();
     final now = DateTime.now();
@@ -434,7 +464,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   Future<void> _rewardByAdPlaceholder() async {
-    if (adRewardUsedToday >= 3) return;
+    if (adRewardUsedToday >= adDailyClaims) return;
     final prefs = await SharedPreferences.getInstance();
     final now = DateTime.now();
     final today = '${now.year}-${now.month}-${now.day}';
@@ -447,7 +477,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 
     setState(() {
       adRewardUsedToday += 1;
-      tickets = (tickets + 10).clamp(0, ticketCap);
+      tickets = (tickets + adTicketRewardAmount).clamp(0, ticketCap);
     });
 
     await prefs.setInt(_adCountKey, adRewardUsedToday);
@@ -456,7 +486,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   Future<void> _activateAdBuff() async {
     if (_isAdBuffActive) return;
     final prefs = await SharedPreferences.getInstance();
-    final exp = DateTime.now().add(const Duration(hours: 16));
+    final exp = DateTime.now().add(Duration(hours: adBuffHours));
     setState(() => adBuffExpiresAt = exp);
     await prefs.setInt(_adExpireKey, exp.millisecondsSinceEpoch);
   }
@@ -690,7 +720,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
             label: const Text('클릭 (+포인트)'),
           ),
           const SizedBox(height: 8),
-          const Text('기본: 1초당 포인트 1개, 클릭 시 포인트 +5 (최종원소 발견 수에 따라 증가)'),
+          Text('기본: 1초당 포인트 ${passivePointPerSec.toStringAsFixed(1)}개, 클릭 시 +$clickBase (최종원소 보너스 +$finalElementClickBonus)'),
           if (_isAdBuffActive)
             Text('광고 버프 적용 중: ${adBuffExpiresAt!.difference(DateTime.now()).inHours}h 남음'),
         ],
@@ -729,7 +759,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           ),
           const SizedBox(height: 16),
           const Text('티켓 구매', style: TextStyle(fontWeight: FontWeight.bold)),
-          const Text('티켓 1장 = 원소포인트 20'),
+          Text('티켓 1장 = 원소포인트 $ticketPointCost'),
           const SizedBox(height: 6),
           Row(
             children: [
@@ -745,8 +775,8 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           const SizedBox(height: 16),
           const Text('광고 보상(가챠권)', style: TextStyle(fontWeight: FontWeight.bold)),
           FilledButton.tonal(
-            onPressed: adRewardUsedToday < 3 ? _rewardByAdPlaceholder : null,
-            child: Text('광고 보고 +가챠권 10 (오늘 $adRewardUsedToday/3)'),
+            onPressed: adRewardUsedToday < adDailyClaims ? _rewardByAdPlaceholder : null,
+            child: Text('광고 보고 +가챠권 $adTicketRewardAmount (오늘 $adRewardUsedToday/$adDailyClaims)'),
           ),
           const Text('※ 현재 광고 API 미연동. 보상만 지급'),
         ],
@@ -756,25 +786,42 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 
   Widget _buildCodex() {
     final all = elementDefs.values.toList()..sort((a, b) => a.name.compareTo(b.name));
+    final found = all.where((e) => discovered.contains(e.id)).toList();
+    final missing = all.where((e) => !discovered.contains(e.id)).toList();
+
+    Widget section(String title, List<ElementDef> list) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 8),
+          Text(title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+          ...list.map((e) {
+            final ok = discovered.contains(e.id);
+            return ListTile(
+              dense: true,
+              leading: Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked),
+              title: Text(e.name),
+              subtitle: Text('등급: ${e.rarity.name}'),
+              trailing: Text(ok ? '발견' : '미발견'),
+            );
+          })
+        ],
+      );
+    }
+
     return ListView(
       padding: const EdgeInsets.all(12),
       children: [
         const Text('도감', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-        const SizedBox(height: 8),
-        ...all.map((e) {
-          final found = discovered.contains(e.id);
-          return ListTile(
-            leading: Icon(found ? Icons.check_circle : Icons.radio_button_unchecked),
-            title: Text(e.name),
-            subtitle: Text('등급: ${e.rarity.name}'),
-            trailing: Text(found ? '발견' : '미발견'),
-          );
-        }),
+        Text('발견 ${found.length}/${all.length}'),
+        section('발견한 원소', found),
+        section('미발견 원소', missing),
       ],
     );
   }
 
   Widget _buildMega() {
+    final normalEntries = mergeRecipes.entries.toList();
     return ListView(
       padding: const EdgeInsets.all(12),
       children: [
@@ -786,8 +833,9 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           return Card(
             child: ListTile(
               title: Text('${r.ingredients.join(' + ')} => ${reward.name}'),
-              subtitle: Text(active ? '활성화됨 (3초 꾹 눌러 발동)' : '재료 부족: ${_megaIngredientStatus(r)}'),
+              subtitle: Text(active ? '활성화됨 (2초 꾹 눌러 발동)' : '재료 부족: ${_megaIngredientStatus(r)}'),
               trailing: _Hold3sButton(
+                holdSec: holdSec,
                 enabled: active,
                 onCommit: () {
                   setState(() {
@@ -796,6 +844,20 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                 },
               ),
             ),
+          );
+        }),
+        const SizedBox(height: 12),
+        const Text('일반 조합 레시피', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+        ...normalEntries.map((e) {
+          final pair = e.key.split('+');
+          final a = elementDefs[pair[0]]?.name ?? pair[0];
+          final b = elementDefs[pair[1]]?.name ?? pair[1];
+          final r = elementDefs[e.value]?.name ?? e.value;
+          final unlocked = discovered.contains(e.value);
+          return ListTile(
+            dense: true,
+            title: Text('$a + $b → $r'),
+            trailing: Icon(unlocked ? Icons.lock_open : Icons.lock_outline, size: 18),
           );
         }),
       ],
@@ -816,7 +878,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           const SizedBox(height: 10),
           FilledButton(
             onPressed: _isAdBuffActive ? null : _activateAdBuff,
-            child: const Text('광고 시청 (16시간 모든 수치 2배)'),
+            child: Text('광고 시청 ($adBuffHours시간 모든 수치 $adBuffMultiplier배)'),
           ),
           const SizedBox(height: 6),
           const Text('버프 지속 중에는 재시청으로 누적되지 않습니다.'),
@@ -897,10 +959,11 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 }
 
 class _Hold3sButton extends StatefulWidget {
-  const _Hold3sButton({required this.enabled, required this.onCommit});
+  const _Hold3sButton({required this.enabled, required this.onCommit, this.holdSec = 3});
 
   final bool enabled;
   final VoidCallback onCommit;
+  final double holdSec;
 
   @override
   State<_Hold3sButton> createState() => _Hold3sButtonState();
@@ -916,7 +979,7 @@ class _Hold3sButtonState extends State<_Hold3sButton> {
     sec = 0;
     timer = Timer.periodic(const Duration(milliseconds: 100), (t) {
       setState(() => sec += 0.1);
-      if (sec >= 3) {
+      if (sec >= widget.holdSec) {
         t.cancel();
         sec = 0;
         widget.onCommit();
@@ -952,7 +1015,7 @@ class _Hold3sButtonState extends State<_Hold3sButton> {
               child: const Icon(Icons.play_arrow),
             ),
             if (sec > 0)
-              CircularProgressIndicator(value: (sec / 3).clamp(0.0, 1.0), strokeWidth: 3),
+              CircularProgressIndicator(value: (sec / widget.holdSec).clamp(0.0, 1.0), strokeWidth: 3),
           ],
         ),
       ),

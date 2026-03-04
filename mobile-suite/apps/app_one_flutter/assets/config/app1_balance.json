@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "passivePointPerSec": 1,
+  "baseClick": 5,
+  "finalElementClickBonus": 2,
+  "ticketCap": 30,
+  "ticketPointCost": 20,
+  "gachaCosts": {"single": 1, "multi10": 10},
+  "ad": {
+    "dailyTicketRewardClaims": 3,
+    "dailyTicketRewardAmount": 10,
+    "buffHours": 16,
+    "buffMultiplier": 2
+  }
+}

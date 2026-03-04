@@ -60,6 +60,7 @@ flutter:
   assets:
     - assets/config/
     - assets/art/
+    - assets/fonts/
 
 
   # The following line ensures that the Material Icons font is
@@ -97,3 +98,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  fonts:
+    - family: ChogoonKR
+      fonts:
+        - asset: assets/fonts/chogoon_medium.ttf
