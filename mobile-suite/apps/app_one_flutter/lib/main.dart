@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'dart:math';
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -45,6 +45,7 @@ const elementDefs = <String, ElementDef>{
   'mud': ElementDef('mud', '진흙', Rarity.rare),
   'dust': ElementDef('dust', '먼지', Rarity.special),
   'energy': ElementDef('energy', '에너지', Rarity.legendary),
+  'philosopher_stone': ElementDef('philosopher_stone', '현자의 돌', Rarity.finalTier),
   'phoenix_seed': ElementDef('phoenix_seed', '불사 씨앗', Rarity.mythic),
 };
 
@@ -53,6 +54,7 @@ const mergeRecipes = <String, String>{
   'water+earth': 'mud',
   'air+earth': 'dust',
   'fire+air': 'energy',
+  'energy+dust': 'philosopher_stone',
 };
 
 const defaultMegaRecipes = <MegaRecipe>[
@@ -69,7 +71,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App One',
+      title: '원소 숙성소',
       theme: ThemeData(colorSchemeSeed: Colors.teal, useMaterial3: true),
       home: const ElementalIdleHome(),
     );
@@ -86,16 +88,22 @@ class ElementalIdleHome extends StatefulWidget {
 class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   static const _adDayKey = 'app1_ad_day';
   static const _adCountKey = 'app1_ad_count';
+  static const _adExpireKey = 'app1_ad_expire_ms';
 
   final random = Random();
   final elements = <FieldElement>[];
   final discovered = <String>{};
 
-  int currentPage = 0; // 0 home, 1 codex, 2 mega
+  int page = 2; // 0 time, 1 gacha, 2 home, 3 codex, 4 mega, 5 ads
+
   int tickets = 20;
   int ticketCap = 30;
-  int ticketRemainSec = 0;
+
+  int elementPoint = 0;
+  int clickBase = 5;
+
   int adRewardUsedToday = 0;
+  DateTime? adBuffExpiresAt;
 
   double gachaCommon = 0.72;
   double gachaRare = 0.20;
@@ -103,13 +111,12 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   double gachaLegendary = 0.008;
 
   List<MegaRecipe> megaRecipes = List<MegaRecipe>.from(defaultMegaRecipes);
-  String? lastSpawnUid;
 
   Size canvasSize = const Size(380, 580);
 
   FieldElement? dragging;
-  Offset dragDelta = Offset.zero;
   String? hoverTargetUid;
+  bool hoverTargetCombinable = false;
   double hoverSec = 0;
   double trashHoldSec = 0;
 
@@ -121,9 +128,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     _loadAdRewardState();
     _loadDesignConfig();
     loop = Timer.periodic(const Duration(milliseconds: 100), (_) {
-      setState(() {
-        _tick(0.1);
-      });
+      setState(() => _tick(0.1));
     });
   }
 
@@ -133,26 +138,47 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     super.dispose();
   }
 
+  bool get _isAdBuffActive {
+    if (adBuffExpiresAt == null) return false;
+    return DateTime.now().isBefore(adBuffExpiresAt!);
+  }
+
+  int get _clickPower {
+    final finalCount = discovered.where((id) => elementDefs[id]?.rarity == Rarity.finalTier).length;
+    final power = clickBase + finalCount * 2;
+    return (_isAdBuffActive ? power * 2 : power);
+  }
+
   void _tick(double dt) {
-    if (tickets < ticketCap) {
-      ticketRemainSec += (dt * 1).round();
-      if (ticketRemainSec >= 600) {
-        ticketRemainSec = 0;
-        tickets += 1;
-      }
+    // 1초당 1 원소포인트
+    final add = dt >= 1 ? 1 : (random.nextDouble() < dt ? 1 : 0);
+    if (add > 0) {
+      elementPoint += (_isAdBuffActive ? add * 2 : add);
+    }
+
+    if (_isAdBuffActive && DateTime.now().isAfter(adBuffExpiresAt!)) {
+      adBuffExpiresAt = null;
     }
 
     if (dragging != null) {
-      final target = _findMergeTarget(dragging!);
+      final target = _findNearestTarget(dragging!);
       if (target != null) {
+        final combinable = _isCombinable(dragging!.elementId, target.elementId);
         if (hoverTargetUid == target.uid) {
-          hoverSec += dt;
+          if (combinable) {
+            hoverSec += dt;
+          } else {
+            hoverSec = 0;
+          }
         } else {
           hoverTargetUid = target.uid;
+          hoverTargetCombinable = combinable;
           hoverSec = 0;
         }
+        hoverTargetCombinable = combinable;
       } else {
         hoverTargetUid = null;
+        hoverTargetCombinable = false;
         hoverSec = 0;
       }
 
@@ -162,6 +188,22 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         trashHoldSec = 0;
       }
     }
+  }
+
+  void _clickGain() {
+    setState(() {
+      elementPoint += _clickPower;
+    });
+  }
+
+  void _buyTicket(int count) {
+    const pricePerTicket = 20;
+    final total = count * pricePerTicket;
+    if (elementPoint < total) return;
+    setState(() {
+      elementPoint -= total;
+      tickets = (tickets + count).clamp(0, ticketCap);
+    });
   }
 
   void _spawnFromGacha({int count = 1}) {
@@ -185,27 +227,30 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
 
   void _spawnElement(String id) {
     final p = Offset(
-      30 + random.nextDouble() * (canvasSize.width - 80).clamp(40, 500),
-      30 + random.nextDouble() * (canvasSize.height - 120).clamp(60, 700),
+      20 + random.nextDouble() * (canvasSize.width - 80).clamp(40, 900),
+      70 + random.nextDouble() * (canvasSize.height - 160).clamp(80, 1200),
     );
     final e = FieldElement(uid: '${DateTime.now().microsecondsSinceEpoch}_${random.nextInt(9999)}', elementId: id, position: p);
     elements.add(e);
-    lastSpawnUid = e.uid;
     discovered.add(id);
   }
 
-  FieldElement? _findMergeTarget(FieldElement src) {
+  bool _isCombinable(String a, String b) {
+    return mergeRecipes.containsKey('$a+$b') || mergeRecipes.containsKey('$b+$a');
+  }
+
+  FieldElement? _findNearestTarget(FieldElement src) {
+    FieldElement? best;
+    var bestDist = 999999.0;
     for (final e in elements) {
       if (e.uid == src.uid) continue;
       final d = (e.position - src.position).distance;
-      if (d > 56) continue;
-      final key1 = '${src.elementId}+${e.elementId}';
-      final key2 = '${e.elementId}+${src.elementId}';
-      if (mergeRecipes.containsKey(key1) || mergeRecipes.containsKey(key2)) {
-        return e;
+      if (d < bestDist && d <= 56) {
+        bestDist = d;
+        best = e;
       }
     }
-    return null;
+    return best;
   }
 
   bool _isOverTrash(Offset p) {
@@ -214,7 +259,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _commitMergeIfReady() {
-    if (dragging == null || hoverTargetUid == null || hoverSec < 3) return;
+    if (dragging == null || hoverTargetUid == null || hoverSec < 3 || !hoverTargetCombinable) return;
 
     final src = dragging!;
     final dst = elements.firstWhere((e) => e.uid == hoverTargetUid, orElse: () => src);
@@ -232,8 +277,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _commitTrashIfReady() {
-    if (dragging == null) return;
-    if (trashHoldSec < 3) return;
+    if (dragging == null || trashHoldSec < 3) return;
     elements.removeWhere((e) => e.uid == dragging!.uid);
   }
 
@@ -250,23 +294,141 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     return true;
   }
 
+  String _megaIngredientStatus(MegaRecipe r) {
+    final counts = <String, int>{};
+    for (final e in elements) {
+      counts[e.elementId] = (counts[e.elementId] ?? 0) + 1;
+    }
+    final parts = <String>[];
+    for (final ing in r.ingredients) {
+      final ok = (counts[ing] ?? 0) > 0;
+      parts.add('${elementDefs[ing]?.name ?? ing}:${ok ? 'O' : 'X'}');
+      if (ok) counts[ing] = (counts[ing] ?? 1) - 1;
+    }
+    return parts.join(', ');
+  }
+
   void _consumeForMega(MegaRecipe r) {
-    final required = List<String>.from(r.ingredients);
-    for (final ing in required) {
+    final req = List<String>.from(r.ingredients);
+    for (final ing in req) {
       final idx = elements.indexWhere((e) => e.elementId == ing);
       if (idx >= 0) elements.removeAt(idx);
     }
     _spawnElement(r.rewardMythicId);
   }
 
+  void _autoArrangeElements() {
+    const col = 6;
+    const x0 = 16.0;
+    const y0 = 80.0;
+    const dx = 60.0;
+    const dy = 64.0;
+    for (var i = 0; i < elements.length; i++) {
+      final r = i ~/ col;
+      final c = i % col;
+      elements[i].position = Offset(x0 + c * dx, y0 + r * dy);
+    }
+    setState(() {});
+  }
+
+  Future<void> _loadDesignConfig() async {
+    try {
+      final raw = await rootBundle.loadString('assets/config/app1_design.json');
+      final json = jsonDecode(raw) as Map<String, dynamic>;
+      final g = json['gacha'] as Map<String, dynamic>?;
+      if (g != null) {
+        gachaCommon = (g['common'] as num?)?.toDouble() ?? gachaCommon;
+        gachaRare = (g['rare'] as num?)?.toDouble() ?? gachaRare;
+        gachaSpecial = (g['special'] as num?)?.toDouble() ?? gachaSpecial;
+        gachaLegendary = (g['legendary'] as num?)?.toDouble() ?? gachaLegendary;
+      }
+
+      final list = json['megaRecipes'];
+      if (list is List) {
+        final parsed = list
+            .whereType<Map>()
+            .map(
+              (m) => MegaRecipe(
+                id: (m['id'] ?? '').toString(),
+                ingredients: ((m['ingredients'] as List?) ?? const []).map((e) => e.toString()).toList(),
+                rewardMythicId: (m['rewardMythicId'] ?? '').toString(),
+              ),
+            )
+            .where((r) => r.id.isNotEmpty && r.ingredients.length == 4 && r.rewardMythicId.isNotEmpty)
+            .toList();
+        if (parsed.isNotEmpty) megaRecipes = parsed;
+      }
+
+      if (mounted) setState(() {});
+    } catch (_) {
+      // defaults
+    }
+  }
+
+  Future<void> _loadAdRewardState() async {
+    final prefs = await SharedPreferences.getInstance();
+    final now = DateTime.now();
+    final today = '${now.year}-${now.month}-${now.day}';
+    final savedDay = prefs.getString(_adDayKey);
+    final savedCount = prefs.getInt(_adCountKey) ?? 0;
+    final expMs = prefs.getInt(_adExpireKey);
+
+    setState(() {
+      if (savedDay == today) {
+        adRewardUsedToday = savedCount;
+      } else {
+        adRewardUsedToday = 0;
+      }
+      if (expMs != null) {
+        adBuffExpiresAt = DateTime.fromMillisecondsSinceEpoch(expMs);
+      }
+    });
+
+    if (savedDay != today) {
+      await prefs.setString(_adDayKey, today);
+      await prefs.setInt(_adCountKey, 0);
+    }
+  }
+
+  Future<void> _rewardByAdPlaceholder() async {
+    if (adRewardUsedToday >= 3) return;
+    final prefs = await SharedPreferences.getInstance();
+    final now = DateTime.now();
+    final today = '${now.year}-${now.month}-${now.day}';
+
+    final savedDay = prefs.getString(_adDayKey);
+    if (savedDay != today) {
+      adRewardUsedToday = 0;
+      await prefs.setString(_adDayKey, today);
+    }
+
+    setState(() {
+      adRewardUsedToday += 1;
+      tickets = (tickets + 10).clamp(0, ticketCap);
+    });
+
+    await prefs.setInt(_adCountKey, adRewardUsedToday);
+  }
+
+  Future<void> _activateAdBuff() async {
+    if (_isAdBuffActive) return;
+    final prefs = await SharedPreferences.getInstance();
+    final exp = DateTime.now().add(const Duration(hours: 16));
+    setState(() => adBuffExpiresAt = exp);
+    await prefs.setInt(_adExpireKey, exp.millisecondsSinceEpoch);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('원소 숙성소')),
-      body: switch (currentPage) {
-        0 => _buildHome(),
-        1 => _buildCodex(),
-        _ => _buildMega(),
+      body: switch (page) {
+        0 => _buildTimePage(),
+        1 => _buildGachaPage(),
+        2 => _buildHome(),
+        3 => _buildCodex(),
+        4 => _buildMega(),
+        _ => _buildAdsPage(),
       },
       bottomNavigationBar: _bottomNav(),
     );
@@ -279,14 +441,14 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         return Stack(
           children: [
             Positioned(
-              left: 12,
-              top: 12,
+              left: 8,
+              top: 8,
               child: Row(
                 children: [
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.all(8),
-                      child: Text('Tickets: $tickets/$ticketCap · 전설 <1%'),
+                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint'),
                     ),
                   ),
                   const SizedBox(width: 8),
@@ -317,13 +479,11 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
       child: GestureDetector(
         onPanStart: (_) {
           dragging = e;
-          dragDelta = Offset.zero;
           hoverSec = 0;
           trashHoldSec = 0;
         },
         onPanUpdate: (d) {
           setState(() {
-            dragDelta += d.delta;
             e.position = Offset(
               (e.position.dx + d.delta.dx).clamp(0, canvasSize.width - 56),
               (e.position.dy + d.delta.dy).clamp(0, canvasSize.height - 96),
@@ -336,6 +496,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
             _commitTrashIfReady();
             dragging = null;
             hoverTargetUid = null;
+            hoverTargetCombinable = false;
             hoverSec = 0;
             trashHoldSec = 0;
           });
@@ -350,20 +511,32 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                 color: _rarityColor(def.rarity),
                 borderRadius: BorderRadius.circular(28),
                 border: Border.all(
-                  color: isDragging ? Colors.black : (isHoverTarget ? Colors.amber : (lastSpawnUid == e.uid ? Colors.green : Colors.white)),
-                  width: isDragging ? 3 : (lastSpawnUid == e.uid ? 3 : 2),
+                  color: isDragging
+                      ? Colors.black
+                      : (isHoverTarget ? Colors.amber : Colors.white),
+                  width: isDragging ? 3 : 2,
                 ),
               ),
               child: Center(
-                child: Text(def.name, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold), textAlign: TextAlign.center),
+                child: Text(
+                  def.name,
+                  style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
-            if (isHoverTarget && dragging != null)
+            if (isDragging && hoverSec > 0)
               Positioned.fill(
                 child: CircularProgressIndicator(
-                  value: (hoverSec / 3).clamp(0, 1),
+                  value: (hoverSec / 3).clamp(0.0, 1.0),
                   strokeWidth: 3,
                 ),
+              ),
+            if (isDragging && hoverTargetUid != null && !hoverTargetCombinable)
+              const Positioned(
+                top: -4,
+                right: -4,
+                child: Icon(Icons.close, color: Colors.redAccent, size: 16),
               ),
           ],
         ),
@@ -400,6 +573,87 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     );
   }
 
+  Widget _buildTimePage() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('시간 페이지', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 8),
+          Text('원소 포인트: $elementPoint'),
+          Text('클릭 파워: $_clickPower'),
+          const SizedBox(height: 12),
+          FilledButton.icon(
+            onPressed: _clickGain,
+            icon: const Icon(Icons.touch_app),
+            label: const Text('클릭 (+포인트)'),
+          ),
+          const SizedBox(height: 8),
+          const Text('기본: 1초당 포인트 1개, 클릭 시 포인트 +5 (최종원소 발견 수에 따라 증가)'),
+          if (_isAdBuffActive)
+            Text('광고 버프 적용 중: ${adBuffExpiresAt!.difference(DateTime.now()).inHours}h 남음'),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildGachaPage() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: ListView(
+        children: [
+          const Text('가챠샵', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 8),
+          Text('티켓: $tickets/$ticketCap'),
+          Text('원소 포인트: $elementPoint'),
+          const SizedBox(height: 8),
+          Text('확률: 일반 ${(gachaCommon * 100).toStringAsFixed(1)}% / 희귀 ${(gachaRare * 100).toStringAsFixed(1)}% / 특수 ${(gachaSpecial * 100).toStringAsFixed(1)}% / 전설 ${(gachaLegendary * 100).toStringAsFixed(2)}%'),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Expanded(
+                child: FilledButton(
+                  onPressed: () => setState(() => _spawnFromGacha(count: 1)),
+                  child: const Text('1회 뽑기'),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () => setState(() => _spawnFromGacha(count: 10)),
+                  child: const Text('10회 뽑기'),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          const Text('티켓 구매', style: TextStyle(fontWeight: FontWeight.bold)),
+          const Text('티켓 1장 = 원소포인트 20'),
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton(onPressed: () => _buyTicket(1), child: const Text('1장 구매')),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton(onPressed: () => _buyTicket(5), child: const Text('5장 구매')),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          const Text('광고 보상(가챠권)', style: TextStyle(fontWeight: FontWeight.bold)),
+          FilledButton.tonal(
+            onPressed: adRewardUsedToday < 3 ? _rewardByAdPlaceholder : null,
+            child: Text('광고 보고 +가챠권 10 (오늘 $adRewardUsedToday/3)'),
+          ),
+          const Text('※ 현재 광고 API 미연동. 보상만 지급'),
+        ],
+      ),
+    );
+  }
+
   Widget _buildCodex() {
     final all = elementDefs.values.toList()..sort((a, b) => a.name.compareTo(b.name));
     return ListView(
@@ -429,11 +683,10 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         ...megaRecipes.map((r) {
           final active = _canMega(r);
           final reward = elementDefs[r.rewardMythicId]!;
-          final status = _megaIngredientStatus(r);
           return Card(
             child: ListTile(
               title: Text('${r.ingredients.join(' + ')} => ${reward.name}'),
-              subtitle: Text(active ? '활성화됨 (3초 꾹 눌러 발동)' : '재료 부족: $status'),
+              subtitle: Text(active ? '활성화됨 (3초 꾹 눌러 발동)' : '재료 부족: ${_megaIngredientStatus(r)}'),
               trailing: _Hold3sButton(
                 enabled: active,
                 onCommit: () {
@@ -449,223 +702,59 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     );
   }
 
+  Widget _buildAdsPage() {
+    final remain = adBuffExpiresAt?.difference(DateTime.now());
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: ListView(
+        children: [
+          const Text('광고 페이지', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 8),
+          Text(_isAdBuffActive
+              ? '버프 활성: ${remain?.inHours ?? 0}h ${(remain?.inMinutes ?? 0) % 60}m 남음'
+              : '버프 비활성'),
+          const SizedBox(height: 10),
+          FilledButton(
+            onPressed: _isAdBuffActive ? null : _activateAdBuff,
+            child: const Text('광고 시청 (16시간 모든 수치 2배)'),
+          ),
+          const SizedBox(height: 6),
+          const Text('버프 지속 중에는 재시청으로 누적되지 않습니다.'),
+        ],
+      ),
+    );
+  }
+
   Widget _bottomNav() {
     return BottomAppBar(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
         child: Row(
           children: [
-            Expanded(
-              child: IconButton(
-                onPressed: () => _showTimeInfo(),
-                icon: const Icon(Icons.schedule),
-                tooltip: '시간',
-              ),
-            ),
-            Expanded(
-              child: IconButton(
-                onPressed: () => _openGachaSheet(),
-                icon: const Icon(Icons.casino),
-                tooltip: '원소 가챠',
-              ),
-            ),
-            Expanded(
-              child: FilledButton.tonal(
-                onPressed: () => setState(() => currentPage = 0),
-                child: const Text('홈'),
-              ),
-            ),
-            Expanded(
-              child: IconButton(
-                onPressed: () => setState(() => currentPage = 1),
-                icon: const Icon(Icons.menu_book),
-                tooltip: '도감',
-              ),
-            ),
-            Expanded(
-              child: IconButton(
-                onPressed: () => setState(() => currentPage = 2),
-                icon: const Icon(Icons.auto_awesome),
-                tooltip: '대규모 합성',
-              ),
-            ),
+            Expanded(child: _navBtn('시간', 0, Icons.schedule)),
+            Expanded(child: _navBtn('가챠', 1, Icons.casino)),
+            Expanded(child: _navBtn('홈', 2, Icons.home)),
+            Expanded(child: _navBtn('도감', 3, Icons.menu_book)),
+            Expanded(child: _navBtn('합성', 4, Icons.auto_awesome)),
+            Expanded(child: _navBtn('광고', 5, Icons.ondemand_video)),
           ],
         ),
       ),
     );
   }
 
-  void _showTimeInfo() {
-    showDialog<void>(
-      context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('시간 정보'),
-        content: Text('다음 티켓까지: ${600 - ticketRemainSec}s'),
-        actions: [TextButton(onPressed: () => Navigator.pop(context), child: const Text('확인'))],
+  Widget _navBtn(String label, int idx, IconData icon) {
+    final selected = page == idx;
+    return InkWell(
+      onTap: () => setState(() => page = idx),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: selected ? Colors.teal : Colors.grey),
+          Text(label, style: TextStyle(fontSize: 11, color: selected ? Colors.teal : Colors.grey)),
+        ],
       ),
     );
-  }
-
-  void _openGachaSheet() {
-    showModalBottomSheet<void>(
-      context: context,
-      builder: (_) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text('원소 가챠 확률', style: TextStyle(fontWeight: FontWeight.bold)),
-              Text('일반 ${(gachaCommon*100).toStringAsFixed(1)}% / 희귀 ${(gachaRare*100).toStringAsFixed(1)}% / 특수 ${(gachaSpecial*100).toStringAsFixed(1)}% / 전설 ${(gachaLegendary*100).toStringAsFixed(2)}%'),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: FilledButton(
-                      onPressed: () {
-                        setState(() => _spawnFromGacha(count: 1));
-                        Navigator.pop(context);
-                      },
-                      child: const Text('1회'),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed: () {
-                        setState(() => _spawnFromGacha(count: 10));
-                        Navigator.pop(context);
-                      },
-                      child: const Text('10회'),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: FilledButton.tonal(
-                      onPressed: adRewardUsedToday < 3
-                          ? () async {
-                              await _rewardByAdPlaceholder();
-                              if (mounted) Navigator.pop(context);
-                            }
-                          : null,
-                      child: Text('광고 보고 +가챠권 10 (오늘 $adRewardUsedToday/3)'),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 4),
-              const Text('※ 현재는 광고 API 미연동. 버튼 누르면 보상만 지급됩니다.', style: TextStyle(fontSize: 12)),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Future<void> _loadAdRewardState() async {
-    final prefs = await SharedPreferences.getInstance();
-    final now = DateTime.now();
-    final today = '$now.year-$now.month-$now.day';
-    final savedDay = prefs.getString(_adDayKey);
-    final savedCount = prefs.getInt(_adCountKey) ?? 0;
-
-    setState(() {
-      if (savedDay == today) {
-        adRewardUsedToday = savedCount;
-      } else {
-        adRewardUsedToday = 0;
-      }
-    });
-
-    if (savedDay != today) {
-      await prefs.setString(_adDayKey, today);
-      await prefs.setInt(_adCountKey, 0);
-    }
-  }
-
-  Future<void> _rewardByAdPlaceholder() async {
-    if (adRewardUsedToday >= 3) return;
-    final prefs = await SharedPreferences.getInstance();
-    final now = DateTime.now();
-    final today = '$now.year-$now.month-$now.day';
-
-    final savedDay = prefs.getString(_adDayKey);
-    if (savedDay != today) {
-      adRewardUsedToday = 0;
-      await prefs.setString(_adDayKey, today);
-    }
-
-    setState(() {
-      adRewardUsedToday += 1;
-      tickets = (tickets + 10).clamp(0, ticketCap);
-    });
-
-    await prefs.setInt(_adCountKey, adRewardUsedToday);
-  }
-
-  Future<void> _loadDesignConfig() async {
-    try {
-      final raw = await rootBundle.loadString('assets/config/app1_design.json');
-      final json = jsonDecode(raw) as Map<String, dynamic>;
-      final g = json['gacha'] as Map<String, dynamic>?;
-      if (g != null) {
-        gachaCommon = (g['common'] as num?)?.toDouble() ?? gachaCommon;
-        gachaRare = (g['rare'] as num?)?.toDouble() ?? gachaRare;
-        gachaSpecial = (g['special'] as num?)?.toDouble() ?? gachaSpecial;
-        gachaLegendary = (g['legendary'] as num?)?.toDouble() ?? gachaLegendary;
-      }
-      final list = json['megaRecipes'];
-      if (list is List) {
-        megaRecipes = list
-            .whereType<Map>()
-            .map((m) => MegaRecipe(
-                  id: (m['id'] ?? '').toString(),
-                  ingredients: ((m['ingredients'] as List?) ?? const []).map((e) => e.toString()).toList(),
-                  rewardMythicId: (m['rewardMythicId'] ?? '').toString(),
-                ))
-            .where((r) => r.id.isNotEmpty && r.ingredients.length == 4 && r.rewardMythicId.isNotEmpty)
-            .toList();
-        if (megaRecipes.isEmpty) {
-          megaRecipes = List<MegaRecipe>.from(defaultMegaRecipes);
-        }
-      }
-      if (mounted) setState(() {});
-    } catch (_) {
-      // fallback to defaults
-    }
-  }
-
-  void _autoArrangeElements() {
-    const col = 6;
-    const x0 = 20.0;
-    const y0 = 90.0;
-    const gapX = 60.0;
-    const gapY = 64.0;
-    for (var i = 0; i < elements.length; i++) {
-      final r = i ~/ col;
-      final c = i % col;
-      elements[i].position = Offset(x0 + c * gapX, y0 + r * gapY);
-    }
-    setState(() {});
-  }
-
-  String _megaIngredientStatus(MegaRecipe r) {
-    final counts = <String, int>{};
-    for (final e in elements) {
-      counts[e.elementId] = (counts[e.elementId] ?? 0) + 1;
-    }
-    final chunks = <String>[];
-    for (final ing in r.ingredients) {
-      final has = (counts[ing] ?? 0) > 0;
-      chunks.add('${elementDefs[ing]?.name ?? ing}:${has ? 'O' : 'X'}');
-      if (has) counts[ing] = (counts[ing] ?? 1) - 1;
-    }
-    return chunks.join(', ');
   }
 
   Color _rarityColor(Rarity r) {
@@ -736,7 +825,7 @@ class _Hold3sButtonState extends State<_Hold3sButton> {
               child: const Icon(Icons.play_arrow),
             ),
             if (sec > 0)
-              CircularProgressIndicator(value: (sec / 3).clamp(0, 1), strokeWidth: 3),
+              CircularProgressIndicator(value: (sec / 3).clamp(0.0, 1.0), strokeWidth: 3),
           ],
         ),
       ),
