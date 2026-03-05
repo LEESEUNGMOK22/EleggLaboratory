@@ -340,6 +340,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     final merged = FieldElement(uid: '${DateTime.now().microsecondsSinceEpoch}', elementId: resultId, position: dst.position);
     elements.add(merged);
     discovered.add(resultId);
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('합성 성공!'), duration: Duration(milliseconds: 500)));
   }
 
   void _commitTrashIfReady() {
@@ -652,10 +653,16 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
               child: Row(
                 children: [
                   Card(
-                    color: const Color(0x55222B3A),
+                    color: const Color(0x66222B3A),
                     child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Text('Tickets: $tickets/$ticketCap · 포인트: $elementPoint · 원소 ${elements.length}/$maxFieldElements${elements.length >= maxFieldElements ? ' (가득 참)' : ''}', style: const TextStyle(color: Color(0xFFE5E7EB))),
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Tickets $tickets/$ticketCap  ·  Points $elementPoint', style: const TextStyle(color: Color(0xFFE5E7EB), fontWeight: FontWeight.w700)),
+                          Text('필드 ${elements.length}/$maxFieldElements${elements.length >= maxFieldElements ? ' (가득 참)' : ''}', style: const TextStyle(color: Color(0xFFB6C2D1), fontSize: 11)),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(width: 8),
@@ -666,6 +673,23 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                     label: const Text('정렬'),
                   ),
                 ],
+              ),
+            ),
+            Positioned(
+              left: 12,
+              right: 12,
+              top: 58,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: const Color(0xAA0F172A),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: const Color(0x552CCFBF)),
+                ),
+                child: Text(
+                  _homePrimaryHint(),
+                  style: const TextStyle(color: Color(0xFFE5E7EB), fontSize: 12, fontWeight: FontWeight.w600),
+                ),
               ),
             ),
             ...elements.map(_elementWidget),
@@ -741,21 +765,32 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      _rarityAsset(def.rarity),
-                      width: 18,
-                      height: 18,
-                      fit: BoxFit.contain,
+                    Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        Image.asset(
+                          _rarityAsset(def.rarity),
+                          width: 18,
+                          height: 18,
+                          fit: BoxFit.contain,
+                        ),
+                        Positioned(
+                          right: -2,
+                          top: -2,
+                          child: Container(
+                            width: 7,
+                            height: 7,
+                            decoration: BoxDecoration(color: _rarityColor(def.rarity), shape: BoxShape.circle, border: Border.all(color: Colors.white, width: 1)),
+                          ),
+                        ),
+                      ],
                     ),
                     Text(
                       def.name,
                       style: const TextStyle(fontSize: 9, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                      _rarityLabel(def.rarity),
-                      style: const TextStyle(fontSize: 6.5, fontWeight: FontWeight.w600),
-                    ),
+                    const SizedBox.shrink(),
                   ],
                 ),
               ),
@@ -820,6 +855,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
           Text('클릭 파워: $_clickPower'),
           const SizedBox(height: 12),
           FilledButton.icon(
+            style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2CCFBF), foregroundColor: Colors.black87),
             onPressed: _clickGain,
             icon: const Icon(Icons.touch_app),
             label: const Text('클릭 (+포인트)'),
@@ -1035,6 +1071,13 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     );
   }
 
+  String _homePrimaryHint() {
+    if (tickets <= 0) return '가챠 페이지에서 포인트로 티켓을 구매해 원소를 뽑아보세요.';
+    if (elements.length < 2) return '원소를 드래그해 다른 원소 위에 2초 유지 후 드랍하면 합성됩니다.';
+    if (discovered.length < 6) return '새 조합을 찾아 도감을 채워보세요.';
+    return '대규모 합성에서 4재료 조합으로 신화 원소를 획득해보세요.';
+  }
+
   Widget _title(String text) {
     return Text(
       text,
@@ -1057,16 +1100,6 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     };
   }
 
-  String _rarityLabel(Rarity r) {
-    return switch (r) {
-      Rarity.common => '일반',
-      Rarity.rare => '희귀',
-      Rarity.special => '특수',
-      Rarity.legendary => '전설',
-      Rarity.finalTier => '최종',
-      Rarity.mythic => '신화',
-    };
-  }
 
   String _rarityAsset(Rarity r) {
     return switch (r) {
