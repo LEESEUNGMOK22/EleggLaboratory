@@ -144,6 +144,10 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   ArrangeMode arrangeMode = ArrangeMode.kind;
   bool megaActiveOnly = false;
   String megaQuery = '';
+  String? fxMessage;
+  Color fxColor = Colors.white;
+  Rarity? codexFilter;
+  final Set<String> codexRarityRewarded = {};
 
   @override
   void initState() {
@@ -181,6 +185,24 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     final finalCount = discovered.where((id) => elementDefs[id]?.rarity == Rarity.finalTier).length;
     final power = clickBase + finalCount * finalElementClickBonus;
     return (_isAdBuffActive ? power * adBuffMultiplier : power);
+  }
+
+
+  void _showFx(String msg, {Color color = Colors.white}) {
+    fxMessage = msg;
+    fxColor = color;
+    Future.delayed(const Duration(milliseconds: 650), () {
+      if (!mounted) return;
+      if (fxMessage == msg) {
+        setState(() => fxMessage = null);
+      }
+    });
+  }
+
+  int _ticketUnitCost() {
+    if (tickets < 10) return ticketPointCost;
+    if (tickets < 20) return ticketPointCost + 5;
+    return ticketPointCost + 10;
   }
 
   void _tick(double dt) {
@@ -238,7 +260,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   }
 
   void _buyTicket(int count) {
-    final total = count * ticketPointCost;
+    final total = count * _ticketUnitCost();
     if (elementPoint < total) return;
     setState(() {
       elementPoint -= total;
@@ -362,13 +384,13 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     final merged = FieldElement(uid: '${DateTime.now().microsecondsSinceEpoch}', elementId: resultId, position: dst.position);
     elements.add(merged);
     discovered.add(resultId);
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('합성 성공!'), duration: Duration(milliseconds: 500)));
+    _showFx('합성 성공!', color: const Color(0xFF2CCFBF));
   }
 
   void _commitTrashIfReady() {
     if (dragging == null || trashHoldSec < holdSec) return;
     elements.removeWhere((e) => e.uid == dragging!.uid);
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('원소 삭제됨'), duration: Duration(milliseconds: 450)));
+    _showFx('원소 삭제됨', color: const Color(0xFFF87171));
   }
 
   bool _canMega(MegaRecipe r) {
@@ -406,7 +428,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
     }
     _spawnElement(r.rewardMythicId);
     _saveGameState();
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('대규모 합성 성공! 신화 원소 획득'), duration: Duration(milliseconds: 700)));
+    _showFx('신화 원소 획득!', color: const Color(0xFFFBBF24));
   }
 
   String _arrangeModeLabel(ArrangeMode m) {
@@ -761,6 +783,27 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                 ),
               ),
             ),
+            if (fxMessage != null)
+              Positioned(
+                top: 92,
+                left: 0,
+                right: 0,
+                child: Center(
+                  child: AnimatedOpacity(
+                    duration: const Duration(milliseconds: 180),
+                    opacity: fxMessage == null ? 0 : 1,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.black87,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: fxColor.withValues(alpha: 0.8)),
+                      ),
+                      child: Text(fxMessage!, style: TextStyle(color: fxColor, fontWeight: FontWeight.w700)),
+                    ),
+                  ),
+                ),
+              ),
             ...elements.map(_elementWidget),
             _trashWidget(),
           ],
@@ -872,10 +915,10 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
                 ),
               ),
             if (isDragging && hoverTargetUid != null && !hoverTargetCombinable)
-              const Positioned(
-                top: -4,
-                right: -4,
-                child: Icon(Icons.close, color: Colors.redAccent, size: 16),
+              Positioned(
+                top: -2,
+                right: -2,
+                child: Icon(Icons.close, color: Colors.redAccent.withValues(alpha: 0.75), size: 12),
               ),
           ],
         ),
@@ -920,6 +963,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         children: [
           _title('시간 페이지'),
           const SizedBox(height: 8),
+        ..._recommendedMegaRecipes().map((r) => Text('추천: ${r.id}')).take(3),
           Text('원소 포인트: $elementPoint'),
           Text('클릭 파워: $_clickPower'),
           const SizedBox(height: 12),
@@ -1022,35 +1066,57 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
   Widget _buildCodex() {
     final all = elementDefs.values.toList()..sort((a, b) => a.name.compareTo(b.name));
     final found = all.where((e) => discovered.contains(e.id)).toList();
-    final missing = all.where((e) => !discovered.contains(e.id)).toList();
 
-    Widget section(String title, List<ElementDef> list) {
-      return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 8),
-          Text(title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-          ...list.map((e) {
-            final ok = discovered.contains(e.id);
-            return ListTile(
-              dense: true,
-              leading: Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked),
-              title: Text(e.name),
-              subtitle: Text('등급: ${e.rarity.name}'),
-              trailing: Text(ok ? '발견' : '미발견'),
-            );
-          })
-        ],
-      );
+    final rarityFoundCounts = <Rarity, int>{for (final r in Rarity.values) r: 0};
+    final rarityTotalCounts = <Rarity, int>{for (final r in Rarity.values) r: 0};
+    for (final e in all) {
+      rarityTotalCounts[e.rarity] = (rarityTotalCounts[e.rarity] ?? 0) + 1;
+      if (discovered.contains(e.id)) {
+        rarityFoundCounts[e.rarity] = (rarityFoundCounts[e.rarity] ?? 0) + 1;
+      }
     }
+
+    for (final r in Rarity.values) {
+      final done = (rarityFoundCounts[r] ?? 0) > 0 && rarityFoundCounts[r] == rarityTotalCounts[r];
+      final key = r.name;
+      if (done && !codexRarityRewarded.contains(key)) {
+        codexRarityRewarded.add(key);
+        elementPoint += 50;
+        tickets = (tickets + 1).clamp(0, ticketCap);
+        _showFx('${_rarityKorean(r)} 등급 도감 완성 보상!', color: const Color(0xFFFBBF24));
+      }
+    }
+
+    final filtered = codexFilter == null ? all : all.where((e) => e.rarity == codexFilter).toList();
 
     return ListView(
       padding: const EdgeInsets.all(12),
       children: [
         _title('도감'),
         Text('발견 ${found.length}/${all.length}'),
-        section('발견한 원소', found),
-        section('미발견 원소', missing),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 6,
+          children: [
+            ChoiceChip(label: const Text('전체'), selected: codexFilter == null, onSelected: (_) => setState(() => codexFilter = null)),
+            ...Rarity.values.map((r) => ChoiceChip(
+              label: Text('${_rarityKorean(r)} ${(rarityFoundCounts[r] ?? 0)}/${rarityTotalCounts[r] ?? 0}'),
+              selected: codexFilter == r,
+              onSelected: (_) => setState(() => codexFilter = r),
+            )),
+          ],
+        ),
+        const SizedBox(height: 8),
+        ...filtered.map((e) {
+          final ok = discovered.contains(e.id);
+          return ListTile(
+            dense: true,
+            leading: Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked),
+            title: Text(e.name),
+            subtitle: Text('등급: ${_rarityKorean(e.rarity)}'),
+            trailing: Text(ok ? '발견' : '미발견'),
+          );
+        }),
       ],
     );
   }
@@ -1073,6 +1139,7 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         _title('대규모 합성'),
         const SizedBox(height: 8),
         Text('활성 레시피: $activeCount / ${megaRecipes.length}'),
+        Text('부족 재료 Top1: ${_missingTopOne()}'),
         const SizedBox(height: 8),
         Row(
           children: [
@@ -1130,6 +1197,53 @@ class _ElementalIdleHomeState extends State<ElementalIdleHome> {
         }),
       ],
     );
+  }
+
+
+  String _rarityKorean(Rarity r) {
+    return switch (r) {
+      Rarity.common => '일반',
+      Rarity.rare => '희귀',
+      Rarity.special => '특수',
+      Rarity.legendary => '전설',
+      Rarity.finalTier => '최종',
+      Rarity.mythic => '신화',
+    };
+  }
+
+  String _missingTopOne() {
+    final miss = <String, int>{};
+    for (final r in megaRecipes) {
+      for (final ing in r.ingredients) {
+        final has = elements.any((e) => e.elementId == ing);
+        if (!has) miss[ing] = (miss[ing] ?? 0) + 1;
+      }
+    }
+    if (miss.isEmpty) return '없음';
+    final top = miss.entries.reduce((a, b) => a.value >= b.value ? a : b).key;
+    return elementDefs[top]?.name ?? top;
+  }
+
+  List<MegaRecipe> _recommendedMegaRecipes() {
+    int missingCount(MegaRecipe r) {
+      var m = 0;
+      final counts = <String, int>{};
+      for (final e in elements) {
+        counts[e.elementId] = (counts[e.elementId] ?? 0) + 1;
+      }
+      for (final ing in r.ingredients) {
+        if ((counts[ing] ?? 0) <= 0) {
+          m++;
+        } else {
+          counts[ing] = counts[ing]! - 1;
+        }
+      }
+      return m;
+    }
+
+    final list = List<MegaRecipe>.from(megaRecipes);
+    list.sort((a, b) => missingCount(a).compareTo(missingCount(b)));
+    return list;
   }
 
   Widget _bottomNav() {
