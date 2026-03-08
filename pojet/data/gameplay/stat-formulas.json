@@ -1,0 +1,50 @@
+﻿{
+  "abilityModifier": {
+    "formula": "floor((score - 10) / 2)",
+    "description": "기본 5E 감각 유지"
+  },
+  "proficiencyBonusByLevel": {
+    "formula": "2 + floor((level - 1) / 4)",
+    "description": "레벨 성장 체감"
+  },
+  "attackTotal": {
+    "formula": "d20 + abilityMod + proficiency + gearBonus + situational",
+    "description": "명중 판정"
+  },
+  "armorClass": {
+    "formula": "baseArmor + dexCapBonus + shieldBonus + situational",
+    "description": "방어 감각 단순화"
+  },
+  "abilityCheck": {
+    "formula": "d20 + abilityMod + proficiency(optional) + situational",
+    "description": "탐험/사회 공통"
+  },
+  "saveCheck": {
+    "formula": "d20 + saveMod + proficiencyIfTrained + situational",
+    "description": "조건/위험 저항"
+  },
+  "passiveCheck": {
+    "formula": "10 + abilityMod + proficiency(optional)",
+    "description": "자동 감지 루프"
+  },
+  "contestedCheck": {
+    "formula": "checkA vs checkB; higher wins",
+    "description": "추격/설득 대항"
+  },
+  "restHeal": {
+    "formula": "base(4~8) + conMod + campQualityBonus - fatiguePenalty",
+    "description": "자동 휴식 회복"
+  },
+  "fatiguePenalty": {
+    "formula": "floor(fatigue / 20)",
+    "description": "고피로 시 판정/회복 저하"
+  },
+  "taintModifier": {
+    "formula": "if taint>=40 then socialPenalty+1, if taint>=70 then relationPenalty+2",
+    "description": "오염의 장기 비용"
+  },
+  "renownModifier": {
+    "formula": "floor(renown / 15)",
+    "description": "사회 이벤트 유리 보정"
+  }
+}

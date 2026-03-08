@@ -1,0 +1,55 @@
+﻿{
+  "baseLayers": {
+    "expression": "neutral_face",
+    "lighting": "low_warm",
+    "posture": "upright",
+    "frameStyle": "iron_frame",
+    "microMotion": "idle_slow"
+  },
+  "tagRules": [
+    {"requires":["wounded_minor"],"apply":{"expression":"pain_controlled","posture":"slight_drop","overlays":["scratch_overlay"]}},
+    {"requires":["wounded_severe"],"apply":{"expression":"pain_hard","posture":"deep_drop","lighting":"cold_dim","overlays":["bandage_overlay","blood_edge"]}},
+    {"requires":["exhausted"],"apply":{"expression":"tired_focus","microMotion":"idle_heavy"}},
+    {"requires":["blessed"],"apply":{"lighting":"soft_gold","ambientSymbols":["sigil_gold"]}},
+    {"requires":["tainted"],"apply":{"lighting":"ashen_shadow","overlays":["shadow_vein"],"ambientSymbols":["whisper_rune"]}},
+    {"requires":["noble_favor"],"apply":{"frameStyle":"gilded_frame","attireOverlay":"formal_trim"}},
+    {"requires":["hunted"],"apply":{"expression":"watchful","ambientSymbols":["hunter_mark"]}},
+    {"requires":["rain_soaked"],"apply":{"overlays":["rain_layer"],"microMotion":"idle_shiver"}},
+    {"requires":["bloodied"],"apply":{"overlays":["blood_splash_light"],"expression":"grim"}},
+    {"requires":["spellglow_arcane"],"apply":{"ambientSymbols":["arcane_orbit"],"lighting":"blue_edge"}},
+    {"requires":["spellglow_divine"],"apply":{"ambientSymbols":["divine_halo"],"lighting":"ivory_edge"}},
+    {"requires":["tempted"],"apply":{"expression":"wavering","overlays":["iris_shift"]}},
+    {"requires":["resolved"],"apply":{"expression":"resolved","posture":"upright_strong"}},
+    {"requires":["grieving"],"apply":{"expression":"hollow_soft","lighting":"muted_gray"}},
+    {"requires":["triumphant"],"apply":{"expression":"confident","frameStyle":"victory_frame","microMotion":"idle_rise"}},
+    {"requires":["intimate_afterglow"],"apply":{"expression":"softened","lighting":"rose_dim"}},
+    {"requires":["wounded_minor","exhausted"],"apply":{"expression":"facial_tension_01","posture":"posture_drop_01"}},
+    {"requires":["noble_favor","city_formal"],"apply":{"attireOverlay":"attire_overlay_03"}},
+    {"requires":["tainted","relic_bearer"],"apply":{"overlays":["eye_glow_shadow_02","background_whisper_fx"]}},
+    {"requires":["intimate_afterglow","trusted_companion_nearby"],"apply":{"expression":"softened_expression_02"}}
+  ],
+  "priority": [
+    "wounded_severe",
+    "tainted",
+    "t3_focus",
+    "wounded_minor",
+    "exhausted",
+    "blessed",
+    "noble_favor",
+    "intimate_afterglow"
+  ],
+  "comboShowcase": [
+    ["wounded_minor"],
+    ["wounded_minor","exhausted"],
+    ["wounded_severe"],
+    ["blessed"],
+    ["tainted"],
+    ["tainted","relic_bearer"],
+    ["noble_favor","city_formal"],
+    ["rain_soaked","hunted"],
+    ["bloodied","resolved"],
+    ["spellglow_arcane"],
+    ["spellglow_divine"],
+    ["intimate_afterglow","trusted_companion_nearby"]
+  ]
+}

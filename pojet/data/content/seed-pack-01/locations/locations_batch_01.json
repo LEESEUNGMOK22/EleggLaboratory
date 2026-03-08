@@ -1,0 +1,908 @@
+[
+  {
+    "id": "loc_001",
+    "regionId": "ember_ward",
+    "displayName": "잿불 항구지구 외곽",
+    "actRange": [
+      1,
+      2,
+      4
+    ],
+    "environment": "성역",
+    "dangerTier": 1,
+    "encounterTags": [
+      "politics",
+      "ritual",
+      "undead",
+      "wildlife"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_002",
+    "regionId": "grave_step",
+    "displayName": "묘행 골목 외곽",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "귀족가",
+    "dangerTier": 5,
+    "encounterTags": [
+      "wildlife",
+      "ambush",
+      "romance_tension",
+      "patrol"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_003",
+    "regionId": "thornwatch",
+    "displayName": "가시망루 숲경계 외곽",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "숲",
+    "dangerTier": 4,
+    "encounterTags": [
+      "wildlife",
+      "market",
+      "ambush",
+      "romance_tension"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_004",
+    "regionId": "glass_priory",
+    "displayName": "유리수도원 외곽",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "폐허",
+    "dangerTier": 1,
+    "encounterTags": [
+      "wildlife",
+      "politics",
+      "market",
+      "ambush"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_005",
+    "regionId": "salt_chapel",
+    "displayName": "소금예배당 외곽",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "귀족가",
+    "dangerTier": 4,
+    "encounterTags": [
+      "wildlife",
+      "rain",
+      "undead",
+      "market"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_006",
+    "regionId": "broken_scriptorium",
+    "displayName": "붕괴한 필사관 외곽",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "폐허",
+    "dangerTier": 3,
+    "encounterTags": [
+      "smuggling",
+      "rain",
+      "plague",
+      "ambush"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_007",
+    "regionId": "ashen_road",
+    "displayName": "재빛 순례로 외곽",
+    "actRange": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "environment": "지하",
+    "dangerTier": 3,
+    "encounterTags": [
+      "ritual",
+      "wildlife",
+      "smuggling",
+      "ruin"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_008",
+    "regionId": "river_mire",
+    "displayName": "회흙 늪나루 외곽",
+    "actRange": [
+      1,
+      3,
+      4
+    ],
+    "environment": "숲",
+    "dangerTier": 2,
+    "encounterTags": [
+      "plague",
+      "ritual",
+      "undead",
+      "market"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_009",
+    "regionId": "red_lantern_quay",
+    "displayName": "붉은등잔 선창 외곽",
+    "actRange": [
+      2,
+      4
+    ],
+    "environment": "성역",
+    "dangerTier": 4,
+    "encounterTags": [
+      "market",
+      "undead",
+      "ritual",
+      "ruin"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_010",
+    "regionId": "hollow_court",
+    "displayName": "빈궁정 저택가 외곽",
+    "actRange": [
+      2,
+      4,
+      5
+    ],
+    "environment": "항만",
+    "dangerTier": 3,
+    "encounterTags": [
+      "market",
+      "politics",
+      "wildlife",
+      "ritual"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_011",
+    "regionId": "storm_cellar",
+    "displayName": "폭우 저장고 외곽",
+    "actRange": [
+      1,
+      2
+    ],
+    "environment": "교구",
+    "dangerTier": 3,
+    "encounterTags": [
+      "ambush",
+      "plague",
+      "ruin",
+      "market"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_012",
+    "regionId": "char_vault",
+    "displayName": "탄흔 금고 외곽",
+    "actRange": [
+      3,
+      4,
+      5
+    ],
+    "environment": "폐허",
+    "dangerTier": 4,
+    "encounterTags": [
+      "patrol",
+      "rain",
+      "market",
+      "undead"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_013",
+    "regionId": "moonwell_heath",
+    "displayName": "월정 초원 외곽",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "성역",
+    "dangerTier": 1,
+    "encounterTags": [
+      "wildlife",
+      "rain",
+      "politics",
+      "ambush"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_014",
+    "regionId": "saintfall_stairs",
+    "displayName": "성락 계단구 외곽",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "숲",
+    "dangerTier": 2,
+    "encounterTags": [
+      "undead",
+      "smuggling",
+      "market",
+      "rain"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_015",
+    "regionId": "cinder_forge",
+    "displayName": "잿망치 제련소 외곽",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "숲",
+    "dangerTier": 2,
+    "encounterTags": [
+      "rain",
+      "romance_tension",
+      "ambush",
+      "smuggling"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_016",
+    "regionId": "mourn_bridge",
+    "displayName": "애가교 외곽",
+    "actRange": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "environment": "황야",
+    "dangerTier": 4,
+    "encounterTags": [
+      "undead",
+      "ruin",
+      "romance_tension",
+      "patrol"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_017",
+    "regionId": "veil_market",
+    "displayName": "장막시장 외곽",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "황야",
+    "dangerTier": 3,
+    "encounterTags": [
+      "romance_tension",
+      "patrol",
+      "plague",
+      "rain"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_018",
+    "regionId": "blackreed_marsh",
+    "displayName": "검은갈대 습지 외곽",
+    "actRange": [
+      1,
+      3,
+      4
+    ],
+    "environment": "성역",
+    "dangerTier": 4,
+    "encounterTags": [
+      "wildlife",
+      "rain",
+      "smuggling",
+      "market"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_019",
+    "regionId": "prayer_cellars",
+    "displayName": "기도 저장굴 외곽",
+    "actRange": [
+      2,
+      3
+    ],
+    "environment": "숲",
+    "dangerTier": 2,
+    "encounterTags": [
+      "ruin",
+      "ambush",
+      "romance_tension",
+      "plague"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_020",
+    "regionId": "sunken_archive",
+    "displayName": "침수기록고 외곽",
+    "actRange": [
+      3,
+      4,
+      5
+    ],
+    "environment": "지하",
+    "dangerTier": 5,
+    "encounterTags": [
+      "ritual",
+      "ruin",
+      "rain",
+      "market"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_021",
+    "regionId": "oathfield",
+    "displayName": "맹세 벌판 외곽",
+    "actRange": [
+      4,
+      5
+    ],
+    "environment": "귀족가",
+    "dangerTier": 5,
+    "encounterTags": [
+      "market",
+      "smuggling",
+      "ritual",
+      "patrol"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_022",
+    "regionId": "ash_crown_gate",
+    "displayName": "재관문 외곽",
+    "actRange": [
+      4,
+      5
+    ],
+    "environment": "폐허",
+    "dangerTier": 1,
+    "encounterTags": [
+      "smuggling",
+      "ambush",
+      "rain",
+      "wildlife"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_023",
+    "regionId": "pale_harbor",
+    "displayName": "창백항 외곽",
+    "actRange": [
+      1,
+      2,
+      5
+    ],
+    "environment": "황야",
+    "dangerTier": 4,
+    "encounterTags": [
+      "ritual",
+      "plague",
+      "patrol",
+      "ambush"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_024",
+    "regionId": "hush_catacombs",
+    "displayName": "정적 지하묘 외곽",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "지하",
+    "dangerTier": 3,
+    "encounterTags": [
+      "market",
+      "rain",
+      "ambush",
+      "ruin"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_025",
+    "regionId": "ember_ward",
+    "displayName": "잿불 항구지구 뒷골목",
+    "actRange": [
+      1,
+      2,
+      4
+    ],
+    "environment": "습지",
+    "dangerTier": 4,
+    "encounterTags": [
+      "romance_tension",
+      "undead",
+      "ambush",
+      "ritual"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_026",
+    "regionId": "grave_step",
+    "displayName": "묘행 골목 뒷골목",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "성역",
+    "dangerTier": 2,
+    "encounterTags": [
+      "market",
+      "wildlife",
+      "undead",
+      "politics"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_027",
+    "regionId": "thornwatch",
+    "displayName": "가시망루 숲경계 뒷골목",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "지하",
+    "dangerTier": 3,
+    "encounterTags": [
+      "patrol",
+      "ruin",
+      "ritual",
+      "ambush"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_028",
+    "regionId": "glass_priory",
+    "displayName": "유리수도원 뒷골목",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "항만",
+    "dangerTier": 5,
+    "encounterTags": [
+      "romance_tension",
+      "ritual",
+      "politics",
+      "rain"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_029",
+    "regionId": "salt_chapel",
+    "displayName": "소금예배당 뒷골목",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "교구",
+    "dangerTier": 1,
+    "encounterTags": [
+      "politics",
+      "wildlife",
+      "undead",
+      "patrol"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_030",
+    "regionId": "broken_scriptorium",
+    "displayName": "붕괴한 필사관 뒷골목",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "성역",
+    "dangerTier": 4,
+    "encounterTags": [
+      "ambush",
+      "undead",
+      "plague",
+      "patrol"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_031",
+    "regionId": "ashen_road",
+    "displayName": "재빛 순례로 뒷골목",
+    "actRange": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "environment": "항만",
+    "dangerTier": 2,
+    "encounterTags": [
+      "politics",
+      "rain",
+      "ritual",
+      "wildlife"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_032",
+    "regionId": "river_mire",
+    "displayName": "회흙 늪나루 뒷골목",
+    "actRange": [
+      1,
+      3,
+      4
+    ],
+    "environment": "지하",
+    "dangerTier": 5,
+    "encounterTags": [
+      "wildlife",
+      "rain",
+      "politics",
+      "undead"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_033",
+    "regionId": "red_lantern_quay",
+    "displayName": "붉은등잔 선창 뒷골목",
+    "actRange": [
+      2,
+      4
+    ],
+    "environment": "항만",
+    "dangerTier": 4,
+    "encounterTags": [
+      "ambush",
+      "politics",
+      "smuggling",
+      "plague"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_034",
+    "regionId": "hollow_court",
+    "displayName": "빈궁정 저택가 뒷골목",
+    "actRange": [
+      2,
+      4,
+      5
+    ],
+    "environment": "도시",
+    "dangerTier": 3,
+    "encounterTags": [
+      "ritual",
+      "plague",
+      "patrol",
+      "rain"
+    ],
+    "summary": "주인공의 명성에 따라 같은 풍경도 전혀 다르게 반응하는 장소."
+  },
+  {
+    "id": "loc_035",
+    "regionId": "storm_cellar",
+    "displayName": "폭우 저장고 뒷골목",
+    "actRange": [
+      1,
+      2
+    ],
+    "environment": "폐허",
+    "dangerTier": 2,
+    "encounterTags": [
+      "ambush",
+      "plague",
+      "wildlife",
+      "politics"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_036",
+    "regionId": "char_vault",
+    "displayName": "탄흔 금고 뒷골목",
+    "actRange": [
+      3,
+      4,
+      5
+    ],
+    "environment": "귀족가",
+    "dangerTier": 4,
+    "encounterTags": [
+      "politics",
+      "market",
+      "rain",
+      "ritual"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_037",
+    "regionId": "moonwell_heath",
+    "displayName": "월정 초원 뒷골목",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "도시",
+    "dangerTier": 3,
+    "encounterTags": [
+      "patrol",
+      "ambush",
+      "rain",
+      "politics"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_038",
+    "regionId": "saintfall_stairs",
+    "displayName": "성락 계단구 뒷골목",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "성역",
+    "dangerTier": 5,
+    "encounterTags": [
+      "smuggling",
+      "wildlife",
+      "romance_tension",
+      "ruin"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_039",
+    "regionId": "cinder_forge",
+    "displayName": "잿망치 제련소 뒷골목",
+    "actRange": [
+      1,
+      2,
+      3
+    ],
+    "environment": "황야",
+    "dangerTier": 3,
+    "encounterTags": [
+      "plague",
+      "ambush",
+      "rain",
+      "ruin"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_040",
+    "regionId": "mourn_bridge",
+    "displayName": "애가교 뒷골목",
+    "actRange": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "environment": "폐허",
+    "dangerTier": 4,
+    "encounterTags": [
+      "smuggling",
+      "romance_tension",
+      "rain",
+      "plague"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_041",
+    "regionId": "veil_market",
+    "displayName": "장막시장 뒷골목",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "귀족가",
+    "dangerTier": 4,
+    "encounterTags": [
+      "plague",
+      "wildlife",
+      "ruin",
+      "ritual"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_042",
+    "regionId": "blackreed_marsh",
+    "displayName": "검은갈대 습지 뒷골목",
+    "actRange": [
+      1,
+      3,
+      4
+    ],
+    "environment": "지하",
+    "dangerTier": 4,
+    "encounterTags": [
+      "undead",
+      "market",
+      "wildlife",
+      "ruin"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_043",
+    "regionId": "prayer_cellars",
+    "displayName": "기도 저장굴 뒷골목",
+    "actRange": [
+      2,
+      3
+    ],
+    "environment": "지하",
+    "dangerTier": 1,
+    "encounterTags": [
+      "plague",
+      "politics",
+      "ruin",
+      "undead"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_044",
+    "regionId": "sunken_archive",
+    "displayName": "침수기록고 뒷골목",
+    "actRange": [
+      3,
+      4,
+      5
+    ],
+    "environment": "숲",
+    "dangerTier": 4,
+    "encounterTags": [
+      "market",
+      "romance_tension",
+      "plague",
+      "politics"
+    ],
+    "summary": "비와 재가 섞인 냄새가 오래 남아 있는 장소."
+  },
+  {
+    "id": "loc_045",
+    "regionId": "oathfield",
+    "displayName": "맹세 벌판 뒷골목",
+    "actRange": [
+      4,
+      5
+    ],
+    "environment": "폐허",
+    "dangerTier": 5,
+    "encounterTags": [
+      "smuggling",
+      "ruin",
+      "ambush",
+      "ritual"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  },
+  {
+    "id": "loc_046",
+    "regionId": "ash_crown_gate",
+    "displayName": "재관문 뒷골목",
+    "actRange": [
+      4,
+      5
+    ],
+    "environment": "폐허",
+    "dangerTier": 5,
+    "encounterTags": [
+      "rain",
+      "politics",
+      "market",
+      "ambush"
+    ],
+    "summary": "낮에는 평범해 보이지만 밤이 되면 다른 세력이 얼굴을 드러낸다."
+  },
+  {
+    "id": "loc_047",
+    "regionId": "pale_harbor",
+    "displayName": "창백항 뒷골목",
+    "actRange": [
+      1,
+      2,
+      5
+    ],
+    "environment": "숲",
+    "dangerTier": 4,
+    "encounterTags": [
+      "ambush",
+      "market",
+      "ritual",
+      "patrol"
+    ],
+    "summary": "길을 잃은 순례자와 장물상이 같은 처마 밑을 나누는 곳."
+  },
+  {
+    "id": "loc_048",
+    "regionId": "hush_catacombs",
+    "displayName": "정적 지하묘 뒷골목",
+    "actRange": [
+      2,
+      3,
+      4
+    ],
+    "environment": "폐허",
+    "dangerTier": 4,
+    "encounterTags": [
+      "undead",
+      "ambush",
+      "rain",
+      "market"
+    ],
+    "summary": "숨겨진 문 하나만 열리면 사건의 격이 바뀌는 구역."
+  }
+]

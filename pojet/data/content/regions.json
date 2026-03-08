@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ashen-frontier",
+    "name": "무명 지역 1",
+    "mood": "survival_gloom",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 1,
+    "traits": [
+      "frontier",
+      "rain",
+      "ruin-edge"
+    ],
+    "linkedFactions": [
+      "black-gate-guild",
+      "lamp-sanctum"
+    ]
+  },
+  {
+    "id": "gray-harbor",
+    "name": "무명 지역 2",
+    "mood": "trade_and_rumor",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 2,
+    "traits": [
+      "market",
+      "dock",
+      "crime"
+    ],
+    "linkedFactions": [
+      "black-gate-guild",
+      "red-night-syndicate"
+    ]
+  },
+  {
+    "id": "stella-hill",
+    "name": "무명 지역 3",
+    "mood": "sacred_tension",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 2,
+    "traits": [
+      "faith",
+      "manor",
+      "court"
+    ],
+    "linkedFactions": [
+      "lamp-sanctum",
+      "gray-edict-office"
+    ]
+  },
+  {
+    "id": "glass-lower",
+    "name": "무명 지역 4",
+    "mood": "arcane_decay",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 3,
+    "traits": [
+      "arcane",
+      "vault",
+      "lab"
+    ],
+    "linkedFactions": [
+      "glass-reliquary",
+      "gray-edict-office"
+    ]
+  },
+  {
+    "id": "ashgate-ruins",
+    "name": "무명 지역 5",
+    "mood": "corruption_pressure",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 4,
+    "traits": [
+      "ruin",
+      "rift",
+      "corruption"
+    ],
+    "linkedFactions": [
+      "glass-reliquary",
+      "red-night-syndicate"
+    ]
+  },
+  {
+    "id": "iron-corridor",
+    "name": "무명 지역 6",
+    "mood": "war_politics",
+    "summary": "오래된 소문이 떠도는 곳이다.",
+    "dangerTier": 5,
+    "traits": [
+      "siege",
+      "command",
+      "oath"
+    ],
+    "linkedFactions": [
+      "gray-edict-office",
+      "black-gate-guild"
+    ]
+  }
+]

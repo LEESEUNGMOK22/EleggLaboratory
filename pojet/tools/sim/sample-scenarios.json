@@ -1,0 +1,30 @@
+﻿{
+  "runsPerClass": 120,
+  "maxTicksPerRun": 220,
+  "baseSecondsPerTick": 30,
+  "speedDistribution": [1, 1, 2, 2, 4, 4, 8],
+  "presets": ["신중형", "대담형", "탐욕형", "자비형", "권력지향형", "관계중시형", "신앙중시형"],
+  "backgrounds": [
+    "border-conscript",
+    "crusade-runner",
+    "orphan-cutpurse",
+    "tower-dropout",
+    "funeral-aide",
+    "fallen-bastard",
+    "caravan-guard",
+    "smuggler-runner",
+    "forest-watch",
+    "relic-digger"
+  ],
+  "seed": 441901,
+  "event": {
+    "t2BaseChance": 0.05,
+    "t2EscalationAfterTicks": 14,
+    "t2EscalationBonus": 0.06,
+    "t3BaseChance": 0.02,
+    "t3ActBonus": 0.007,
+    "t3MinTick": 45,
+    "t3EscalationAfterTicks": 40,
+    "t3EscalationBonus": 0.05
+  }
+}

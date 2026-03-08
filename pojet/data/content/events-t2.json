@@ -1,0 +1,2946 @@
+[
+  {
+    "id": "evt-t2-001",
+    "tier": "T2",
+    "category": "social",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 사회 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "사회 사건 #1",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-002",
+    "tier": "T2",
+    "category": "relationship",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 관계 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "관계 사건 #2",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-003",
+    "tier": "T2",
+    "category": "faction",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 세력 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "세력 사건 #3",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-004",
+    "tier": "T2",
+    "category": "relic",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 유물 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "유물 사건 #4",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-005",
+    "tier": "T2",
+    "category": "market",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 시장 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "시장 사건 #5",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-006",
+    "tier": "T2",
+    "category": "faith",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 신앙 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "신앙 사건 #6",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-007",
+    "tier": "T2",
+    "category": "corruption",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 오염 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "오염 사건 #7",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-008",
+    "tier": "T2",
+    "category": "travel",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 여정 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "여정 사건 #8",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-009",
+    "tier": "T2",
+    "category": "social",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 사회 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "사회 사건 #9",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-010",
+    "tier": "T2",
+    "category": "relationship",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 관계 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "관계 사건 #10",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-011",
+    "tier": "T2",
+    "category": "faction",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 세력 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "세력 사건 #11",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-012",
+    "tier": "T2",
+    "category": "relic",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 유물 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "유물 사건 #12",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-013",
+    "tier": "T2",
+    "category": "market",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 시장 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "시장 사건 #13",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-014",
+    "tier": "T2",
+    "category": "faith",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 신앙 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "신앙 사건 #14",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-015",
+    "tier": "T2",
+    "category": "corruption",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 오염 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "오염 사건 #15",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-016",
+    "tier": "T2",
+    "category": "travel",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 여정 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "여정 사건 #16",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-017",
+    "tier": "T2",
+    "category": "social",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 사회 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "사회 사건 #17",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-018",
+    "tier": "T2",
+    "category": "relationship",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 관계 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "관계 사건 #18",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-019",
+    "tier": "T2",
+    "category": "faction",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 세력 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "세력 사건 #19",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-020",
+    "tier": "T2",
+    "category": "relic",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 유물 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "유물 사건 #20",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-021",
+    "tier": "T2",
+    "category": "market",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 시장 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "시장 사건 #21",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-022",
+    "tier": "T2",
+    "category": "faith",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 신앙 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "신앙 사건 #22",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-023",
+    "tier": "T2",
+    "category": "corruption",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 오염 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "오염 사건 #23",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-024",
+    "tier": "T2",
+    "category": "travel",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 여정 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "여정 사건 #24",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-025",
+    "tier": "T2",
+    "category": "social",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 사회 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "사회 사건 #25",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-026",
+    "tier": "T2",
+    "category": "relationship",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 관계 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "관계 사건 #26",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-027",
+    "tier": "T2",
+    "category": "faction",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 세력 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "세력 사건 #27",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-028",
+    "tier": "T2",
+    "category": "relic",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 유물 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "유물 사건 #28",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-029",
+    "tier": "T2",
+    "category": "market",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 시장 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "시장 사건 #29",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-030",
+    "tier": "T2",
+    "category": "faith",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 신앙 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "신앙 사건 #30",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-031",
+    "tier": "T2",
+    "category": "corruption",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 오염 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "오염 사건 #31",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t2-032",
+    "tier": "T2",
+    "category": "travel",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 여정 문제가 불거졌다. 개입하지 않으면 성향 프리셋에 따라 자동 처리된다.",
+    "logSummary": "여정 사건 #32",
+    "defaultResolution": "preset",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 8,
+    "oneShot": false,
+    "chronicleTags": [
+      "t2-choice"
+    ],
+    "portraitStateEffects": [
+      "tempted"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "c1",
+        "label": "강행한다",
+        "effects": [
+          {
+            "kind": "gain_gold",
+            "value": 14
+          },
+          {
+            "kind": "renown",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "신중히 처리한다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": 2
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "label": "물러선다",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 10
+          },
+          {
+            "kind": "fatigue",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  }
+]

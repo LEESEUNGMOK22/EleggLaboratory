@@ -1,0 +1,458 @@
+[
+  {
+    "id": "npc-01",
+    "name": "인물-001",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "black-gate-guild",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 45,
+      "intimacy": 10,
+      "tension": 25,
+      "desire": 8,
+      "respect": 50,
+      "fear": 20
+    },
+    "preferredChecks": [
+      "persuasion",
+      "insight"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "rain_soaked"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-001",
+      "evt-t3-001"
+    ]
+  },
+  {
+    "id": "npc-02",
+    "name": "인물-002",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "lamp-sanctum",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 40,
+      "intimacy": 18,
+      "tension": 22,
+      "desire": 14,
+      "respect": 44,
+      "fear": 12
+    },
+    "preferredChecks": [
+      "religion",
+      "insight"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "blessed",
+      "tempted"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-003",
+      "evt-t3-004"
+    ]
+  },
+  {
+    "id": "npc-03",
+    "name": "인물-003",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "gray-edict-office",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 30,
+      "intimacy": 6,
+      "tension": 35,
+      "desire": 5,
+      "respect": 42,
+      "fear": 24
+    },
+    "preferredChecks": [
+      "investigation",
+      "persuasion"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "noble_favor"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-005",
+      "evt-t3-001"
+    ]
+  },
+  {
+    "id": "npc-04",
+    "name": "인물-004",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "red-night-syndicate",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 26,
+      "intimacy": 22,
+      "tension": 30,
+      "desire": 20,
+      "respect": 28,
+      "fear": 18
+    },
+    "preferredChecks": [
+      "deception",
+      "sleight_of_hand"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "tempted",
+      "rain_soaked"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-002",
+      "evt-t3-003"
+    ]
+  },
+  {
+    "id": "npc-05",
+    "name": "인물-005",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "glass-reliquary",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 22,
+      "intimacy": 9,
+      "tension": 28,
+      "desire": 11,
+      "respect": 35,
+      "fear": 26
+    },
+    "preferredChecks": [
+      "arcana",
+      "investigation"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "spellglow_arcane",
+      "tainted"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-005",
+      "evt-t3-004"
+    ]
+  },
+  {
+    "id": "npc-06",
+    "name": "인물-006",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "black-gate-guild",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 38,
+      "intimacy": 16,
+      "tension": 12,
+      "desire": 7,
+      "respect": 27,
+      "fear": 8
+    },
+    "preferredChecks": [
+      "insight",
+      "persuasion"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "grieving"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t1-007",
+      "evt-t2-004"
+    ]
+  },
+  {
+    "id": "npc-07",
+    "name": "인물-007",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "gray-edict-office",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 24,
+      "intimacy": 19,
+      "tension": 29,
+      "desire": 17,
+      "respect": 31,
+      "fear": 15
+    },
+    "preferredChecks": [
+      "history",
+      "persuasion"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "noble_favor",
+      "tempted"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-006",
+      "evt-t3-002"
+    ]
+  },
+  {
+    "id": "npc-08",
+    "name": "인물-008",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "lamp-sanctum",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 34,
+      "intimacy": 8,
+      "tension": 18,
+      "desire": 4,
+      "respect": 36,
+      "fear": 19
+    },
+    "preferredChecks": [
+      "survival",
+      "religion"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "grieving",
+      "rain_soaked"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t1-010",
+      "evt-t2-009"
+    ]
+  },
+  {
+    "id": "npc-09",
+    "name": "인물-009",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "red-night-syndicate",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 18,
+      "intimacy": 14,
+      "tension": 31,
+      "desire": 16,
+      "respect": 26,
+      "fear": 21
+    },
+    "preferredChecks": [
+      "arcana",
+      "deception"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "tainted",
+      "bloodied"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-010",
+      "evt-t3-003"
+    ]
+  },
+  {
+    "id": "npc-10",
+    "name": "인물-010",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "black-gate-guild",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 33,
+      "intimacy": 7,
+      "tension": 23,
+      "desire": 5,
+      "respect": 47,
+      "fear": 22
+    },
+    "preferredChecks": [
+      "athletics",
+      "intimidation"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "bloodied"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t1-008",
+      "evt-t3-001"
+    ]
+  },
+  {
+    "id": "npc-11",
+    "name": "인물-011",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "glass-reliquary",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 28,
+      "intimacy": 24,
+      "tension": 26,
+      "desire": 18,
+      "respect": 19,
+      "fear": 14
+    },
+    "preferredChecks": [
+      "investigation",
+      "persuasion"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "spellglow_arcane",
+      "tempted"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t2-011",
+      "evt-t3-005"
+    ]
+  },
+  {
+    "id": "npc-12",
+    "name": "인물-012",
+    "role": "도시의 중개인",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨겨진 이해관계를 품고 있다.",
+    "faction": "gray-edict-office",
+    "firstImpression": "첫인상은 단정하지만 경계를 늦출 수 없다.",
+    "relationshipAxes": {
+      "trust": 36,
+      "intimacy": 11,
+      "tension": 17,
+      "desire": 6,
+      "respect": 29,
+      "fear": 10
+    },
+    "preferredChecks": [
+      "athletics",
+      "investigation"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "wounded_minor"
+    ],
+    "routePotential": "동맹/경쟁 루트",
+    "eventLinks": [
+      "evt-t1-009",
+      "evt-t2-012"
+    ]
+  }
+]

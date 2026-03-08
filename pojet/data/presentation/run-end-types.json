@@ -1,0 +1,8 @@
+﻿[
+  {"id":"glorious_retirement","displayName":"영광스러운 은퇴","tone":"기록관의 금빛 잉크로 남는 결말","chronicleTemplateId":"retire_glory","legacyRewardId":"legacy_glory","unlocks":{"backgrounds":["fallen-bastard"],"portraitStyles":["victory_frame"]}},
+  {"id":"battle_death","displayName":"전투 중 사망","tone":"피와 비가 같은 페이지에 번진 결말","chronicleTemplateId":"death_battle","legacyRewardId":"legacy_blood","unlocks":{"backgrounds":["border-conscript"],"portraitStyles":["scar_mark"]}},
+  {"id":"corruption_fall","displayName":"오염 몰락","tone":"이름은 남고 목소리는 변질된 결말","chronicleTemplateId":"fall_corruption","legacyRewardId":"legacy_taint","unlocks":{"backgrounds":["tower-dropout"],"portraitStyles":["shadow_vein"]}},
+  {"id":"faction_ascension","displayName":"세력 권력 등극","tone":"도시 장부에 직인이 찍힌 결말","chronicleTemplateId":"ascend_power","legacyRewardId":"legacy_power","unlocks":{"backgrounds":["caravan-guard"],"portraitStyles":["gilded_frame"]}},
+  {"id":"forbidden_fusion","displayName":"금지된 힘과 융합","tone":"봉인과 육체가 같은 문장으로 묶인 결말","chronicleTemplateId":"fusion_forbidden","legacyRewardId":"legacy_fusion","unlocks":{"backgrounds":["relic-digger"],"portraitStyles":["eye_glow_shadow_02"]}},
+  {"id":"vanished_legend","displayName":"실종/전설화","tone":"사라졌으나 소문이 더 선명한 결말","chronicleTemplateId":"vanish_legend","legacyRewardId":"legacy_legend","unlocks":{"backgrounds":["smuggler-runner"],"portraitStyles":["mist_outline"]}}
+]

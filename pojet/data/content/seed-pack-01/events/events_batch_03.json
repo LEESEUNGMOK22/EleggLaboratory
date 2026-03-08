@@ -1,0 +1,7058 @@
+[
+  {
+    "id": "event_0161",
+    "title": "유리 조각 회랑 · 신앙 161",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "신앙",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "moonwell_heath",
+    "regionName": "월정 초원",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_030",
+      "npc_017"
+    ],
+    "npcNames": [
+      "도브 그레이",
+      "리엔 솔트"
+    ],
+    "triggerTags": [
+      "debt",
+      "romance_flag",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 월정 초원에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "reputation_up",
+      "knowledge_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "연대기 하이라이트",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0162",
+    "title": "빗물 속 칼끝 · 길드 162",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "길드",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "thornwatch",
+    "regionName": "가시망루 숲경계",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_072",
+      "npc_048",
+      "npc_021"
+    ],
+    "npcNames": [
+      "벨트 리드",
+      "아셴 바인",
+      "니바 마스크"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "cursed",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 가시망루 숲경계에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "violence_grim",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "gold_up",
+      "reputation_down",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "연대기 하이라이트",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0163",
+    "title": "화물 강탈 · 순례 163",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "순례",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_048",
+      "npc_022",
+      "npc_045"
+    ],
+    "npcNames": [
+      "아셴 바인",
+      "코르 모트",
+      "소린 브레이"
+    ],
+    "triggerTags": [
+      "travel",
+      "cursed",
+      "debt"
+    ],
+    "summary": "자동 전투 흐름 속에서 잿망치 제련소에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿망치 제련소에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "safe",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "body_horror_mild",
+      "vice"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "reputation_down",
+      "reputation_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0164",
+    "title": "검은갈대 흔적 · 묘지 164",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "묘지",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_061"
+    ],
+    "npcNames": [
+      "테르 솔트"
+    ],
+    "triggerTags": [
+      "cursed",
+      "romance_flag",
+      "night"
+    ],
+    "summary": "탐험 로그가 이어지던 중 유리수도원에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿불 길드의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "trust_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "세력 재접촉",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0165",
+    "title": "장막시장 협상 · 계약 165",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "계약",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_051"
+    ],
+    "npcNames": [
+      "브리나 모트"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "debt",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 재관문에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재관문에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "power_play",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "knowledge_up",
+      "gold_down",
+      "injury"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "장비 잠금 추천",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0166",
+    "title": "고해실의 거래 · 화재 166",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "화재",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_077",
+      "npc_038"
+    ],
+    "npcNames": [
+      "소린 베일",
+      "오렐 바인"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "rainstorm",
+      "low_gold"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 회흙 늪나루에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "power_play",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "gold_down",
+      "knowledge_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "세력 재접촉",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0167",
+    "title": "검문소 돌파 · 연회 167",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "연회",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_026",
+      "npc_065",
+      "npc_062"
+    ],
+    "npcNames": [
+      "페일 할로",
+      "세라 바인",
+      "리엔 페인"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "rainstorm",
+      "high_reputation"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "애가교에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "knowledge_up",
+      "loot_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "계승용 기억",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0168",
+    "title": "야영지의 속삭임 · 귀족 168",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "귀족",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_061",
+      "npc_020"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "테르 솔트",
+      "엘린 베일"
+    ],
+    "triggerTags": [
+      "cursed",
+      "debt",
+      "rainstorm"
+    ],
+    "summary": "탐험 로그가 이어지던 중 정적 지하묘에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "power_play",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "blessing",
+      "fatigue",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "칭호 해금",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0169",
+    "title": "부패한 야수의 습격 · 기근 169",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "기근",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_037",
+      "npc_014",
+      "npc_030"
+    ],
+    "npcNames": [
+      "라일 크레스트",
+      "엘린 솔트",
+      "도브 그레이"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "night",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 장막시장에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "seduction_tension",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "curse",
+      "blessing",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "동료 개인 이벤트",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0170",
+    "title": "유리 조각 회랑 · 길드 170",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "길드",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_027",
+      "npc_071"
+    ],
+    "npcNames": [
+      "이사 펜",
+      "니바 차펠"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "debt",
+      "night"
+    ],
+    "summary": "탐험 로그가 이어지던 중 애가교에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "power_play",
+      "grief"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "corruption_up",
+      "knowledge_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "칭호 해금",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0171",
+    "title": "골목 추격전 · 연애 긴장 171",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "연애 긴장",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_035"
+    ],
+    "npcNames": [
+      "시아 스톤"
+    ],
+    "triggerTags": [
+      "cursed",
+      "romance_flag",
+      "blessed"
+    ],
+    "summary": "자동 전투 흐름 속에서 재빛 순례로에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "religious_pressure",
+      "vice"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "fatigue",
+      "trust_down",
+      "curse"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "동료 개인 이벤트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0172",
+    "title": "찬가와 협박 · 유물 172",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "유물",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_038",
+      "npc_061",
+      "npc_048"
+    ],
+    "npcNames": [
+      "오렐 바인",
+      "테르 솔트",
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "blessed",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 유리수도원에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "유리수도원에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "vice",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "curse",
+      "reputation_up",
+      "blessing",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "연대기 하이라이트",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0173",
+    "title": "고해실의 거래 · 기근 173",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "기근",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_067",
+      "npc_028",
+      "npc_058"
+    ],
+    "npcNames": [
+      "도브 모트",
+      "비나 펜",
+      "데른 워드"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 기도 저장굴에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "injury",
+      "gold_up",
+      "fatigue",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "의식 방해의 대가",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0174",
+    "title": "부패한 야수의 습격 · 치유 174",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "치유",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_050",
+      "npc_040",
+      "npc_023"
+    ],
+    "npcNames": [
+      "페일 마스크",
+      "니바 핀치",
+      "비나 차펠"
+    ],
+    "triggerTags": [
+      "night",
+      "low_hp",
+      "debt"
+    ],
+    "summary": "자동 전투 흐름 속에서 성락 계단구에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "injury",
+      "curse",
+      "blessing",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "칭호 해금",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0175",
+    "title": "도시 경계의 맹세 · 치유 175",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "치유",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_041",
+      "npc_078"
+    ],
+    "npcNames": [
+      "브리나 드레이크",
+      "페일 스텝"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "rainstorm",
+      "cursed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 침수기록고에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "injury",
+      "reputation_down",
+      "trust_down",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "계승용 기억",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0176",
+    "title": "잿길 매복 · 신앙 176",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "신앙",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_008"
+    ],
+    "npcNames": [
+      "타린 할로"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "cursed",
+      "night"
+    ],
+    "summary": "자동 전투 흐름 속에서 잿불 항구지구에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "religious_pressure",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "corruption_up",
+      "trust_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "장막시장 재방문",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0177",
+    "title": "저택가 초대장 · 귀족 177",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "귀족",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_048"
+    ],
+    "npcNames": [
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "cursed",
+      "high_reputation",
+      "low_hp"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 잿불 항구지구에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "흑지느러미 상단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "gold_down",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장비 잠금 추천",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0178",
+    "title": "봉인된 문턱 · 밀수 178",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "밀수",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_079"
+    ],
+    "npcNames": [
+      "로엔 크레스트"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "low_gold",
+      "low_hp"
+    ],
+    "summary": "탐험 로그가 이어지던 중 회흙 늪나루에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "gold_down",
+      "corruption_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0179",
+    "title": "검은갈대 흔적 · 기근 179",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "기근",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_070",
+      "npc_024",
+      "npc_065"
+    ],
+    "npcNames": [
+      "테르 쏜",
+      "오렐 리드",
+      "세라 바인"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "faction_favor",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 붕괴한 필사관에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿불 길드의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "power_play",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "loot_up",
+      "reputation_down",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "세력 재접촉",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0180",
+    "title": "제단 경비 교전 · 감시 180",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "감시",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_025",
+      "npc_047"
+    ],
+    "npcNames": [
+      "페일 차펠",
+      "카셀 차펠"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "high_reputation",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 탄흔 금고에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "power_play",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "curse",
+      "loot_up",
+      "trust_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "칭호 해금",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0181",
+    "title": "숲길 표식 · 유물 181",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "유물",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_039",
+      "npc_018"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "크로 모트",
+      "페일 페인"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "romance_flag",
+      "debt"
+    ],
+    "summary": "탐험 로그가 이어지던 중 회흙 늪나루에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "흑지느러미 상단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "vice",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "curse",
+      "trust_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "의식 방해의 대가",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0182",
+    "title": "침수된 서고 · 연애 긴장 182",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "연애 긴장",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_007",
+      "npc_002"
+    ],
+    "npcNames": [
+      "타린 쏜",
+      "카셀 스톤"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "debt",
+      "faction_favor"
+    ],
+    "summary": "탐험 로그가 이어지던 중 성락 계단구에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "violence_grim",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "trust_up",
+      "reputation_down",
+      "curse"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "장비 잠금 추천",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0183",
+    "title": "유리 조각 회랑 · 폭우 183",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "폭우",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_074",
+      "npc_012"
+    ],
+    "npcNames": [
+      "나엘 크레스트",
+      "시아 마스크"
+    ],
+    "triggerTags": [
+      "night",
+      "low_gold",
+      "rainstorm"
+    ],
+    "summary": "탐험 로그가 이어지던 중 검은갈대 습지에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "violence_grim",
+      "grief"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "loot_up",
+      "trust_down",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0184",
+    "title": "검문소 돌파 · 폭우 184",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "폭우",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_051",
+      "npc_046"
+    ],
+    "npcNames": [
+      "브리나 모트",
+      "유나 할로"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "debt",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 회흙 늪나루에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "corruption_up",
+      "gold_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "동료 개인 이벤트",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0185",
+    "title": "묘지 순찰 · 화재 185",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "화재",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_048"
+    ],
+    "npcNames": [
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "blessed",
+      "night"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "knowledge_up",
+      "blessing",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장막시장 재방문",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0186",
+    "title": "화물 강탈 · 황무지 186",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "황무지",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_056",
+      "npc_079",
+      "npc_023"
+    ],
+    "npcNames": [
+      "라일 쏜",
+      "로엔 크레스트",
+      "비나 차펠"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "corruption_2",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 회흙 늪나루에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "회흙 늪나루에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "violence_grim",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "fatigue",
+      "gold_up",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "연대기 하이라이트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0187",
+    "title": "숲길 표식 · 배신 187",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "배신",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_021"
+    ],
+    "npcNames": [
+      "니바 마스크"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "blessed",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 정적 지하묘에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "religious_pressure",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "corruption_up",
+      "loot_up",
+      "curse"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장막시장 재방문",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0188",
+    "title": "제단 경비 교전 · 유물 188",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "유물",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_050",
+      "npc_073",
+      "npc_063"
+    ],
+    "npcNames": [
+      "페일 마스크",
+      "도브 쏜",
+      "오렐 스톤"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "night",
+      "low_gold"
+    ],
+    "summary": "자동 전투 흐름 속에서 침수기록고에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "seduction_tension",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "reputation_up",
+      "corruption_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "세력 재접촉",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0189",
+    "title": "묘지 순찰 · 배신 189",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "배신",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_016"
+    ],
+    "npcNames": [
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "night",
+      "low_hp",
+      "low_gold"
+    ],
+    "summary": "자동 전투 흐름 속에서 장막시장에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "장막 수집회의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "safe",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "romance_tension",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "injury",
+      "blessing",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0190",
+    "title": "고해실의 거래 · 연회 190",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "연회",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_052"
+    ],
+    "npcNames": [
+      "페일 리드"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "cursed",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 창백항에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "창백항에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "religious_pressure",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "gold_down",
+      "reputation_up",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "의식 방해의 대가",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0191",
+    "title": "봉인된 문턱 · 감시 191",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "감시",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_051",
+      "npc_080"
+    ],
+    "npcNames": [
+      "브리나 모트",
+      "에단 스크립"
+    ],
+    "triggerTags": [
+      "cursed",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "창백항에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "fatigue",
+      "curse",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "연대기 하이라이트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0192",
+    "title": "고해실의 거래 · 황무지 192",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "황무지",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_055",
+      "npc_071",
+      "npc_011"
+    ],
+    "npcNames": [
+      "데른 스크립",
+      "니바 차펠",
+      "데른 펜"
+    ],
+    "triggerTags": [
+      "debt",
+      "low_gold",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 정적 지하묘에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "vice",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "curse",
+      "reputation_up",
+      "corruption_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "동료 개인 이벤트",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0193",
+    "title": "숲길 표식 · 화재 193",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "화재",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_060"
+    ],
+    "npcNames": [
+      "가브 마이어"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 유리수도원에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "romance_tension",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "curse",
+      "knowledge_up",
+      "blessing",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "세력 재접촉",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0194",
+    "title": "제단 경비 교전 · 귀족 194",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "귀족",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_010"
+    ],
+    "npcNames": [
+      "브람 쏜"
+    ],
+    "triggerTags": [
+      "night",
+      "blessed",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 빈궁정 저택가에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "religious_pressure",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "gold_up",
+      "blessing",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "계승용 기억",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0195",
+    "title": "부패한 야수의 습격 · 오염 195",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "오염",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_077",
+      "npc_044"
+    ],
+    "npcNames": [
+      "소린 베일",
+      "라일 할로"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "low_gold",
+      "low_hp"
+    ],
+    "summary": "자동 전투 흐름 속에서 침수기록고에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "등불 교회회의의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "blessing",
+      "trust_down",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "칭호 해금",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0196",
+    "title": "봉인된 문턱 · 연회 196",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "연회",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_051"
+    ],
+    "npcNames": [
+      "브리나 모트"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "rainstorm",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 폭우 저장고에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "seduction_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "reputation_down",
+      "injury",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "동료 개인 이벤트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0197",
+    "title": "저택가 초대장 · 밀수 197",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "밀수",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_005",
+      "npc_065"
+    ],
+    "npcNames": [
+      "셀루 워드",
+      "세라 바인"
+    ],
+    "triggerTags": [
+      "cursed",
+      "low_gold",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 정적 지하묘에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "power_play",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "injury",
+      "blessing",
+      "curse",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "의식 방해의 대가",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0198",
+    "title": "연회장의 시선 · 오염 198",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "오염",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_045",
+      "npc_032",
+      "npc_028"
+    ],
+    "npcNames": [
+      "소린 브레이",
+      "카셀 모트",
+      "비나 펜"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "debt",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 묘행 골목에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "violence_grim",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "trust_down",
+      "trust_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "의식 방해의 대가",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0199",
+    "title": "도시 경계의 맹세 · 신앙 199",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "신앙",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_019",
+      "npc_034"
+    ],
+    "npcNames": [
+      "미라 크라운",
+      "브리나 애쉬본"
+    ],
+    "triggerTags": [
+      "cursed",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 탄흔 금고에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "power_play",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "trust_down",
+      "reputation_up",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0200",
+    "title": "숨은 제단 · 계약 200",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "계약",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_006",
+      "npc_011"
+    ],
+    "npcNames": [
+      "카일 워드",
+      "데른 펜"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "cursed",
+      "romance_flag"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재빛 순례로에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "romance_tension",
+      "vice"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "trust_down",
+      "fatigue",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0201",
+    "title": "유리 조각 회랑 · 순례 201",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "순례",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_033"
+    ],
+    "npcNames": [
+      "마렌 솔트"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "romance_flag",
+      "faction_favor"
+    ],
+    "summary": "탐험 로그가 이어지던 중 회흙 늪나루에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "body_horror_mild",
+      "vice"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "fatigue",
+      "trust_up",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "후원 계약",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0202",
+    "title": "잿길 매복 · 밀수 202",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "밀수",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_053",
+      "npc_025",
+      "npc_067"
+    ],
+    "npcNames": [
+      "코르 바인",
+      "페일 차펠",
+      "도브 모트"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "night",
+      "romance_flag"
+    ],
+    "summary": "자동 전투 흐름 속에서 창백항에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "창백항에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "trust_down",
+      "fatigue",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "계승용 기억",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0203",
+    "title": "저택가 초대장 · 연애 긴장 203",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "연애 긴장",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_050",
+      "npc_025",
+      "npc_065"
+    ],
+    "npcNames": [
+      "페일 마스크",
+      "페일 차펠",
+      "세라 바인"
+    ],
+    "triggerTags": [
+      "travel",
+      "low_gold",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 장막시장에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "fatigue",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0204",
+    "title": "검은갈대 흔적 · 치유 204",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "치유",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_067",
+      "npc_053"
+    ],
+    "npcNames": [
+      "도브 모트",
+      "코르 바인"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "night",
+      "rainstorm"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재관문에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "호박 궁정의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "reputation_down",
+      "loot_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "세력 재접촉",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0205",
+    "title": "후원자의 미소 · 길드 205",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "길드",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_018",
+      "npc_064",
+      "npc_061"
+    ],
+    "npcNames": [
+      "페일 페인",
+      "테르 베일",
+      "테르 솔트"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "high_reputation",
+      "travel"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 맹세 벌판에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "맹세 벌판에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "vice",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "reputation_down",
+      "corruption_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장비 잠금 추천",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0206",
+    "title": "도시 경계의 맹세 · 순례 206",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "순례",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_076",
+      "npc_066"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "가브 쏜",
+      "미라 크레스트"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "cursed",
+      "travel"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 묘행 골목에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "등불 교회회의의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "power_play",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "gold_down",
+      "fatigue",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "동료 개인 이벤트",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0207",
+    "title": "검문소 돌파 · 묘지 207",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "묘지",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_058"
+    ],
+    "npcNames": [
+      "데른 워드"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "faction_favor",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 잿불 항구지구에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "호박 궁정의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "power_play",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "trust_up",
+      "fatigue",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장막시장 재방문",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0208",
+    "title": "장막시장 협상 · 폭우 208",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "폭우",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_034",
+      "npc_033",
+      "npc_056"
+    ],
+    "npcNames": [
+      "브리나 애쉬본",
+      "마렌 솔트",
+      "라일 쏜"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "high_reputation",
+      "low_hp"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 성락 계단구에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "성락 계단구에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "loot_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "칭호 해금",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0209",
+    "title": "연회장의 시선 · 묘지 209",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "묘지",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "red_lantern_quay",
+    "regionName": "붉은등잔 선창",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_056",
+      "npc_052"
+    ],
+    "npcNames": [
+      "라일 쏜",
+      "페일 리드"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "rainstorm",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 붉은등잔 선창에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "vice",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "corruption_up",
+      "reputation_down",
+      "injury"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "장비 잠금 추천",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0210",
+    "title": "숨은 제단 · 황무지 210",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "황무지",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_033"
+    ],
+    "npcNames": [
+      "마렌 솔트"
+    ],
+    "triggerTags": [
+      "travel",
+      "romance_flag",
+      "high_reputation"
+    ],
+    "summary": "탐험 로그가 이어지던 중 맹세 벌판에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "injury",
+      "curse",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "동료 개인 이벤트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0211",
+    "title": "침수된 서고 · 오염 211",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "오염",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_007"
+    ],
+    "npcNames": [
+      "타린 쏜"
+    ],
+    "triggerTags": [
+      "debt",
+      "low_hp",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재빛 순례로에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "fatigue",
+      "trust_down",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "장비 잠금 추천",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0212",
+    "title": "검문소 돌파 · 계약 212",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "계약",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_010",
+      "npc_059",
+      "npc_048"
+    ],
+    "npcNames": [
+      "브람 쏜",
+      "카셀 스크립",
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "blessed",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 성락 계단구에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "curse",
+      "gold_up",
+      "trust_up",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "동료 개인 이벤트",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0213",
+    "title": "길드 사무실 소문 · 배신 213",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "배신",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_069"
+    ],
+    "npcNames": [
+      "라일 베일"
+    ],
+    "triggerTags": [
+      "debt",
+      "night",
+      "blessed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 정적 지하묘에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "violence_grim",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "curse",
+      "gold_down",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "칭호 해금",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0214",
+    "title": "저택가 초대장 · 감시 214",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "감시",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_060",
+      "npc_023"
+    ],
+    "npcNames": [
+      "가브 마이어",
+      "비나 차펠"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "corruption_2",
+      "debt"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 맹세 벌판에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "흑지느러미 상단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "violence_grim",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "reputation_down",
+      "fatigue",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장비 잠금 추천",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0215",
+    "title": "무너진 저장고 · 신앙 215",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "신앙",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_007",
+      "npc_028"
+    ],
+    "npcNames": [
+      "타린 쏜",
+      "비나 펜"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "low_gold",
+      "cursed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 애가교에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "흑지느러미 상단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "gold_down",
+      "trust_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "연대기 하이라이트",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0216",
+    "title": "검문소 돌파 · 길드 216",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "길드",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_052"
+    ],
+    "npcNames": [
+      "페일 리드"
+    ],
+    "triggerTags": [
+      "travel",
+      "night",
+      "high_reputation"
+    ],
+    "summary": "자동 전투 흐름 속에서 재빛 순례로에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "소금 재판단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "safe",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "injury",
+      "reputation_up",
+      "trust_down",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "계승용 기억",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0217",
+    "title": "잿길 매복 · 순례 217",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "순례",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_053",
+      "npc_061",
+      "npc_011"
+    ],
+    "npcNames": [
+      "코르 바인",
+      "테르 솔트",
+      "데른 펜"
+    ],
+    "triggerTags": [
+      "cursed",
+      "faction_favor",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 정적 지하묘에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "curse",
+      "injury",
+      "reputation_down",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "칭호 해금",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0218",
+    "title": "숲길 표식 · 묘지 218",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "묘지",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_006",
+      "npc_055"
+    ],
+    "npcNames": [
+      "카일 워드",
+      "데른 스크립"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "blessed",
+      "low_hp"
+    ],
+    "summary": "탐험 로그가 이어지던 중 정적 지하묘에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재필사단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "safe",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "body_horror_mild",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "reputation_down",
+      "curse",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장막시장 재방문",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0219",
+    "title": "고해실의 거래 · 계약 219",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "계약",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_024",
+      "npc_016",
+      "npc_070"
+    ],
+    "npcNames": [
+      "오렐 리드",
+      "도브 차펠",
+      "테르 쏜"
+    ],
+    "triggerTags": [
+      "cursed",
+      "corruption_2",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 유리수도원에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "curse",
+      "loot_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "장막시장 재방문",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0220",
+    "title": "장막시장 협상 · 화재 220",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "화재",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_064",
+      "npc_019",
+      "npc_026"
+    ],
+    "npcNames": [
+      "테르 베일",
+      "미라 크라운",
+      "페일 할로"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "rainstorm",
+      "romance_flag"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 애가교에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "blessing",
+      "gold_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "의식 방해의 대가",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0221",
+    "title": "묘지 순찰 · 연회 221",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "연회",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_047",
+      "npc_007",
+      "npc_008"
+    ],
+    "npcNames": [
+      "카셀 차펠",
+      "타린 쏜",
+      "타린 할로"
+    ],
+    "triggerTags": [
+      "blessed",
+      "low_gold",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 창백항에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿불 길드의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "fatigue",
+      "trust_down",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "세력 재접촉",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0222",
+    "title": "검은갈대 흔적 · 귀족 222",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "귀족",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_079",
+      "npc_014",
+      "npc_023"
+    ],
+    "npcNames": [
+      "로엔 크레스트",
+      "엘린 솔트",
+      "비나 차펠"
+    ],
+    "triggerTags": [
+      "debt",
+      "travel",
+      "romance_flag"
+    ],
+    "summary": "탐험 로그가 이어지던 중 기도 저장굴에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "fatigue",
+      "trust_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "세력 재접촉",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0223",
+    "title": "습지의 불빛 · 기근 223",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "기근",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_060"
+    ],
+    "npcNames": [
+      "가브 마이어"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "faction_favor",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 기도 저장굴에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "공동의 합창단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "reputation_down",
+      "gold_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "장막시장 재방문",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0224",
+    "title": "무너진 저장고 · 길드 224",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "길드",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_057",
+      "npc_052"
+    ],
+    "npcNames": [
+      "셀루 드레이크",
+      "페일 리드"
+    ],
+    "triggerTags": [
+      "debt",
+      "blessed",
+      "faction_favor"
+    ],
+    "summary": "탐험 로그가 이어지던 중 회흙 늪나루에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "회흙 늪나루에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "vice",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "injury",
+      "trust_up",
+      "blessing",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "후원 계약",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0225",
+    "title": "잿길 매복 · 연애 긴장 225",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "연애 긴장",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_026",
+      "npc_072",
+      "npc_021"
+    ],
+    "npcNames": [
+      "페일 할로",
+      "벨트 리드",
+      "니바 마스크"
+    ],
+    "triggerTags": [
+      "blessed",
+      "faction_favor",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 탄흔 금고에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "corruption_up",
+      "loot_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "후원 계약",
+      "세력 재접촉"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0226",
+    "title": "저택가 초대장 · 유물 226",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "유물",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_075",
+      "npc_042",
+      "npc_004"
+    ],
+    "npcNames": [
+      "카일 크라운",
+      "카일 베일",
+      "오렐 드레이크"
+    ],
+    "triggerTags": [
+      "travel",
+      "romance_flag",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 검은갈대 습지에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "호박 궁정의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "grief",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "reputation_up",
+      "curse",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "의식 방해의 대가",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0227",
+    "title": "고해실의 거래 · 기근 227",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "기근",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_060"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "가브 마이어"
+    ],
+    "triggerTags": [
+      "cursed",
+      "low_gold",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 장막시장에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "romance_tension",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "blessing",
+      "knowledge_up",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "의식 방해의 대가",
+      "후원 계약"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0228",
+    "title": "습지의 불빛 · 치유 228",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "치유",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_003"
+    ],
+    "npcNames": [
+      "미라 브레이"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "rainstorm",
+      "night"
+    ],
+    "summary": "자동 전투 흐름 속에서 성락 계단구에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "공동의 합창단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "gold_up",
+      "gold_down",
+      "injury"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "의식 방해의 대가",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0229",
+    "title": "비밀 증언 · 치유 229",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "치유",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_050"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "페일 마스크"
+    ],
+    "triggerTags": [
+      "debt",
+      "faction_favor",
+      "night"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 유리수도원에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "소금 재판단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "injury",
+      "gold_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "후원 계약",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정중하게 받아들인다",
+        "tone": "신뢰를 얻지만 빚이 생길 수 있다",
+        "effectTags": [
+          "trust_up",
+          "debt_risk",
+          "soft_power"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0230",
+    "title": "습지의 불빛 · 신앙 230",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "신앙",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_017",
+      "npc_002",
+      "npc_023"
+    ],
+    "npcNames": [
+      "리엔 솔트",
+      "카셀 스톤",
+      "비나 차펠"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "romance_flag",
+      "low_gold"
+    ],
+    "summary": "자동 전투 흐름 속에서 빈궁정 저택가에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "빈궁정 저택가에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "gold_down",
+      "injury",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "의식 방해의 대가",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "칭호와 장기 서사"
+  },
+  {
+    "id": "event_0231",
+    "title": "도시 경계의 맹세 · 귀족 231",
+    "tier": "T2",
+    "pillar": "social",
+    "theme": "귀족",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_015"
+    ],
+    "npcNames": [
+      "카일 쏜"
+    ],
+    "triggerTags": [
+      "night",
+      "debt",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 검은갈대 습지에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "violence_grim",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "corruption_up",
+      "knowledge_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "연대기 하이라이트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "거짓말로 빠져나간다",
+        "tone": "당장은 편하지만 들키면 후폭풍이 크다",
+        "effectTags": [
+          "deception",
+          "future_risk",
+          "time_save"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "침묵으로 버틴다",
+        "tone": "명확한 약속은 피하지만 기회를 놓칠 수 있다",
+        "effectTags": [
+          "neutral",
+          "opportunity_down",
+          "mystique"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "조건을 깎아낸다",
+        "tone": "즉시 이익을 얻으나 긴장감이 높아진다",
+        "effectTags": [
+          "gold_up",
+          "tension_up",
+          "pragmatic"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0232",
+    "title": "숲길 표식 · 밀수 232",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "밀수",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_058",
+      "npc_069",
+      "npc_018"
+    ],
+    "npcNames": [
+      "데른 워드",
+      "라일 베일",
+      "페일 페인"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "blessed",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 붕괴한 필사관에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "religious_pressure",
+      "vice"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "injury",
+      "gold_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "장비 잠금 추천",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0233",
+    "title": "봉인된 문턱 · 기근 233",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "기근",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_079"
+    ],
+    "npcNames": [
+      "로엔 크레스트"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "corruption_2",
+      "cursed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 유리수도원에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "violence_grim",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "knowledge_up",
+      "gold_down",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "계승용 기억",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  },
+  {
+    "id": "event_0234",
+    "title": "묘지 순찰 · 감시 234",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "감시",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_074",
+      "npc_025",
+      "npc_040"
+    ],
+    "npcNames": [
+      "나엘 크레스트",
+      "페일 차펠",
+      "니바 핀치"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "night",
+      "romance_flag"
+    ],
+    "summary": "자동 전투 흐름 속에서 빈궁정 저택가에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "빈궁정 저택가에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "power_play",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "curse",
+      "blessing",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "연대기 하이라이트",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0235",
+    "title": "쓰러진 감시대 · 유물 235",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "유물",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_014",
+      "npc_015",
+      "npc_007"
+    ],
+    "npcNames": [
+      "엘린 솔트",
+      "카일 쏜",
+      "타린 쏜"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "rainstorm",
+      "cursed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "창백항에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "grief",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "injury",
+      "reputation_down",
+      "gold_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "칭호 해금",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0236",
+    "title": "야영지의 속삭임 · 연애 긴장 236",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "연애 긴장",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_046",
+      "npc_038"
+    ],
+    "npcNames": [
+      "유나 할로",
+      "오렐 바인"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "low_gold",
+      "night"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재빛 순례로에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재빛 순례로에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "safe",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "reputation_down",
+      "injury",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "동행에게 맡긴다",
+        "tone": "관계를 소모해 위험 분산을 노린다",
+        "effectTags": [
+          "companion_focus",
+          "relationship_shift",
+          "risk_split"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      },
+      {
+        "key": "opt_3",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0237",
+    "title": "순례길의 틈 · 폭우 237",
+    "tier": "T2",
+    "pillar": "exploration",
+    "theme": "폭우",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_035",
+      "npc_063",
+      "npc_048"
+    ],
+    "npcNames": [
+      "시아 스톤",
+      "오렐 스톤",
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "high_reputation",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 기도 저장굴에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "장막 수집회의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "seduction_tension",
+      "vice"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "blessing",
+      "trust_down",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "후원 계약",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "표식을 남기고 돌아선다",
+        "tone": "위험을 미루되 후속 이벤트 씨앗을 남긴다",
+        "effectTags": [
+          "safe",
+          "followup_seed",
+          "reputation_neutral"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "당장 회수한다",
+        "tone": "빠른 이익을 얻지만 함정이나 저주 가능성이 있다",
+        "effectTags": [
+          "loot_up",
+          "curse_risk",
+          "fast"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "봉인을 조사한다",
+        "tone": "시간을 들여 지식과 단서를 얻는다",
+        "effectTags": [
+          "knowledge_up",
+          "time_cost",
+          "ritual_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "오염 수치와 비밀 유지"
+  },
+  {
+    "id": "event_0238",
+    "title": "항구 난투 · 폭우 238",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "폭우",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_072",
+      "npc_059",
+      "npc_048"
+    ],
+    "npcNames": [
+      "벨트 리드",
+      "카셀 스크립",
+      "아셴 바인"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "romance_flag",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 정적 지하묘에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "장막 수집회의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "reputation_up",
+      "curse",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "계승용 기억",
+      "칭호 해금"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "신앙형이면 의식 존중"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "세력 평판과 후속 퀘스트"
+  },
+  {
+    "id": "event_0239",
+    "title": "습지의 불빛 · 화재 239",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "화재",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_057"
+    ],
+    "npcNames": [
+      "셀루 드레이크"
+    ],
+    "triggerTags": [
+      "travel",
+      "high_reputation",
+      "corruption_2"
+    ],
+    "summary": "자동 전투 흐름 속에서 검은갈대 습지에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "검은갈대 습지에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "loot_up",
+      "knowledge_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "연대기 하이라이트",
+      "계승용 기억"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "교섭으로 빠져나간다",
+        "tone": "은화나 약속을 내주고 피를 아낀다",
+        "effectTags": [
+          "social_escape",
+          "gold_down",
+          "injury_avoid"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "신중형이면 회피 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "관계와 명성"
+  },
+  {
+    "id": "event_0240",
+    "title": "골목 추격전 · 황무지 240",
+    "tier": "T2",
+    "pillar": "combat",
+    "theme": "황무지",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_070"
+    ],
+    "npcNames": [
+      "테르 쏜"
+    ],
+    "triggerTags": [
+      "blessed",
+      "low_gold",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "violence_grim",
+      "vice"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "corruption_up",
+      "gold_down",
+      "injury"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "동료 개인 이벤트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "manual_or_rule",
+    "options": [
+      {
+        "key": "opt_1",
+        "label": "증인을 남기지 않는다",
+        "tone": "사건을 조용히 끝내지만 관계와 명성에 그림자를 남긴다",
+        "effectTags": [
+          "ruthless",
+          "reputation_down",
+          "threat_removed"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      },
+      {
+        "key": "opt_2",
+        "label": "측면 우회로를 탄다",
+        "tone": "시간을 써서 피해를 줄이고 전리품 회수율을 높인다",
+        "effectTags": [
+          "cautious",
+          "loot_up",
+          "time_cost"
+        ],
+        "autoRuleHint": "야망형이면 보상 우선"
+      },
+      {
+        "key": "opt_3",
+        "label": "정면으로 밀어붙인다",
+        "tone": "부상 위험은 있지만 명성과 즉시 보상을 노린다",
+        "effectTags": [
+          "aggressive",
+          "reputation_up",
+          "injury_risk"
+        ],
+        "autoRuleHint": "관계중시형이면 신뢰 우선"
+      }
+    ],
+    "defaultTimeoutSec": 20,
+    "mustPause": false,
+    "stakes": "희귀 자원과 부상"
+  }
+]

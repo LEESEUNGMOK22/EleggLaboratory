@@ -1,0 +1,1618 @@
+[
+  {
+    "id": "evt-t3-001",
+    "tier": "T3",
+    "category": "faction",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 운명을 바꿀 세력 결단의 순간이 찾아왔다.",
+    "logSummary": "세력 사건 #1",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-002",
+    "tier": "T3",
+    "category": "relic",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 운명을 바꿀 유물 결단의 순간이 찾아왔다.",
+    "logSummary": "유물 사건 #2",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-003",
+    "tier": "T3",
+    "category": "relationship",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 운명을 바꿀 관계 결단의 순간이 찾아왔다.",
+    "logSummary": "관계 사건 #3",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-004",
+    "tier": "T3",
+    "category": "legacy",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 운명을 바꿀 계승 결단의 순간이 찾아왔다.",
+    "logSummary": "계승 사건 #4",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-005",
+    "tier": "T3",
+    "category": "corruption",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 2,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 운명을 바꿀 오염 결단의 순간이 찾아왔다.",
+    "logSummary": "오염 사건 #5",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-006",
+    "tier": "T3",
+    "category": "faith",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 2,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 운명을 바꿀 신앙 결단의 순간이 찾아왔다.",
+    "logSummary": "신앙 사건 #6",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-007",
+    "tier": "T3",
+    "category": "faction",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 2,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 운명을 바꿀 세력 결단의 순간이 찾아왔다.",
+    "logSummary": "세력 사건 #7",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-008",
+    "tier": "T3",
+    "category": "relic",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 2,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 운명을 바꿀 유물 결단의 순간이 찾아왔다.",
+    "logSummary": "유물 사건 #8",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-009",
+    "tier": "T3",
+    "category": "relationship",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 3,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 운명을 바꿀 관계 결단의 순간이 찾아왔다.",
+    "logSummary": "관계 사건 #9",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-010",
+    "tier": "T3",
+    "category": "legacy",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 3,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 운명을 바꿀 계승 결단의 순간이 찾아왔다.",
+    "logSummary": "계승 사건 #10",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-011",
+    "tier": "T3",
+    "category": "corruption",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 3,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 운명을 바꿀 오염 결단의 순간이 찾아왔다.",
+    "logSummary": "오염 사건 #11",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-012",
+    "tier": "T3",
+    "category": "faith",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 3,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 운명을 바꿀 신앙 결단의 순간이 찾아왔다.",
+    "logSummary": "신앙 사건 #12",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-013",
+    "tier": "T3",
+    "category": "faction",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 4,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 운명을 바꿀 세력 결단의 순간이 찾아왔다.",
+    "logSummary": "세력 사건 #13",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-014",
+    "tier": "T3",
+    "category": "relic",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 4,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 운명을 바꿀 유물 결단의 순간이 찾아왔다.",
+    "logSummary": "유물 사건 #14",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-015",
+    "tier": "T3",
+    "category": "relationship",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 4,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 운명을 바꿀 관계 결단의 순간이 찾아왔다.",
+    "logSummary": "관계 사건 #15",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evt-t3-016",
+    "tier": "T3",
+    "category": "legacy",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 4,
+      "minLevel": 2,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 운명을 바꿀 계승 결단의 순간이 찾아왔다.",
+    "logSummary": "계승 사건 #16",
+    "defaultResolution": "none",
+    "outcomes": [
+      {
+        "id": "default",
+        "effects": [
+          {
+            "kind": "gain_xp",
+            "value": 8
+          }
+        ]
+      }
+    ],
+    "cooldown": 20,
+    "oneShot": true,
+    "chronicleTags": [
+      "t3-fork"
+    ],
+    "portraitStateEffects": [
+      "resolved",
+      "bloodied"
+    ],
+    "followUpEventIds": [],
+    "choices": [
+      {
+        "id": "oath",
+        "label": "맹세를 따른다",
+        "effects": [
+          {
+            "kind": "faction",
+            "value": {
+              "guild": 2,
+              "temple": 1
+            }
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "oath-fixed"
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "label": "대가를 감수한다",
+        "effects": [
+          {
+            "kind": "taint",
+            "value": 8
+          },
+          {
+            "kind": "infamy",
+            "value": 3
+          },
+          {
+            "kind": "chronicle_tag",
+            "value": "rule-breaker"
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "label": "봉인하고 떠난다",
+        "effects": [
+          {
+            "kind": "renown",
+            "value": -1
+          },
+          {
+            "kind": "relation",
+            "value": {
+              "tension": -1,
+              "trust": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "quest_049",
+    "title": "불씨의 증언 #049",
+    "questType": "relationship",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_012",
+    "issuerName": "시아 마스크",
+    "issuerFactionId": "veil_collectors",
+    "issuerFactionName": "장막 수집회",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_050",
+    "title": "검은갈대 협약 #050",
+    "questType": "relationship",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_073",
+    "issuerName": "도브 쏜",
+    "issuerFactionId": "veil_collectors",
+    "issuerFactionName": "장막 수집회",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "power_play",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "세력 승진 분기"
+    ]
+  },
+  {
+    "id": "quest_051",
+    "title": "유리수도원의 누락 페이지 #051",
+    "questType": "survival",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_067",
+    "issuerName": "도브 모트",
+    "issuerFactionId": "hollow_choir",
+    "issuerFactionName": "공동의 합창단",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "hook": "순례자를 위한 숙소가 사실상 정보 시장이 되었다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_052",
+    "title": "애가교의 방문객 #052",
+    "questType": "faction",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_074",
+    "issuerName": "나엘 크레스트",
+    "issuerFactionId": "blackfin_consort",
+    "issuerFactionName": "흑지느러미 상단",
+    "regionId": "salt_chapel",
+    "regionName": "소금예배당",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "계승 기록용 칭호 부여",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_053",
+    "title": "소금과 유리 #053",
+    "questType": "intrigue",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_019",
+    "issuerName": "미라 크라운",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_054",
+    "title": "묘행의 밤순찰 #054",
+    "questType": "intrigue",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_059",
+    "issuerName": "카셀 스크립",
+    "issuerFactionId": "blackfin_consort",
+    "issuerFactionName": "흑지느러미 상단",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "동료를 잃지 않고 귀환한다",
+      "세력 간 충돌 없이 물건을 회수한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "power_play",
+      "grief"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "세력 승진 분기"
+    ]
+  },
+  {
+    "id": "quest_055",
+    "title": "빈궁정의 봉인 #055",
+    "questType": "expedition",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_073",
+    "issuerName": "도브 쏜",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_056",
+    "title": "묘행의 밤순찰 #056",
+    "questType": "intrigue",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_052",
+    "issuerName": "페일 리드",
+    "issuerFactionId": "veil_collectors",
+    "issuerFactionName": "장막 수집회",
+    "regionId": "thornwatch",
+    "regionName": "가시망루 숲경계",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "동료를 잃지 않고 귀환한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "grief",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_057",
+    "title": "소금과 유리 #057",
+    "questType": "expedition",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_044",
+    "issuerName": "라일 할로",
+    "issuerFactionId": "cinder_guild",
+    "issuerFactionName": "잿불 길드",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "hook": "순례자를 위한 숙소가 사실상 정보 시장이 되었다",
+    "objectives": [
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "vice",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_058",
+    "title": "망루 아래의 맹세 #058",
+    "questType": "faction",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_054",
+    "issuerName": "나엘 핀치",
+    "issuerFactionId": "veil_collectors",
+    "issuerFactionName": "장막 수집회",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "hook": "순례자를 위한 숙소가 사실상 정보 시장이 되었다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "동료를 잃지 않고 귀환한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "romance_tension",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_059",
+    "title": "빈궁정의 봉인 #059",
+    "questType": "relationship",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_040",
+    "issuerName": "니바 핀치",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "사라진 장부 한 권이 항구 전체를 흔든다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "romance_tension",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_060",
+    "title": "빈궁정의 봉인 #060",
+    "questType": "rite",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_036",
+    "issuerName": "타린 리드",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_061",
+    "title": "불씨의 증언 #061",
+    "questType": "escort",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_076",
+    "issuerName": "가브 쏜",
+    "issuerFactionId": "amber_court",
+    "issuerFactionName": "호박 궁정",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "후원 계약 제안",
+      "동료 개인 퀘스트 개방"
+    ]
+  },
+  {
+    "id": "quest_062",
+    "title": "소금과 유리 #062",
+    "questType": "investigation",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_029",
+    "issuerName": "리엔 스톤",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "red_lantern_quay",
+    "regionName": "붉은등잔 선창",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "세력 승진 분기"
+    ]
+  },
+  {
+    "id": "quest_063",
+    "title": "검은갈대 협약 #063",
+    "questType": "expedition",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_033",
+    "issuerName": "마렌 솔트",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "hook": "귀족 연회에서 사라진 인장이 도시의 충성도를 시험한다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "religious_pressure",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_064",
+    "title": "침묵의 성배 #064",
+    "questType": "intrigue",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_080",
+    "issuerName": "에단 스크립",
+    "issuerFactionId": "blackfin_consort",
+    "issuerFactionName": "흑지느러미 상단",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "사라진 장부 한 권이 항구 전체를 흔든다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "grief",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "세력 승진 분기"
+    ]
+  },
+  {
+    "id": "quest_065",
+    "title": "소금과 유리 #065",
+    "questType": "expedition",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_036",
+    "issuerName": "타린 리드",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "hook": "귀족 연회에서 사라진 인장이 도시의 충성도를 시험한다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "명성 손실을 최소화하며 보상을 확보한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "계승 기록용 칭호 부여",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_066",
+    "title": "소금과 유리 #066",
+    "questType": "rite",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_004",
+    "issuerName": "오렐 드레이크",
+    "issuerFactionId": "verdant_wardens",
+    "issuerFactionName": "청엽 감시단",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "hook": "귀족 연회에서 사라진 인장이 도시의 충성도를 시험한다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_067",
+    "title": "유리수도원의 누락 페이지 #067",
+    "questType": "rite",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_029",
+    "issuerName": "리엔 스톤",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "세력 간 충돌 없이 물건을 회수한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "romance_tension",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "후원 계약 제안",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_068",
+    "title": "유리수도원의 누락 페이지 #068",
+    "questType": "relationship",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_072",
+    "issuerName": "벨트 리드",
+    "issuerFactionId": "veil_collectors",
+    "issuerFactionName": "장막 수집회",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "세력 간 충돌 없이 물건을 회수한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "grief",
+      "vice"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_069",
+    "title": "침묵의 성배 #069",
+    "questType": "rite",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_034",
+    "issuerName": "브리나 애쉬본",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "순례자를 위한 숙소가 사실상 정보 시장이 되었다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "명성 손실을 최소화하며 보상을 확보한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_070",
+    "title": "비에 젖은 인장 #070",
+    "questType": "recovery",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_068",
+    "issuerName": "레브 모트",
+    "issuerFactionId": "hollow_choir",
+    "issuerFactionName": "공동의 합창단",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_071",
+    "title": "유리수도원의 누락 페이지 #071",
+    "questType": "escort",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_011",
+    "issuerName": "데른 펜",
+    "issuerFactionId": "verdant_wardens",
+    "issuerFactionName": "청엽 감시단",
+    "regionId": "moonwell_heath",
+    "regionName": "월정 초원",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "vice",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_072",
+    "title": "두 번째 장부 #072",
+    "questType": "faction",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_021",
+    "issuerName": "니바 마스크",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "동료 개인 퀘스트 개방"
+    ]
+  },
+  {
+    "id": "quest_073",
+    "title": "빈궁정의 봉인 #073",
+    "questType": "escort",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_048",
+    "issuerName": "아셴 바인",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "hook": "묘지의 새 봉인석이 밤마다 미세하게 울린다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "grief",
+      "vice"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_074",
+    "title": "침묵의 성배 #074",
+    "questType": "relationship",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_050",
+    "issuerName": "페일 마스크",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "사라진 장부 한 권이 항구 전체를 흔든다",
+    "objectives": [
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_075",
+    "title": "비에 젖은 인장 #075",
+    "questType": "recovery",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_025",
+    "issuerName": "페일 차펠",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "hook": "묘지의 새 봉인석이 밤마다 미세하게 울린다",
+    "objectives": [
+      "세력 간 충돌 없이 물건을 회수한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "연대기 기록용 칭호 획득",
+    "maturityTags": [
+      "romance_tension",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_076",
+    "title": "장막 속 영수증 #076",
+    "questType": "main",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_047",
+    "issuerName": "카셀 차펠",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "hook": "귀족 연회에서 사라진 인장이 도시의 충성도를 시험한다",
+    "objectives": [
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "followupSeeds": [
+      "계승 기록용 칭호 부여",
+      "세력 승진 분기"
+    ]
+  },
+  {
+    "id": "quest_077",
+    "title": "장막 속 영수증 #077",
+    "questType": "rite",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_015",
+    "issuerName": "카일 쏜",
+    "issuerFactionId": "cinder_guild",
+    "issuerFactionName": "잿불 길드",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "grief",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_078",
+    "title": "묘행의 밤순찰 #078",
+    "questType": "intrigue",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_067",
+    "issuerName": "도브 모트",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "명성 손실을 최소화하며 보상을 확보한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "후원 계약 제안"
+    ]
+  },
+  {
+    "id": "quest_079",
+    "title": "망루 아래의 맹세 #079",
+    "questType": "survival",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_026",
+    "issuerName": "페일 할로",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "동료를 잃지 않고 귀환한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "후원 계약 제안",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_080",
+    "title": "비에 젖은 인장 #080",
+    "questType": "main",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_043",
+    "issuerName": "세라 쏜",
+    "issuerFactionId": "amber_court",
+    "issuerFactionName": "호박 궁정",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "명성 상승과 새로운 후원자 해금",
+    "maturityTags": [
+      "power_play",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "계승 기록용 칭호 부여",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_081",
+    "title": "애가교의 방문객 #081",
+    "questType": "investigation",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_033",
+    "issuerName": "마렌 솔트",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "hook": "귀족 연회에서 사라진 인장이 도시의 충성도를 시험한다",
+    "objectives": [
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다",
+      "동료를 잃지 않고 귀환한다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_082",
+    "title": "침묵의 성배 #082",
+    "questType": "faction",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_041",
+    "issuerName": "브리나 드레이크",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "사라진 장부 한 권이 항구 전체를 흔든다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_083",
+    "title": "두 번째 장부 #083",
+    "questType": "escort",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_048",
+    "issuerName": "아셴 바인",
+    "issuerFactionId": "lantern_synod",
+    "issuerFactionName": "등불 교회회의",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_084",
+    "title": "두 번째 장부 #084",
+    "questType": "main",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_015",
+    "issuerName": "카일 쏜",
+    "issuerFactionId": "verdant_wardens",
+    "issuerFactionName": "청엽 감시단",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "희귀 장비 선택권",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_085",
+    "title": "애가교의 방문객 #085",
+    "questType": "rite",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_004",
+    "issuerName": "오렐 드레이크",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "grief",
+      "vice"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_086",
+    "title": "망루 아래의 맹세 #086",
+    "questType": "intrigue",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_074",
+    "issuerName": "나엘 크레스트",
+    "issuerFactionId": "blackfin_consort",
+    "issuerFactionName": "흑지느러미 상단",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_087",
+    "title": "비에 젖은 인장 #087",
+    "questType": "intrigue",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_020",
+    "issuerName": "엘린 베일",
+    "issuerFactionId": "hollow_choir",
+    "issuerFactionName": "공동의 합창단",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "hook": "사라진 장부 한 권이 항구 전체를 흔든다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "명성 손실을 최소화하며 보상을 확보한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "body_horror_mild",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_088",
+    "title": "비에 젖은 인장 #088",
+    "questType": "expedition",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_031",
+    "issuerName": "셀루 핀치",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "hook": "묘지의 새 봉인석이 밤마다 미세하게 울린다",
+    "objectives": [
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_089",
+    "title": "애가교의 방문객 #089",
+    "questType": "rite",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_058",
+    "issuerName": "데른 워드",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "동료를 잃지 않고 귀환한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "관계 이벤트 연속 해금",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_090",
+    "title": "빈궁정의 봉인 #090",
+    "questType": "survival",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_012",
+    "issuerName": "시아 마스크",
+    "issuerFactionId": "cinder_guild",
+    "issuerFactionName": "잿불 길드",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "hook": "묘지의 새 봉인석이 밤마다 미세하게 울린다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "세력 평판 증가",
+    "maturityTags": [
+      "romance_tension",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "유물 선택 이벤트",
+      "오염 수치 상승 이벤트"
+    ]
+  },
+  {
+    "id": "quest_091",
+    "title": "애가교의 방문객 #091",
+    "questType": "intrigue",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_072",
+    "issuerName": "벨트 리드",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "hook": "오래 잠긴 창고의 열쇠가 두 세력의 손에 동시에 들어갔다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "동료를 잃지 않고 귀환한다",
+      "단서를 모아 사건의 진실을 특정한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_092",
+    "title": "불씨의 증언 #092",
+    "questType": "survival",
+    "act": 2,
+    "actName": "도시의 속살",
+    "issuerNpcId": "npc_038",
+    "issuerName": "오렐 바인",
+    "issuerFactionId": "salt_tribunal",
+    "issuerFactionName": "소금 재판단",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "hook": "폭우 뒤 드러난 지하문이 순례로를 가른다",
+    "objectives": [
+      "단서를 모아 사건의 진실을 특정한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "동료를 잃지 않고 귀환한다"
+    ],
+    "failureTension": "실패하면 경쟁 세력이 먼저 손을 뻗는다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "grief",
+      "body_horror_mild"
+    ],
+    "followupSeeds": [
+      "세력 승진 분기",
+      "적대 NPC 재등장"
+    ]
+  },
+  {
+    "id": "quest_093",
+    "title": "장막 속 영수증 #093",
+    "questType": "faction",
+    "act": 3,
+    "actName": "금지된 문",
+    "issuerNpcId": "npc_026",
+    "issuerName": "페일 할로",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "salt_chapel",
+    "regionName": "소금예배당",
+    "hook": "묘지의 새 봉인석이 밤마다 미세하게 울린다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "위험한 의식을 끝까지 지켜보거나 중단시킨다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "금지된 지식 파편 획득",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "followupSeeds": [
+      "계승 기록용 칭호 부여",
+      "유물 선택 이벤트"
+    ]
+  },
+  {
+    "id": "quest_094",
+    "title": "유리수도원의 누락 페이지 #094",
+    "questType": "rite",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "issuerNpcId": "npc_016",
+    "issuerName": "도브 차펠",
+    "issuerFactionId": "ashen_scriptorium",
+    "issuerFactionName": "재필사단",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "hook": "고해실에서 흘린 한마디가 길드 전쟁의 불씨가 된다",
+    "objectives": [
+      "동료를 잃지 않고 귀환한다",
+      "단서를 모아 사건의 진실을 특정한다",
+      "명성 손실을 최소화하며 보상을 확보한다"
+    ],
+    "failureTension": "시간을 끌수록 사건이 공개되어 도시 여론이 악화된다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "오염 수치 상승 이벤트",
+      "동료 개인 퀘스트 개방"
+    ]
+  },
+  {
+    "id": "quest_095",
+    "title": "침묵의 성배 #095",
+    "questType": "relationship",
+    "act": 5,
+    "actName": "계승과 이름",
+    "issuerNpcId": "npc_075",
+    "issuerName": "카일 크라운",
+    "issuerFactionId": "verdant_wardens",
+    "issuerFactionName": "청엽 감시단",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "hook": "주인공의 이름이 적힌 빚 문서가 의도적으로 퍼지고 있다",
+    "objectives": [
+      "신뢰를 희생하지 않고 목표를 달성한다",
+      "명성 손실을 최소화하며 보상을 확보한다",
+      "도시 소문이 퍼지기 전에 증거를 정리한다"
+    ],
+    "failureTension": "한 번의 오판으로 관계가 오래 틀어질 수 있다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "followupSeeds": [
+      "동료 개인 퀘스트 개방",
+      "계승 기록용 칭호 부여"
+    ]
+  },
+  {
+    "id": "quest_096",
+    "title": "소금과 유리 #096",
+    "questType": "escort",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "issuerNpcId": "npc_036",
+    "issuerName": "타린 리드",
+    "issuerFactionId": "iron_oath_company",
+    "issuerFactionName": "철맹 용병단",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "hook": "순례자를 위한 숙소가 사실상 정보 시장이 되었다",
+    "objectives": [
+      "도시 소문이 퍼지기 전에 증거를 정리한다",
+      "세력 간 충돌 없이 물건을 회수한다",
+      "신뢰를 희생하지 않고 목표를 달성한다"
+    ],
+    "failureTension": "보상보다 비밀이 먼저 증발할 위험이 있다",
+    "rewardSummary": "새 지역 접근 허가",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "followupSeeds": [
+      "적대 NPC 재등장",
+      "계승 기록용 칭호 부여"
+    ]
+  }
+]

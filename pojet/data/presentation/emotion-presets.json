@@ -1,0 +1,12 @@
+﻿{
+  "neutral": {"expression":"neutral_face","lighting":"low_warm","microMotion":"idle_slow"},
+  "victory": {"expression":"confident","lighting":"warm_edge","microMotion":"idle_rise"},
+  "narrow_victory": {"expression":"grim_relief","lighting":"amber_dim","microMotion":"idle_heavy"},
+  "defeat": {"expression":"pain_hard","lighting":"cold_dim","microMotion":"idle_stagger"},
+  "level_up": {"expression":"resolved","lighting":"gold_pulse","microMotion":"pulse_short"},
+  "t2_focus": {"expression":"watchful","lighting":"focus_ring_soft","microMotion":"idle_hold"},
+  "t3_focus": {"expression":"resolved","lighting":"focus_ring_strong","microMotion":"pulse_long"},
+  "relation_warm": {"expression":"softened","lighting":"rose_dim","microMotion":"idle_soft"},
+  "relation_tense": {"expression":"guarded","lighting":"violet_edge","microMotion":"idle_stiff"},
+  "corruption_spike": {"expression":"wavering","lighting":"ashen_shadow","microMotion":"glitch_subtle"}
+}

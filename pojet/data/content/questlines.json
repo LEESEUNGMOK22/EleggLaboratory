@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "main-01",
+    "title": "재의 의뢰 001",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 140,
+      "gold": 92,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-02"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "main-02",
+    "title": "재의 의뢰 002",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 160,
+      "gold": 104,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-03"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "main-03",
+    "title": "재의 의뢰 003",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 180,
+      "gold": 116,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-04"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "main-04",
+    "title": "재의 의뢰 004",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 200,
+      "gold": 128,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-05"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "main-05",
+    "title": "재의 의뢰 005",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 4,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 220,
+      "gold": 140,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-06"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "main-06",
+    "title": "재의 의뢰 006",
+    "emotionalTheme": "의무",
+    "questType": "main",
+    "trigger": {
+      "actMin": 5,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "perception",
+      "survival",
+      "persuasion"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 240,
+      "gold": 152,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [
+      "main-06"
+    ],
+    "chronicleImpact": [
+      "act_shift",
+      "legacy_flag"
+    ]
+  },
+  {
+    "id": "side-01",
+    "title": "재의 의뢰 007",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 50,
+      "gold": 34,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-02",
+    "title": "재의 의뢰 008",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 55,
+      "gold": 38,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-03",
+    "title": "재의 의뢰 009",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 60,
+      "gold": 42,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-04",
+    "title": "재의 의뢰 010",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 65,
+      "gold": 46,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-05",
+    "title": "재의 의뢰 011",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 45,
+      "gold": 50,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-06",
+    "title": "재의 의뢰 012",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 50,
+      "gold": 54,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-07",
+    "title": "재의 의뢰 013",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 55,
+      "gold": 30,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-08",
+    "title": "재의 의뢰 014",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 60,
+      "gold": 34,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-09",
+    "title": "재의 의뢰 015",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 65,
+      "gold": 38,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-10",
+    "title": "재의 의뢰 016",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 2,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 45,
+      "gold": 42,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-11",
+    "title": "재의 의뢰 017",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 50,
+      "gold": 46,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-12",
+    "title": "재의 의뢰 018",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 55,
+      "gold": 50,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-13",
+    "title": "재의 의뢰 019",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 60,
+      "gold": 54,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-14",
+    "title": "재의 의뢰 020",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 65,
+      "gold": 30,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-15",
+    "title": "재의 의뢰 021",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 3,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 45,
+      "gold": 34,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-16",
+    "title": "재의 의뢰 022",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 4,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 50,
+      "gold": 38,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-17",
+    "title": "재의 의뢰 023",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 4,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 55,
+      "gold": 42,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "side-18",
+    "title": "재의 의뢰 024",
+    "emotionalTheme": "의무",
+    "questType": "side",
+    "trigger": {
+      "actMin": 4,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "insight",
+      "deception",
+      "investigation"
+    ],
+    "failureStates": [
+      "진행 지연",
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 60,
+      "gold": 46,
+      "narrative": [
+        "도시의 시선이 달라졌다.",
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "relationship_shift"
+    ]
+  },
+  {
+    "id": "daily-01",
+    "title": "재의 의뢰 025",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-02",
+    "title": "재의 의뢰 026",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-03",
+    "title": "재의 의뢰 027",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-04",
+    "title": "재의 의뢰 028",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-05",
+    "title": "재의 의뢰 029",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-06",
+    "title": "재의 의뢰 030",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-07",
+    "title": "재의 의뢰 031",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-08",
+    "title": "재의 의뢰 032",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-09",
+    "title": "재의 의뢰 033",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-10",
+    "title": "재의 의뢰 034",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-11",
+    "title": "재의 의뢰 035",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-12",
+    "title": "재의 의뢰 036",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-13",
+    "title": "재의 의뢰 037",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-14",
+    "title": "재의 의뢰 038",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-15",
+    "title": "재의 의뢰 039",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-16",
+    "title": "재의 의뢰 040",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-17",
+    "title": "재의 의뢰 041",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-18",
+    "title": "재의 의뢰 042",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-19",
+    "title": "재의 의뢰 043",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-20",
+    "title": "재의 의뢰 044",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-21",
+    "title": "재의 의뢰 045",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-22",
+    "title": "재의 의뢰 046",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-23",
+    "title": "재의 의뢰 047",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-24",
+    "title": "재의 의뢰 048",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-25",
+    "title": "재의 의뢰 049",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-26",
+    "title": "재의 의뢰 050",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 12,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-27",
+    "title": "재의 의뢰 051",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 20,
+      "gold": 14,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-28",
+    "title": "재의 의뢰 052",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 14,
+      "gold": 16,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-29",
+    "title": "재의 의뢰 053",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 16,
+      "gold": 18,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  },
+  {
+    "id": "daily-30",
+    "title": "재의 의뢰 054",
+    "emotionalTheme": "의무",
+    "questType": "daily",
+    "trigger": {
+      "actMin": 1,
+      "requiredReputation": {},
+      "requiredTags": []
+    },
+    "stages": [
+      "단계 1 진행",
+      "단계 2 진행",
+      "단계 3 진행"
+    ],
+    "likelyChecks": [
+      "athletics",
+      "survival"
+    ],
+    "failureStates": [
+      "진행 지연"
+    ],
+    "rewards": {
+      "xp": 18,
+      "gold": 10,
+      "narrative": [
+        "도시의 시선이 달라졌다."
+      ]
+    },
+    "followUps": [],
+    "chronicleImpact": [
+      "minor"
+    ]
+  }
+]

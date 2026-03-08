@@ -1,0 +1,23 @@
+﻿{
+  "combat": {
+    "minorWin": {"xp": 18, "gold": 12, "renown": 1, "fatigue": 4},
+    "majorWin": {"xp": 36, "gold": 26, "renown": 3, "fatigue": 7, "dropTier":"uncommon"},
+    "loss": {"xp": 6, "gold": 3, "fatigue": 10, "hpLoss": 8, "taintChance": 0.1}
+  },
+  "exploration": {
+    "safeRoute": {"xp": 10, "supplies": -1, "questProgress": 12},
+    "hazardSurvive": {"xp": 16, "fatigue": 6, "questProgress": 9},
+    "hiddenFind": {"gold": 14, "itemChance": 0.25, "renown": 1}
+  },
+  "social": {
+    "successfulDiplomacy": {"xp": 12, "reputation": {"guild": 2}, "relationship": {"trust": 2}},
+    "hardBargain": {"gold": 18, "reputation": {"nobility": -1, "underbelly": 2}},
+    "failedTalk": {"reputation": {"guild": -1}, "relationship": {"tension": 2}}
+  },
+  "tierBonuses": {
+    "T0": {"narrativeWeight": 1},
+    "T1": {"narrativeWeight": 2},
+    "T2": {"narrativeWeight": 4, "chronicleTagChance": 0.2},
+    "T3": {"narrativeWeight": 8, "chronicleTagChance": 0.7, "legacyFlagChance": 0.5}
+  }
+}

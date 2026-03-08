@@ -1,0 +1,10 @@
+﻿{
+  "default": {"border":"normal","glow":0.15,"scale":1.0,"shake":0.0,"vignette":0.2},
+  "log": {"trigger":"LOG","emphasis":"default","durationMs":300},
+  "t2_event": {"trigger":"T2","emphasis":{"border":"focus_soft","glow":0.35,"scale":1.02,"shake":0.0,"vignette":0.25},"durationMs":12000},
+  "t3_event": {"trigger":"T3","emphasis":{"border":"focus_strong","glow":0.7,"scale":1.05,"shake":0.01,"vignette":0.4},"durationMs":0},
+  "level_up": {"trigger":"LEVEL_UP","emphasis":{"border":"gold","glow":0.55,"scale":1.03,"shake":0.0,"vignette":0.2},"durationMs":1800},
+  "major_defeat": {"trigger":"DEFEAT_MAJOR","emphasis":{"border":"blood","glow":0.5,"scale":0.99,"shake":0.015,"vignette":0.45},"durationMs":2500},
+  "relationship_gain": {"trigger":"REL_GAIN","emphasis":{"border":"rose","glow":0.3,"scale":1.01,"shake":0.0,"vignette":0.22},"durationMs":1600},
+  "taint_gain": {"trigger":"TAINT_GAIN","emphasis":{"border":"shadow","glow":0.4,"scale":1.0,"shake":0.008,"vignette":0.38},"durationMs":2200}
+}

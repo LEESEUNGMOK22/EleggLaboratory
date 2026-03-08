@@ -1,0 +1,29 @@
+{
+  "project": "Ashmark Chronicle",
+  "datasetVersion": "seed-pack-01",
+  "counts": {
+    "events": 320,
+    "quests": 96,
+    "npcs": 80,
+    "items": 120,
+    "locations": 48,
+    "recordsTotal": 664
+  },
+  "eventTiers": {
+    "T0": 80,
+    "T1": 80,
+    "T2": 100,
+    "T3": 60
+  },
+  "eventPillars": {
+    "combat": 107,
+    "exploration": 107,
+    "social": 106
+  },
+  "notes": [
+    "이 데이터팩은 실제 기획/UX 테스트용 대량 시드다.",
+    "오리지널 세계관 이름만 사용했다.",
+    "T2/T3 이벤트는 선택지와 자동화 힌트를 포함한다.",
+    "문장 품질은 시드 수준이며, 이후 작가 패스로 다듬는 것을 전제한다."
+  ]
+}

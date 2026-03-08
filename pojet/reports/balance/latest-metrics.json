@@ -1,0 +1,440 @@
+{
+  "generatedAt": "2026-03-08T17:38:25.087492Z",
+  "seed": 441901,
+  "scenario": {
+    "runsPerClass": 120,
+    "totalRuns": 1440,
+    "classes": [
+      "barbarian",
+      "bard",
+      "cleric",
+      "druid",
+      "fighter",
+      "monk",
+      "paladin",
+      "ranger",
+      "rogue",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "presets": [
+      "신중형",
+      "대담형",
+      "탐욕형",
+      "자비형",
+      "권력지향형",
+      "관계중시형",
+      "신앙중시형"
+    ],
+    "backgrounds": [
+      "border-conscript",
+      "crusade-runner",
+      "orphan-cutpurse",
+      "tower-dropout",
+      "funeral-aide",
+      "fallen-bastard",
+      "caravan-guard",
+      "smuggler-runner",
+      "forest-watch",
+      "relic-digger"
+    ],
+    "maxTicksPerRun": 220,
+    "baseSecondsPerTick": 30
+  },
+  "contentValidationWarnings": [
+    "Relationship event missing relation effect: evt-t1-001",
+    "Relationship event missing relation effect: evt-t1-007",
+    "Relationship event missing relation effect: evt-t1-013",
+    "Relationship event missing relation effect: evt-t1-019",
+    "Relationship event missing relation effect: evt-t1-025",
+    "Relationship event missing relation effect: evt-t1-031",
+    "Relationship event missing relation effect: evt-t1-037",
+    "Relationship event missing relation effect: evt-t1-043",
+    "Relationship event missing relation effect: evt-t1-049",
+    "Relationship event missing relation effect: evt-t1-055",
+    "Relationship event missing relation effect: evt-t1-061",
+    "T0 duplicate narrative ratio high: 0.63",
+    "T1 duplicate narrative ratio high: 0.53"
+  ],
+  "metrics": {
+    "totals": {
+      "runs": 1440,
+      "survivalRate": 0.002777777777777778,
+      "earlyDeathRate": 0.3104166666666667
+    },
+    "pacing": {
+      "avgLogIntervalTicks": 1.0,
+      "avgLogIntervalSeconds": 15.71617072256228,
+      "avgCombatPerRun": 16.83888888888889,
+      "avgQuestUpdatesPerRun": 0.9673611111111111,
+      "avgT2PerRun": 4.123611111111111,
+      "avgT3PerRun": 0.7708333333333334,
+      "avgFirstLevelupTicks": 19.050427350427352,
+      "avgFirstRelationshipTicks": 16.33220625528318,
+      "avgFirstFactionConflictTicks": 46.5812133072407,
+      "avgRunDurationTicks": 48.602777777777774,
+      "avgRunDurationMinutes": 12.82817708333329,
+      "avgT2IntervalTicks": 13.210154458252239,
+      "avgT3IntervalTicks": 46.907453859488115
+    },
+    "bySpeed": {
+      "8": {
+        "runs": 213,
+        "avgDurationMinutes": 3.290766823161188,
+        "avgT2PerRun": 4.103286384976526,
+        "avgT3PerRun": 0.7934272300469484,
+        "avgPauseSeconds": 10.12206572769953
+      },
+      "4": {
+        "runs": 400,
+        "avgDurationMinutes": 5.9791666666666785,
+        "avgT2PerRun": 3.8625,
+        "avgT3PerRun": 0.71,
+        "avgPauseSeconds": 9.34375
+      },
+      "2": {
+        "runs": 415,
+        "avgDurationMinutes": 12.505783132530128,
+        "avgT2PerRun": 4.183132530120482,
+        "avgT3PerRun": 0.7879518072289157,
+        "avgPauseSeconds": 10.214457831325301
+      },
+      "1": {
+        "runs": 412,
+        "avgDurationMinutes": 24.733191747572807,
+        "avgT2PerRun": 4.327669902912621,
+        "avgT3PerRun": 0.8009708737864077,
+        "avgPauseSeconds": 10.49635922330097
+      }
+    },
+    "byClass": {
+      "barbarian": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.15,
+        "avgRunMinutes": 10.822222222222226,
+        "avgT2PerRun": 3.9166666666666665,
+        "avgT3PerRun": 0.6416666666666667,
+        "avgRelationshipRouteTick": 15.646153846153846,
+        "earlyDeathRate": 0.15833333333333333
+      },
+      "bard": {
+        "runs": 120,
+        "survivalRate": 0.03333333333333333,
+        "avgFinalLevel": 2.425,
+        "avgRunMinutes": 18.487673611111106,
+        "avgT2PerRun": 6.0,
+        "avgT3PerRun": 1.4833333333333334,
+        "avgRelationshipRouteTick": 15.31958762886598,
+        "earlyDeathRate": 0.2
+      },
+      "cleric": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.55,
+        "avgRunMinutes": 19.35246527777777,
+        "avgT2PerRun": 6.175,
+        "avgT3PerRun": 1.7833333333333334,
+        "avgRelationshipRouteTick": 19.075,
+        "earlyDeathRate": 0.14166666666666666
+      },
+      "druid": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.075,
+        "avgRunMinutes": 12.65434027777778,
+        "avgT2PerRun": 4.083333333333333,
+        "avgT3PerRun": 0.6833333333333333,
+        "avgRelationshipRouteTick": 15.175675675675675,
+        "earlyDeathRate": 0.26666666666666666
+      },
+      "fighter": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.1666666666666665,
+        "avgRunMinutes": 13.291145833333328,
+        "avgT2PerRun": 3.9166666666666665,
+        "avgT3PerRun": 0.625,
+        "avgRelationshipRouteTick": 16.415384615384614,
+        "earlyDeathRate": 0.25833333333333336
+      },
+      "monk": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 1.9666666666666666,
+        "avgRunMinutes": 10.581215277777774,
+        "avgT2PerRun": 3.283333333333333,
+        "avgT3PerRun": 0.43333333333333335,
+        "avgRelationshipRouteTick": 17.5,
+        "earlyDeathRate": 0.4166666666666667
+      },
+      "paladin": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.091666666666667,
+        "avgRunMinutes": 13.244027777777779,
+        "avgT2PerRun": 4.275,
+        "avgT3PerRun": 0.7833333333333333,
+        "avgRelationshipRouteTick": 15.575342465753424,
+        "earlyDeathRate": 0.3333333333333333
+      },
+      "ranger": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.15,
+        "avgRunMinutes": 12.038819444444442,
+        "avgT2PerRun": 4.108333333333333,
+        "avgT3PerRun": 0.7583333333333333,
+        "avgRelationshipRouteTick": 17.235294117647058,
+        "earlyDeathRate": 0.30833333333333335
+      },
+      "rogue": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.0166666666666666,
+        "avgRunMinutes": 11.483923611111113,
+        "avgT2PerRun": 3.5166666666666666,
+        "avgT3PerRun": 0.6583333333333333,
+        "avgRelationshipRouteTick": 14.087719298245615,
+        "earlyDeathRate": 0.39166666666666666
+      },
+      "sorcerer": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 1.775,
+        "avgRunMinutes": 9.317430555555552,
+        "avgT2PerRun": 2.933333333333333,
+        "avgT3PerRun": 0.31666666666666665,
+        "avgRelationshipRouteTick": 14.615384615384615,
+        "earlyDeathRate": 0.5083333333333333
+      },
+      "warlock": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 1.8916666666666666,
+        "avgRunMinutes": 10.52798611111111,
+        "avgT2PerRun": 3.2583333333333333,
+        "avgT3PerRun": 0.43333333333333335,
+        "avgRelationshipRouteTick": 17.225352112676056,
+        "earlyDeathRate": 0.4166666666666667
+      },
+      "wizard": {
+        "runs": 120,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.05,
+        "avgRunMinutes": 12.136874999999998,
+        "avgT2PerRun": 4.016666666666667,
+        "avgT3PerRun": 0.65,
+        "avgRelationshipRouteTick": 13.828947368421053,
+        "earlyDeathRate": 0.325
+      }
+    },
+    "byPreset": {
+      "신중형": {
+        "runs": 216,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.189814814814815,
+        "avgTaint": 8.23611111111111,
+        "avgT2PerRun": 4.074074074074074,
+        "avgT3PerRun": 0.7129629629629629
+      },
+      "대담형": {
+        "runs": 204,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.073529411764706,
+        "avgTaint": 7.612745098039215,
+        "avgT2PerRun": 4.1911764705882355,
+        "avgT3PerRun": 0.75
+      },
+      "탐욕형": {
+        "runs": 204,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.0294117647058822,
+        "avgTaint": 7.612745098039215,
+        "avgT2PerRun": 3.9754901960784315,
+        "avgT3PerRun": 0.6372549019607843
+      },
+      "자비형": {
+        "runs": 204,
+        "survivalRate": 0.014705882352941176,
+        "avgFinalLevel": 2.215686274509804,
+        "avgTaint": 8.990196078431373,
+        "avgT2PerRun": 4.161764705882353,
+        "avgT3PerRun": 0.9411764705882353
+      },
+      "권력지향형": {
+        "runs": 204,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.176470588235294,
+        "avgTaint": 14.857843137254902,
+        "avgT2PerRun": 4.598039215686274,
+        "avgT3PerRun": 0.7990196078431373
+      },
+      "관계중시형": {
+        "runs": 204,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 1.9901960784313726,
+        "avgTaint": 7.382352941176471,
+        "avgT2PerRun": 3.8333333333333335,
+        "avgT3PerRun": 0.6372549019607843
+      },
+      "신앙중시형": {
+        "runs": 204,
+        "survivalRate": 0.004901960784313725,
+        "avgFinalLevel": 2.0833333333333335,
+        "avgTaint": 8.877450980392156,
+        "avgT2PerRun": 4.034313725490196,
+        "avgT3PerRun": 0.9215686274509803
+      }
+    },
+    "byBackground": {
+      "border-conscript": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.1041666666666665,
+        "avgGold": 174.625
+      },
+      "crusade-runner": {
+        "runs": 144,
+        "survivalRate": 0.006944444444444444,
+        "avgFinalLevel": 2.1527777777777777,
+        "avgGold": 184.22222222222223
+      },
+      "orphan-cutpurse": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.1041666666666665,
+        "avgGold": 180.02777777777777
+      },
+      "tower-dropout": {
+        "runs": 144,
+        "survivalRate": 0.006944444444444444,
+        "avgFinalLevel": 2.1805555555555554,
+        "avgGold": 187.82638888888889
+      },
+      "funeral-aide": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.0972222222222223,
+        "avgGold": 177.18055555555554
+      },
+      "fallen-bastard": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.076388888888889,
+        "avgGold": 173.03472222222223
+      },
+      "caravan-guard": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.1527777777777777,
+        "avgGold": 199.04166666666666
+      },
+      "smuggler-runner": {
+        "runs": 144,
+        "survivalRate": 0.006944444444444444,
+        "avgFinalLevel": 2.0625,
+        "avgGold": 167.70138888888889
+      },
+      "forest-watch": {
+        "runs": 144,
+        "survivalRate": 0.006944444444444444,
+        "avgFinalLevel": 2.0277777777777777,
+        "avgGold": 164.63194444444446
+      },
+      "relic-digger": {
+        "runs": 144,
+        "survivalRate": 0.0,
+        "avgFinalLevel": 2.1319444444444446,
+        "avgGold": 188.97222222222223
+      }
+    },
+    "categoryMix": {
+      "combat": 0.27536709177010343,
+      "exploration": 0.2276820695685749,
+      "social": 0.18322223105488492,
+      "rest": 0.1085319736080039,
+      "relationship": 0.19393120365217983,
+      "faction": 0.011265430346252995
+    },
+    "endTypes": {
+      "battle_death": 1435,
+      "vanished_legend": 2,
+      "glorious_retirement": 2,
+      "corruption_fall": 1
+    },
+    "legacyTrend": {
+      "run_180": 0.3625,
+      "run_360": 0.4444,
+      "run_540": 0.3926,
+      "run_720": 0.3646,
+      "run_900": 0.3533,
+      "run_1080": 0.3407,
+      "run_1260": 0.3151,
+      "run_1440": 0.3063
+    },
+    "targetChecks": {
+      "t2IntervalTicks": {
+        "actual": 13.210154458252239,
+        "min": 8,
+        "max": 18,
+        "status": "pass"
+      },
+      "t3IntervalTicks": {
+        "actual": 46.907453859488115,
+        "min": 18,
+        "max": 40,
+        "status": "warn"
+      },
+      "combatShare": {
+        "actual": 0.27536709177010343,
+        "min": 0.28,
+        "max": 0.5,
+        "status": "warn"
+      },
+      "explorationShare": {
+        "actual": 0.2276820695685749,
+        "min": 0.2,
+        "max": 0.42,
+        "status": "pass"
+      },
+      "socialShare": {
+        "actual": 0.18322223105488492,
+        "min": 0.15,
+        "max": 0.35,
+        "status": "pass"
+      },
+      "relationshipEventShare": {
+        "actual": 0.19393120365217983,
+        "min": 0.08,
+        "max": 0.3,
+        "status": "pass"
+      },
+      "firstLevelupMinutes": {
+        "actual": 9.525213675213676,
+        "min": 4,
+        "max": 16,
+        "status": "pass"
+      },
+      "firstT3Minutes": {
+        "actual": 26.341541755888652,
+        "min": 8,
+        "max": 30,
+        "status": "pass"
+      },
+      "runDurationMinutes": {
+        "actual": 12.82817708333329,
+        "min": 18,
+        "max": 55,
+        "status": "warn"
+      },
+      "earlyDeathRate": {
+        "actual": 0.3104166666666667,
+        "min": 0.05,
+        "max": 0.35,
+        "status": "pass"
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>재의 표식 연대기 | Ashmark Chronicle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="character-panel" aria-label="캐릭터 패널">
+      <header class="panel-header">
+        <h1>재의 표식 연대기</h1>
+        <p class="subtitle">Ashmark Chronicle</p>
+      </header>
+      <div class="portrait-wrap">
+        <div id="portrait" class="portrait mood-neutral">
+          <div class="portrait-bg"></div>
+          <div class="portrait-body"></div>
+          <div class="portrait-face" id="portrait-face">평정</div>
+          <div class="portrait-glow" id="portrait-glow"></div>
+        </div>
+        <div class="portrait-meta">
+          <h2 id="char-name">아직 이름 없는 자</h2>
+          <p id="char-tag">무명의 생존자</p>
+          <div id="char-status-tags" class="status-tags"></div>
+          <div id="portrait-state-list" class="portrait-state-list"></div>
+        </div>
+      </div>
+      <section class="panel-section">
+        <h3>관계의 온도</h3>
+        <div id="relationship-bars"></div>
+      </section>
+      <section class="panel-section">
+        <h3>정체성 축</h3>
+        <div id="axis-bars"></div>
+      </section>
+      <section class="panel-section small">
+        <h3>활성 동료</h3>
+        <div id="companion-strip" class="companion-strip"></div>
+      </section>
+    </aside>
+
+    <main id="main-panel" aria-label="서사 패널">
+      <div class="top-controls">
+        <div class="speed-controls">
+          <button data-speed="1">1x</button>
+          <button data-speed="2">2x</button>
+          <button data-speed="4">4x</button>
+          <button data-speed="8">8x</button>
+        </div>
+        <div class="run-controls">
+          <button id="pause-btn">일시정지</button>
+          <button id="save-btn">저장</button>
+          <button id="load-btn">불러오기</button>
+          <button id="end-run-btn">연대기 정리</button>
+          <button id="settings-btn">설정</button>
+          <button id="new-life-btn">새 삶 시작</button>
+        </div>
+      </div>
+
+      <section id="tutorial-banner" class="tutorial-banner"></section>
+
+      <section id="event-card" class="event-card hidden">
+        <h2 id="event-title"></h2>
+        <p id="event-text"></p>
+        <div id="event-meta" class="event-meta"></div>
+        <div id="event-choices" class="choices"></div>
+        <div id="event-timer" class="timer"></div>
+      </section>
+
+      <section id="log-panel" class="log-panel" aria-live="polite"></section>
+    </main>
+
+    <aside id="info-panel" aria-label="보조 정보 패널">
+      <section class="panel-section">
+        <h3>진행</h3>
+        <div class="kv"><span>막</span><strong id="act-label">막 1</strong></div>
+        <div class="kv"><span>지역</span><strong id="location-label">검은비 변경</strong></div>
+        <div class="kv"><span>일자</span><strong id="day-label">1일</strong></div>
+        <div class="progress-line"><span id="act-progress-bar"></span></div>
+      </section>
+
+      <section class="panel-section">
+        <h3>자원</h3>
+        <div class="kv"><span>HP</span><strong id="hp-label">0 / 0</strong></div>
+        <div class="kv"><span>금화</span><strong id="gold-label">0</strong></div>
+        <div class="kv"><span>명성</span><strong id="fame-label">0</strong></div>
+        <div class="kv"><span>오염</span><strong id="taint-label">0</strong></div>
+        <div class="kv"><span>피로</span><strong id="fatigue-label">0</strong></div>
+      </section>
+
+      <section class="panel-section">
+        <h3>능력치</h3>
+        <div id="stats-grid" class="stats-grid"></div>
+      </section>
+
+      <section class="panel-section">
+        <h3>퀘스트</h3>
+        <ul id="quest-list" class="quest-list"></ul>
+      </section>
+
+      <section class="panel-section">
+        <h3>장비</h3>
+        <ul id="gear-list" class="gear-list"></ul>
+      </section>
+
+      <section class="panel-section">
+        <h3>연대기 기록</h3>
+        <ul id="legacy-list" class="legacy-list"></ul>
+      </section>
+
+      <section class="panel-section">
+        <h3>기록 보관소</h3>
+        <div id="history-tabs" class="tabs"></div>
+        <div id="history-body" class="history-body"></div>
+      </section>
+    </aside>
+  </div>
+
+  <div id="settings-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <header>
+        <h2>설정</h2>
+        <button id="settings-close">닫기</button>
+      </header>
+      <div class="tabs" id="settings-tabs"></div>
+      <div class="tab-body" id="settings-body"></div>
+    </div>
+  </div>
+
+  <div id="creator-modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-content large">
+      <header>
+        <h2>새로운 삶</h2>
+      </header>
+      <div class="creator-layout">
+        <div>
+          <label>생성 방식
+            <select id="creation-mode">
+              <option value="precise">정밀 생성</option>
+              <option value="quick">빠른 생성</option>
+              <option value="random">랜덤 생성</option>
+            </select>
+          </label>
+          <label>이름 <input id="create-name" placeholder="예: 엘린" /></label>
+          <label>종족 <select id="create-race"></select></label>
+          <label>클래스 <select id="create-class"></select></label>
+          <label>배경 <select id="create-background"></select></label>
+          <label>초상 분위기
+            <select id="create-portrait">
+              <option value="scarred">흉터와 결의</option>
+              <option value="solemn">의식의 잔광</option>
+              <option value="wild">거친 숨결</option>
+              <option value="noble">몰락한 품위</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <h3>능력치 (표준 배열, 슬라이더 배분)</h3>
+          <div id="ability-allocator"></div>
+          <h3>자동화 성향</h3>
+          <label>T2 자동 처리 성향
+            <select id="create-t2-style">
+              <option value="신중형">신중형</option>
+              <option value="대담형">대담형</option>
+              <option value="탐욕형">탐욕형</option>
+              <option value="자비형">자비형</option>
+              <option value="권력지향형">권력지향형</option>
+              <option value="관계중시형">관계중시형</option>
+              <option value="신앙중시형">신앙중시형</option>
+            </select>
+          </label>
+          <p id="inheritance-note"></p>
+        </div>
+      </div>
+      <footer>
+        <button id="randomize-btn">무작위 생성</button>
+        <button id="begin-btn">연대기 시작</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="run-end-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <header>
+        <h2>연대기 종결</h2>
+      </header>
+      <div id="run-end-summary" class="tab-body"></div>
+      <footer>
+        <button id="run-end-next-btn">다음 연대기 시작</button>
+        <button id="run-end-close-btn">닫기</button>
+      </footer>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

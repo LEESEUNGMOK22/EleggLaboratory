@@ -1,0 +1,3330 @@
+[
+  {
+    "id": "evt-t1-001",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #1",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-002",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #2",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-003",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #3",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-004",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #4",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-005",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #5",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-006",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #6",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-007",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #7",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-008",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #8",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-009",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #9",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-010",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #10",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-011",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #11",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-012",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #12",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-013",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #13",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-014",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #14",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-015",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #15",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-016",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #16",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-017",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #17",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-018",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #18",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-019",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #19",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-020",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #20",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-021",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #21",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-022",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #22",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-023",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #23",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-024",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #24",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-025",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #25",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-026",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #26",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-027",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #27",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-028",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #28",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-029",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #29",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-030",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #30",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-031",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #31",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-032",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #32",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-033",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #33",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-034",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #34",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-035",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #35",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-036",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #36",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-037",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #37",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-038",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #38",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-039",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #39",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-040",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #40",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-041",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #41",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-042",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #42",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-043",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #43",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-044",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #44",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-045",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #45",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-046",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #46",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-047",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #47",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-048",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #48",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-049",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #49",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-050",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #50",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-051",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #51",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-052",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #52",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-053",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #53",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-054",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #54",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-055",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #55",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-056",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #56",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-057",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #57",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-058",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "rogue"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #58",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-059",
+    "tier": "T1",
+    "category": "travel",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "cleric"
+    ],
+    "statAffinity": [
+      "WIS"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 여정 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "여정 사건 #59",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-060",
+    "tier": "T1",
+    "category": "exploration",
+    "regionTags": [
+      "ashgate-ruins"
+    ],
+    "classAffinity": [
+      "wizard"
+    ],
+    "statAffinity": [
+      "CHA"
+    ],
+    "backgroundAffinity": [
+      "relic-digger"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "재문 폐허에서 탐험 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "탐험 사건 #60",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-061",
+    "tier": "T1",
+    "category": "relationship",
+    "regionTags": [
+      "ashen-frontier"
+    ],
+    "classAffinity": [
+      "ranger"
+    ],
+    "statAffinity": [
+      "STR"
+    ],
+    "backgroundAffinity": [
+      "border-conscript"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "검은비 변경에서 관계 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "관계 사건 #61",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-062",
+    "tier": "T1",
+    "category": "social",
+    "regionTags": [
+      "gray-harbor"
+    ],
+    "classAffinity": [
+      "warlock"
+    ],
+    "statAffinity": [
+      "DEX"
+    ],
+    "backgroundAffinity": [
+      "orphan-cutpurse"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "회색 항구에서 사회 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "사회 사건 #62",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-063",
+    "tier": "T1",
+    "category": "market",
+    "regionTags": [
+      "stella-hill"
+    ],
+    "classAffinity": [
+      "bard"
+    ],
+    "statAffinity": [
+      "CON"
+    ],
+    "backgroundAffinity": [
+      "tower-dropout"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "성좌 언덕에서 시장 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "시장 사건 #63",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  },
+  {
+    "id": "evt-t1-064",
+    "tier": "T1",
+    "category": "faith",
+    "regionTags": [
+      "glass-lower"
+    ],
+    "classAffinity": [
+      "fighter"
+    ],
+    "statAffinity": [
+      "INT"
+    ],
+    "backgroundAffinity": [
+      "caravan-guard"
+    ],
+    "triggerConditions": {
+      "actMin": 1,
+      "minLevel": 1,
+      "requires": [],
+      "excludes": []
+    },
+    "narrativeText": "유리탑 하층에서 신앙 관련 기류가 포착됐다. 자동 흐름 속에서 처리된다.",
+    "logSummary": "신앙 사건 #64",
+    "defaultResolution": "log-only",
+    "outcomes": [
+      {
+        "id": "apply",
+        "effects": [
+          {
+            "kind": "relation",
+            "value": {
+              "trust": 1
+            }
+          },
+          {
+            "kind": "gain_xp",
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "cooldown": 4,
+    "oneShot": false,
+    "chronicleTags": [
+      "minor-shift"
+    ],
+    "portraitStateEffects": [
+      "resolved"
+    ],
+    "followUpEventIds": []
+  }
+]

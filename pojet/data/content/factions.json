@@ -1,0 +1,143 @@
+[
+  {
+    "id": "black-gate-guild",
+    "name": "무명 세력 1",
+    "identity": "도시의 균형을 흔드는 단체다.",
+    "playerBenefits": [
+      "정리 문구 1",
+      "정리 문구 2",
+      "정리 문구 3"
+    ],
+    "hiddenCost": "숨겨진 대가가 따른다.",
+    "preferredAttitude": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "relationshipHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "repThresholds": [
+      {
+        "min": 20,
+        "reward": "보상 획득"
+      },
+      {
+        "min": -20,
+        "risk": "위험 증가"
+      }
+    ]
+  },
+  {
+    "id": "lamp-sanctum",
+    "name": "무명 세력 2",
+    "identity": "도시의 균형을 흔드는 단체다.",
+    "playerBenefits": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "hiddenCost": "숨겨진 대가가 따른다.",
+    "preferredAttitude": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "relationshipHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "repThresholds": [
+      {
+        "min": 25,
+        "reward": "보상 획득"
+      },
+      {
+        "min": -15,
+        "risk": "위험 증가"
+      }
+    ]
+  },
+  {
+    "id": "gray-edict-office",
+    "name": "무명 세력 3",
+    "identity": "도시의 균형을 흔드는 단체다.",
+    "playerBenefits": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "hiddenCost": "숨겨진 대가가 따른다.",
+    "preferredAttitude": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "relationshipHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "repThresholds": [
+      {
+        "min": 25,
+        "reward": "보상 획득"
+      },
+      {
+        "min": -15,
+        "risk": "위험 증가"
+      }
+    ]
+  },
+  {
+    "id": "red-night-syndicate",
+    "name": "무명 세력 4",
+    "identity": "도시의 균형을 흔드는 단체다.",
+    "playerBenefits": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "hiddenCost": "숨겨진 대가가 따른다.",
+    "preferredAttitude": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "relationshipHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "repThresholds": [
+      {
+        "min": 20,
+        "reward": "보상 획득"
+      },
+      {
+        "min": -20,
+        "risk": "위험 증가"
+      }
+    ]
+  },
+  {
+    "id": "glass-reliquary",
+    "name": "무명 세력 5",
+    "identity": "도시의 균형을 흔드는 단체다.",
+    "playerBenefits": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "hiddenCost": "숨겨진 대가가 따른다.",
+    "preferredAttitude": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "relationshipHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "repThresholds": [
+      {
+        "min": 20,
+        "reward": "보상 획득"
+      },
+      {
+        "min": -20,
+        "risk": "위험 증가"
+      }
+    ]
+  }
+]

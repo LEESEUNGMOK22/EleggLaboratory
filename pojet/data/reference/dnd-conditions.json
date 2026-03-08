@@ -1,0 +1,12 @@
+﻿[
+  {"id":"blinded","displayName":"Blinded","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"시야 제한 상태","mechanicalTags":["condition","combat"],"gameUse":"명중률/피격률 보정","caution":"효과 중첩 규칙 단순화 필요"},
+  {"id":"charmed","displayName":"Charmed","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"매혹 상태","mechanicalTags":["condition","social"],"gameUse":"사회 이벤트 의사결정 왜곡","caution":"플레이어 통제 박탈 연출은 최소화"},
+  {"id":"frightened","displayName":"Frightened","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"공포 상태","mechanicalTags":["condition","morale"],"gameUse":"공격 성향 하향","caution":"로그로 원인 명확히 표시"},
+  {"id":"grappled","displayName":"Grappled","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"속박","mechanicalTags":["condition","movement"],"gameUse":"이동 옵션 제한","caution":"이동 없는 전투 모델에서 대체효과 필요"},
+  {"id":"incapacitated","displayName":"Incapacitated","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"행동 불가","mechanicalTags":["condition","hard-cc"],"gameUse":"행동 큐 스킵","caution":"연속 턴 고정 방지"},
+  {"id":"paralyzed","displayName":"Paralyzed","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"마비","mechanicalTags":["condition","hard-cc","critical-risk"],"gameUse":"치명 위기 이벤트 트리거","caution":"난이도 급등 방지"},
+  {"id":"poisoned","displayName":"Poisoned","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"독","mechanicalTags":["condition","debuff"],"gameUse":"판정 불리 상태","caution":"해독 루프 제공"},
+  {"id":"prone","displayName":"Prone","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"넘어짐","mechanicalTags":["condition","position"],"gameUse":"근접 피격률 상승","caution":"자동 기상 타이밍 정의"},
+  {"id":"restrained","displayName":"Restrained","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"강한 구속","mechanicalTags":["condition","movement","debuff"],"gameUse":"회피/공격 성능 저하","caution":""},
+  {"id":"stunned","displayName":"Stunned","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"기절","mechanicalTags":["condition","hard-cc"],"gameUse":"턴 소실","caution":"해제 판정 로그 필수"}
+]

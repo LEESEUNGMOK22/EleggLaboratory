@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharacterTemplate",
+  "type": "object",
+  "required": ["name","classId","lineageId","backgroundId","abilities","automationPreset"],
+  "properties": {
+    "name": {"type":"string"},
+    "classId": {"type":"string"},
+    "lineageId": {"type":"string"},
+    "backgroundId": {"type":"string"},
+    "abilities": {
+      "type":"object",
+      "required":["STR","DEX","CON","INT","WIS","CHA"],
+      "properties": {
+        "STR":{"type":"number"},"DEX":{"type":"number"},"CON":{"type":"number"},"INT":{"type":"number"},"WIS":{"type":"number"},"CHA":{"type":"number"}
+      }
+    },
+    "automationPreset": {"type":"string"}
+  }
+}

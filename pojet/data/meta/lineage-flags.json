@@ -1,0 +1,10 @@
+﻿{
+  "flags": [
+    {"id":"bloodline_scar","description":"이전 생의 상흔이 외형에 남음","effectType":"portrait"},
+    {"id":"temple_mark","description":"교단이 혈통을 기억함","effectType":"reputation"},
+    {"id":"debt_registry","description":"미지급 채무가 다음 생에 이어짐","effectType":"resource"},
+    {"id":"legend_whisper","description":"도시 소문이 시작 평판에 반영됨","effectType":"reputation"},
+    {"id":"rift_sense","description":"균열 관련 이벤트 조기 감지","effectType":"event_unlock"},
+    {"id":"oath_heir","description":"맹세 기반 선택지 추가","effectType":"choice_unlock"}
+  ]
+}

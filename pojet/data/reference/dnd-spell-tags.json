@@ -1,0 +1,12 @@
+﻿[
+  {"id":"direct_damage","displayName":"Direct Damage","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"직접 피해형 주문","mechanicalTags":["offense"],"gameUse":"적 체력 압박","caution":""},
+  {"id":"control","displayName":"Control","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"행동/이동 제어","mechanicalTags":["cc"],"gameUse":"위협 봉쇄","caution":"상태이상 과다 방지"},
+  {"id":"defense","displayName":"Defense","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"피해 완화/방호","mechanicalTags":["survival"],"gameUse":"생존 우선 정책","caution":""},
+  {"id":"heal","displayName":"Heal","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"회복","mechanicalTags":["support"],"gameUse":"저체력 자동 대응","caution":""},
+  {"id":"utility","displayName":"Utility","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"비전투 활용","mechanicalTags":["exploration","social"],"gameUse":"이벤트 대체 선택지","caution":""},
+  {"id":"summon","displayName":"Summon","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"소환","mechanicalTags":["offense","support"],"gameUse":"전투 지속력 확장","caution":"전투 길이 증가 관리"},
+  {"id":"mobility","displayName":"Mobility","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"이동/포지셔닝","mechanicalTags":["movement"],"gameUse":"원거리 유지/이탈","caution":""},
+  {"id":"ritual","displayName":"Ritual","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"의식형 시전","mechanicalTags":["utility","time-gated"],"gameUse":"탐험 이벤트 해금","caution":"자동 진행 시간 비용 반영"},
+  {"id":"concentration","displayName":"Concentration","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"집중 유지 필요","mechanicalTags":["resource","risk"],"gameUse":"동시 유지 효과 제한","caution":"피격 시 해제 체크 모델 필요"},
+  {"id":"aoe","displayName":"Area of Effect","srdVersion":"5.1/5.2.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"광역 효과","mechanicalTags":["offense","control"],"gameUse":"다수 적 대응","caution":"로그 과밀도 제어"}
+]

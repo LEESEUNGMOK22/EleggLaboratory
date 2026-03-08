@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChronicleEntry",
+  "type": "object",
+  "required": ["id","runId","title","summary","outcome","tags","createdAt"],
+  "properties": {
+    "id": {"type":"string"},
+    "runId": {"type":"string"},
+    "title": {"type":"string"},
+    "summary": {"type":"string"},
+    "outcome": {"type":"string"},
+    "tags": {"type":"array","items":{"type":"string"}},
+    "legacyFlags": {"type":"array","items":{"type":"string"}},
+    "createdAt": {"type":"string"}
+  }
+}

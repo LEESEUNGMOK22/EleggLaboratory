@@ -1,0 +1,98 @@
+[
+  {
+    "id": "wounded_minor",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "hp<70%"
+  },
+  {
+    "id": "wounded_severe",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "hp<35%"
+  },
+  {
+    "id": "exhausted",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "fatigue>=60"
+  },
+  {
+    "id": "blessed",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "blessing>0"
+  },
+  {
+    "id": "tainted",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "taint>=40"
+  },
+  {
+    "id": "noble_favor",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "nobilityRep>=20"
+  },
+  {
+    "id": "hunted",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "underbellyRep<=-15"
+  },
+  {
+    "id": "rain_soaked",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "region=ashen-frontier"
+  },
+  {
+    "id": "bloodied",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "combatLoss or hardWin"
+  },
+  {
+    "id": "spellglow_arcane",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "arcaneAction"
+  },
+  {
+    "id": "spellglow_divine",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "divineAction"
+  },
+  {
+    "id": "tempted",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "t2_temptation"
+  },
+  {
+    "id": "resolved",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "majorWin"
+  },
+  {
+    "id": "grieving",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "companionLoss"
+  },
+  {
+    "id": "triumphant",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "t3_success"
+  },
+  {
+    "id": "intimate_afterglow",
+    "displayName": "상태 태그",
+    "visualHint": "표정과 조명에 반영",
+    "trigger": "relationshipMilestone"
+  }
+]

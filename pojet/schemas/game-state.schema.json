@@ -1,0 +1,19 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GameState",
+  "type": "object",
+  "required": ["run","character","resources","relationships","factions","world","automation","chronicle","time","history"],
+  "properties": {
+    "run": {"type":"object"},
+    "character": {"type":"object"},
+    "resources": {"type":"object"},
+    "relationships": {"type":"object"},
+    "factions": {"type":"object"},
+    "world": {"type":"object"},
+    "automation": {"type":"object"},
+    "chronicle": {"type":"object"},
+    "activeDecisionEvent": {"type":["object","null"]},
+    "time": {"type":"object"},
+    "history": {"type":"object"}
+  }
+}

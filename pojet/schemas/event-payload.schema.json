@@ -1,0 +1,27 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EventPayload",
+  "type": "object",
+  "required": ["eventId","tier","title","text","choices","category"],
+  "properties": {
+    "eventId": {"type":"string"},
+    "tier": {"type":"string","enum":["T0","T1","T2","T3"]},
+    "category": {"type":"string"},
+    "title": {"type":"string"},
+    "text": {"type":"string"},
+    "timeoutSec": {"type":"number"},
+    "mustPause": {"type":"boolean"},
+    "choices": {
+      "type":"array",
+      "items": {
+        "type":"object",
+        "required":["id","label","effects"],
+        "properties": {
+          "id": {"type":"string"},
+          "label": {"type":"string"},
+          "effects": {"type":"array"}
+        }
+      }
+    }
+  }
+}

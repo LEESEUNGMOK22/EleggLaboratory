@@ -1,0 +1,4306 @@
+[
+  {
+    "id": "event_0001",
+    "title": "검문소 돌파 · 순례 001",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "순례",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_043",
+      "npc_068"
+    ],
+    "npcNames": [
+      "세라 쏜",
+      "레브 모트"
+    ],
+    "triggerTags": [
+      "debt",
+      "high_reputation",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 묘행 골목에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재필사단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "safe",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "violence_grim",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "trust_up",
+      "knowledge_up",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "계승용 기억",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0002",
+    "title": "순례길의 틈 · 묘지 002",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "묘지",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_061"
+    ],
+    "npcNames": [
+      "테르 솔트"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "rainstorm",
+      "debt"
+    ],
+    "summary": "탐험 로그가 이어지던 중 성락 계단구에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "body_horror_mild",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "reputation_up",
+      "gold_down",
+      "curse"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "연대기 하이라이트",
+      "후원 계약"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0003",
+    "title": "장막시장 협상 · 계약 003",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "계약",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_016"
+    ],
+    "npcNames": [
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "high_reputation",
+      "low_gold"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 유리수도원에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "유리수도원에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "seduction_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "injury",
+      "gold_down",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "칭호 해금",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0004",
+    "title": "도시 경계의 맹세 · 화재 004",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "화재",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_034",
+      "npc_077"
+    ],
+    "npcNames": [
+      "브리나 애쉬본",
+      "소린 베일"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "night",
+      "travel"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 빈궁정 저택가에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "loot_up",
+      "gold_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "칭호 해금",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0005",
+    "title": "검문소 돌파 · 연회 005",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "연회",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_029",
+      "npc_008"
+    ],
+    "npcNames": [
+      "리엔 스톤",
+      "타린 할로"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "high_reputation",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "religious_pressure",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "reputation_up",
+      "trust_down",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0006",
+    "title": "검은갈대 흔적 · 귀족 006",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "귀족",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_029",
+      "npc_016",
+      "npc_073"
+    ],
+    "npcNames": [
+      "리엔 스톤",
+      "도브 차펠",
+      "도브 쏜"
+    ],
+    "triggerTags": [
+      "blessed",
+      "night",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿불 항구지구에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "body_horror_mild",
+      "vice"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "reputation_down",
+      "loot_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "후원 계약"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0007",
+    "title": "골목 추격전 · 기근 007",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "기근",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "red_lantern_quay",
+    "regionName": "붉은등잔 선창",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_006"
+    ],
+    "npcNames": [
+      "카일 워드"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "cursed",
+      "high_reputation"
+    ],
+    "summary": "자동 전투 흐름 속에서 붉은등잔 선창에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "body_horror_mild",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "gold_up",
+      "fatigue",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "후원 계약",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0008",
+    "title": "무너진 저장고 · 길드 008",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "길드",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_040",
+      "npc_071"
+    ],
+    "npcNames": [
+      "니바 핀치",
+      "니바 차펠"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "night",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 붕괴한 필사관에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "religious_pressure",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "loot_up",
+      "knowledge_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "세력 재접촉",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0009",
+    "title": "항구 난투 · 연애 긴장 009",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "연애 긴장",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_079"
+    ],
+    "npcNames": [
+      "로엔 크레스트"
+    ],
+    "triggerTags": [
+      "cursed",
+      "debt",
+      "faction_favor"
+    ],
+    "summary": "자동 전투 흐름 속에서 탄흔 금고에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "탄흔 금고에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "violence_grim",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "blessing",
+      "loot_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0010",
+    "title": "후원자의 미소 · 유물 010",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "유물",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_013",
+      "npc_050"
+    ],
+    "npcNames": [
+      "세라 워드",
+      "페일 마스크"
+    ],
+    "triggerTags": [
+      "cursed",
+      "blessed",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 맹세 벌판에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "power_play",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "injury",
+      "trust_down",
+      "corruption_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "동료 개인 이벤트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0011",
+    "title": "장막시장 협상 · 기근 011",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "기근",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "thornwatch",
+    "regionName": "가시망루 숲경계",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_018"
+    ],
+    "npcNames": [
+      "페일 페인"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "blessed",
+      "cursed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 가시망루 숲경계에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "body_horror_mild",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "loot_up",
+      "curse",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "세력 재접촉",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0012",
+    "title": "습지의 불빛 · 치유 012",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "치유",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_013",
+      "npc_020"
+    ],
+    "npcNames": [
+      "세라 워드",
+      "엘린 베일"
+    ],
+    "triggerTags": [
+      "night",
+      "low_hp",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 폭우 저장고에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "seduction_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "knowledge_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "연대기 하이라이트",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0013",
+    "title": "비밀 증언 · 치유 013",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "치유",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_027",
+      "npc_058",
+      "npc_012"
+    ],
+    "npcNames": [
+      "이사 펜",
+      "데른 워드",
+      "시아 마스크"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 붕괴한 필사관에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "religious_pressure",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "gold_up",
+      "gold_down",
+      "curse"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0014",
+    "title": "검문소 돌파 · 신앙 014",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "신앙",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hollow_court",
+    "regionName": "빈궁정 저택가",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_054"
+    ],
+    "npcNames": [
+      "나엘 핀치"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "corruption_2",
+      "high_reputation"
+    ],
+    "summary": "자동 전투 흐름 속에서 빈궁정 저택가에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "빈궁정 저택가에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "vice",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "fatigue",
+      "gold_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "세력 재접촉",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0015",
+    "title": "길드 사무실 소문 · 귀족 015",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "귀족",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_065",
+      "npc_029",
+      "npc_034"
+    ],
+    "npcNames": [
+      "세라 바인",
+      "리엔 스톤",
+      "브리나 애쉬본"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "debt",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 재빛 순례로에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "seduction_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "injury",
+      "knowledge_up",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "연대기 하이라이트",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0016",
+    "title": "숲길 표식 · 밀수 016",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "밀수",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "moonwell_heath",
+    "regionName": "월정 초원",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_063",
+      "npc_003",
+      "npc_067"
+    ],
+    "npcNames": [
+      "오렐 스톤",
+      "미라 브레이",
+      "도브 모트"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "romance_flag",
+      "debt"
+    ],
+    "summary": "탐험 로그가 이어지던 중 월정 초원에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "gold_down",
+      "loot_up",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "장막시장 재방문",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0017",
+    "title": "순례길의 틈 · 기근 017",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "기근",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_047",
+      "npc_014"
+    ],
+    "npcNames": [
+      "카셀 차펠",
+      "엘린 솔트"
+    ],
+    "triggerTags": [
+      "debt",
+      "low_hp",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿불 항구지구에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿불 항구지구에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "injury",
+      "gold_up",
+      "knowledge_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "세력 재접촉",
+      "후원 계약"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0018",
+    "title": "습지의 불빛 · 감시 018",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "감시",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_046"
+    ],
+    "npcNames": [
+      "유나 할로"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "cursed",
+      "night"
+    ],
+    "summary": "자동 전투 흐름 속에서 기도 저장굴에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "seduction_tension",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "gold_down",
+      "gold_up",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "계승용 기억",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0019",
+    "title": "무너진 저장고 · 유물 019",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "유물",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_039",
+      "npc_004",
+      "npc_046"
+    ],
+    "npcNames": [
+      "크로 모트",
+      "오렐 드레이크",
+      "유나 할로"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "high_reputation",
+      "night"
+    ],
+    "summary": "탐험 로그가 이어지던 중 성락 계단구에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "power_play",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "gold_up",
+      "trust_down",
+      "curse"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "장막시장 재방문",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0020",
+    "title": "유리 조각 회랑 · 연애 긴장 020",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "연애 긴장",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_064"
+    ],
+    "npcNames": [
+      "테르 베일"
+    ],
+    "triggerTags": [
+      "debt",
+      "high_reputation",
+      "faction_favor"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "seduction_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "knowledge_up",
+      "corruption_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "연대기 하이라이트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0021",
+    "title": "검은갈대 흔적 · 폭우 021",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "폭우",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_037",
+      "npc_014"
+    ],
+    "npcNames": [
+      "라일 크레스트",
+      "엘린 솔트"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "faction_favor",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 묘행 골목에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "grief",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "injury",
+      "gold_up",
+      "loot_up",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "후원 계약",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0022",
+    "title": "잿길 매복 · 폭우 022",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "폭우",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "moonwell_heath",
+    "regionName": "월정 초원",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_077",
+      "npc_066",
+      "npc_057"
+    ],
+    "npcNames": [
+      "소린 베일",
+      "미라 크레스트",
+      "셀루 드레이크"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "cursed",
+      "blessed"
+    ],
+    "summary": "자동 전투 흐름 속에서 월정 초원에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "fatigue",
+      "gold_up",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0023",
+    "title": "제단 경비 교전 · 화재 023",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "화재",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_058"
+    ],
+    "npcNames": [
+      "데른 워드"
+    ],
+    "triggerTags": [
+      "debt",
+      "corruption_2",
+      "blessed"
+    ],
+    "summary": "자동 전투 흐름 속에서 검은갈대 습지에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "violence_grim",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "corruption_up",
+      "blessing",
+      "curse"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "장비 잠금 추천",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0024",
+    "title": "제단 경비 교전 · 황무지 024",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "황무지",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_077",
+      "npc_018",
+      "npc_068"
+    ],
+    "npcNames": [
+      "소린 베일",
+      "페일 페인",
+      "레브 모트"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "romance_flag",
+      "faction_favor"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "애가교에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "corruption_up",
+      "gold_down",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "계승용 기억",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0025",
+    "title": "숲길 표식 · 배신 025",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "배신",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_008",
+      "npc_051"
+    ],
+    "npcNames": [
+      "타린 할로",
+      "브리나 모트"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "travel",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 침수기록고에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "romance_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "trust_up",
+      "knowledge_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "연대기 하이라이트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0026",
+    "title": "부패한 야수의 습격 · 유물 026",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "유물",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_021"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "니바 마스크"
+    ],
+    "triggerTags": [
+      "night",
+      "low_gold",
+      "romance_flag"
+    ],
+    "summary": "자동 전투 흐름 속에서 폭우 저장고에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "소금 재판단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "power_play",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "trust_down",
+      "reputation_down",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "세력 재접촉",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0027",
+    "title": "빗물 속 칼끝 · 배신 027",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "배신",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_042",
+      "npc_016",
+      "npc_049"
+    ],
+    "npcNames": [
+      "카일 베일",
+      "도브 차펠",
+      "세라 마이어"
+    ],
+    "triggerTags": [
+      "cursed",
+      "rainstorm",
+      "blessed"
+    ],
+    "summary": "자동 전투 흐름 속에서 유리수도원에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "유리수도원에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "grief",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "loot_up",
+      "corruption_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "계승용 기억",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0028",
+    "title": "연회장의 시선 · 연회 028",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "연회",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_017"
+    ],
+    "npcNames": [
+      "리엔 솔트"
+    ],
+    "triggerTags": [
+      "night",
+      "rainstorm",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 침수기록고에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "gold_up",
+      "blessing",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "의식 방해의 대가",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0029",
+    "title": "순례길의 틈 · 감시 029",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "감시",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "oathfield",
+    "regionName": "맹세 벌판",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_046",
+      "npc_048",
+      "npc_012"
+    ],
+    "npcNames": [
+      "유나 할로",
+      "아셴 바인",
+      "시아 마스크"
+    ],
+    "triggerTags": [
+      "blessed",
+      "rainstorm",
+      "romance_flag"
+    ],
+    "summary": "탐험 로그가 이어지던 중 맹세 벌판에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "corruption_up",
+      "gold_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "장막시장 재방문",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0030",
+    "title": "비밀 증언 · 황무지 030",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "황무지",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_077"
+    ],
+    "npcNames": [
+      "소린 베일"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "debt",
+      "low_hp"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 재관문에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재관문에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "injury",
+      "fatigue",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0031",
+    "title": "봉인된 문턱 · 화재 031",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "화재",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_059"
+    ],
+    "npcNames": [
+      "카셀 스크립"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "corruption_2",
+      "cursed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿망치 제련소에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "violence_grim",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "reputation_down",
+      "trust_down",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "의식 방해의 대가",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0032",
+    "title": "제단 경비 교전 · 귀족 032",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "귀족",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "glass_priory",
+    "regionName": "유리수도원",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_046",
+      "npc_017"
+    ],
+    "npcNames": [
+      "유나 할로",
+      "리엔 솔트"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "travel",
+      "low_gold"
+    ],
+    "summary": "자동 전투 흐름 속에서 유리수도원에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "curse",
+      "injury",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "후원 계약",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0033",
+    "title": "검문소 돌파 · 오염 033",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "오염",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_028",
+      "npc_051"
+    ],
+    "npcNames": [
+      "비나 펜",
+      "브리나 모트"
+    ],
+    "triggerTags": [
+      "debt",
+      "travel",
+      "romance_flag"
+    ],
+    "summary": "자동 전투 흐름 속에서 성락 계단구에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "vice",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "trust_down",
+      "curse",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "계승용 기억",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0034",
+    "title": "무너진 저장고 · 연회 034",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "연회",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "amber_court"
+    ],
+    "factionNames": [
+      "호박 궁정"
+    ],
+    "npcRefs": [
+      "npc_067",
+      "npc_002"
+    ],
+    "npcNames": [
+      "도브 모트",
+      "카셀 스톤"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "rainstorm",
+      "high_reputation"
+    ],
+    "summary": "탐험 로그가 이어지던 중 성락 계단구에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 호박 궁정 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "violence_grim",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "loot_up",
+      "corruption_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "동료 개인 이벤트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0035",
+    "title": "빚 문서의 제안 · 밀수 035",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "밀수",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_016"
+    ],
+    "npcNames": [
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "travel",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 재관문에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "violence_grim",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "gold_up",
+      "reputation_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "동료 개인 이벤트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0036",
+    "title": "도시 경계의 맹세 · 오염 036",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "오염",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_051",
+      "npc_049"
+    ],
+    "npcNames": [
+      "브리나 모트",
+      "세라 마이어"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "cursed",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 애가교에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "gold_down",
+      "gold_up",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "의식 방해의 대가",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0037",
+    "title": "장막시장 협상 · 신앙 037",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "신앙",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_076"
+    ],
+    "npcNames": [
+      "가브 쏜"
+    ],
+    "triggerTags": [
+      "travel",
+      "romance_flag",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 잿망치 제련소에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "body_horror_mild",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "gold_down",
+      "loot_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "계승용 기억",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0038",
+    "title": "순례길의 틈 · 계약 038",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "계약",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_030",
+      "npc_040",
+      "npc_016"
+    ],
+    "npcNames": [
+      "도브 그레이",
+      "니바 핀치",
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "cursed",
+      "night"
+    ],
+    "summary": "탐험 로그가 이어지던 중 정적 지하묘에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "정적 지하묘에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "body_horror_mild",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "knowledge_up",
+      "trust_down",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "계승용 기억",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0039",
+    "title": "쓰러진 감시대 · 순례 039",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "순례",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_025",
+      "npc_075"
+    ],
+    "npcNames": [
+      "페일 차펠",
+      "카일 크라운"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "low_gold",
+      "romance_flag"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재빛 순례로에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "loot_up",
+      "curse",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장막시장 재방문",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0040",
+    "title": "묘지 순찰 · 밀수 040",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "밀수",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_039"
+    ],
+    "npcNames": [
+      "크로 모트"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "travel",
+      "faction_favor"
+    ],
+    "summary": "자동 전투 흐름 속에서 침수기록고에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재필사단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "romance_tension",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "gold_up",
+      "knowledge_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "계승용 기억",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0041",
+    "title": "비밀 증언 · 연애 긴장 041",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "연애 긴장",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_053",
+      "npc_038",
+      "npc_005"
+    ],
+    "npcNames": [
+      "코르 바인",
+      "오렐 바인",
+      "셀루 워드"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "low_hp",
+      "romance_flag"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 폭우 저장고에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "romance_tension",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "trust_up",
+      "reputation_up",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "칭호 해금",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0042",
+    "title": "침수된 서고 · 치유 042",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "치유",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_011",
+      "npc_077"
+    ],
+    "npcNames": [
+      "데른 펜",
+      "소린 베일"
+    ],
+    "triggerTags": [
+      "debt",
+      "faction_favor",
+      "rainstorm"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "창백항에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "knowledge_up",
+      "reputation_down",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "계승용 기억",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0043",
+    "title": "길드 사무실 소문 · 길드 043",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "길드",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_011",
+      "npc_012"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "데른 펜",
+      "시아 마스크"
+    ],
+    "triggerTags": [
+      "blessed",
+      "low_gold",
+      "debt"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 검은갈대 습지에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "curse",
+      "injury",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "후원 계약",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0044",
+    "title": "찬가와 협박 · 순례 044",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "순례",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_077"
+    ],
+    "npcNames": [
+      "소린 베일"
+    ],
+    "triggerTags": [
+      "debt",
+      "low_hp",
+      "corruption_2"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 성락 계단구에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "corruption_up",
+      "fatigue",
+      "curse"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "연대기 하이라이트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0045",
+    "title": "항구 난투 · 묘지 045",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "묘지",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_005"
+    ],
+    "npcNames": [
+      "셀루 워드"
+    ],
+    "triggerTags": [
+      "debt",
+      "low_hp",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "violence_grim",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "curse",
+      "reputation_down",
+      "trust_down",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "칭호 해금",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0046",
+    "title": "찬가와 협박 · 폭우 046",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "폭우",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_070",
+      "npc_031",
+      "npc_049"
+    ],
+    "npcNames": [
+      "테르 쏜",
+      "셀루 핀치",
+      "세라 마이어"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "cursed",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 잿망치 제련소에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿망치 제련소에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "grief",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "injury",
+      "loot_up",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "세력 재접촉",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0047",
+    "title": "후원자의 미소 · 묘지 047",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "묘지",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_015"
+    ],
+    "npcNames": [
+      "카일 쏜"
+    ],
+    "triggerTags": [
+      "rainstorm",
+      "low_hp",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 기도 저장굴에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "seduction_tension",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "reputation_down",
+      "curse",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장막시장 재방문",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0048",
+    "title": "유리 조각 회랑 · 황무지 048",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "황무지",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_042"
+    ],
+    "npcNames": [
+      "카일 베일"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "low_hp",
+      "blessed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿망치 제련소에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "romance_tension",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "injury",
+      "reputation_down",
+      "blessing",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "세력 재접촉",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0049",
+    "title": "숨은 제단 · 오염 049",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "오염",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "ashen_road",
+    "regionName": "재빛 순례로",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_008"
+    ],
+    "npcNames": [
+      "타린 할로"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "low_hp",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 재빛 순례로에서 '오염' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재필사단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "romance_tension",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "gold_down",
+      "reputation_up",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "세력 재접촉",
+      "칭호 해금",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0050",
+    "title": "골목 추격전 · 계약 050",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "계약",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_037"
+    ],
+    "npcNames": [
+      "라일 크레스트"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "night",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 침수기록고에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "grief",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "knowledge_up",
+      "blessing",
+      "loot_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "의식 방해의 대가",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0051",
+    "title": "길드 사무실 소문 · 배신 051",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "배신",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_035",
+      "npc_017",
+      "npc_043"
+    ],
+    "npcNames": [
+      "시아 스톤",
+      "리엔 솔트",
+      "세라 쏜"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "night",
+      "blessed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 검은갈대 습지에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "injury",
+      "blessing",
+      "curse"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "세력 재접촉",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0052",
+    "title": "후원자의 미소 · 감시 052",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "감시",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_039"
+    ],
+    "npcNames": [
+      "크로 모트"
+    ],
+    "triggerTags": [
+      "cursed",
+      "high_reputation",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 묘행 골목에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "등불 교회회의의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "violence_grim",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "knowledge_up",
+      "gold_up",
+      "fatigue"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0053",
+    "title": "순례길의 틈 · 신앙 053",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "신앙",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "river_mire",
+    "regionName": "회흙 늪나루",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_028",
+      "npc_057",
+      "npc_077"
+    ],
+    "npcNames": [
+      "비나 펜",
+      "셀루 드레이크",
+      "소린 베일"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "low_gold",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 회흙 늪나루에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "grief",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "blessing",
+      "reputation_down",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "연대기 하이라이트",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0054",
+    "title": "골목 추격전 · 길드 054",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "길드",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_015",
+      "npc_030"
+    ],
+    "npcNames": [
+      "카일 쏜",
+      "도브 그레이"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "high_reputation",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 잿불 항구지구에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "loot_up",
+      "fatigue",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "연대기 하이라이트",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0055",
+    "title": "습지의 불빛 · 순례 055",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "순례",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_063"
+    ],
+    "npcNames": [
+      "오렐 스톤"
+    ],
+    "triggerTags": [
+      "night",
+      "cursed",
+      "rainstorm"
+    ],
+    "summary": "자동 전투 흐름 속에서 창백항에서 '순례' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "romance_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "fatigue",
+      "loot_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "동료 개인 이벤트",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0056",
+    "title": "야영지의 속삭임 · 묘지 056",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "묘지",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "ember_ward",
+    "regionName": "잿불 항구지구",
+    "factionIds": [
+      "ashen_scriptorium"
+    ],
+    "factionNames": [
+      "재필사단"
+    ],
+    "npcRefs": [
+      "npc_012",
+      "npc_064",
+      "npc_011"
+    ],
+    "npcNames": [
+      "시아 마스크",
+      "테르 베일",
+      "데른 펜"
+    ],
+    "triggerTags": [
+      "cursed",
+      "debt",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿불 항구지구에서 '묘지' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 재필사단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재필사단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "vice",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "knowledge_up",
+      "injury",
+      "curse"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장비 잠금 추천",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0057",
+    "title": "연회장의 시선 · 계약 057",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "계약",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "broken_scriptorium",
+    "regionName": "붕괴한 필사관",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_053",
+      "npc_043",
+      "npc_007"
+    ],
+    "npcNames": [
+      "코르 바인",
+      "세라 쏜",
+      "타린 쏜"
+    ],
+    "triggerTags": [
+      "high_reputation",
+      "faction_favor",
+      "rainstorm"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 붕괴한 필사관에서 '계약' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "붕괴한 필사관에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "religious_pressure",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "injury",
+      "fatigue",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "의식 방해의 대가",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0058",
+    "title": "저택가 초대장 · 화재 058",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "화재",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "blackfin_consort"
+    ],
+    "factionNames": [
+      "흑지느러미 상단"
+    ],
+    "npcRefs": [
+      "npc_080",
+      "npc_022"
+    ],
+    "npcNames": [
+      "에단 스크립",
+      "코르 모트"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "romance_flag",
+      "low_gold"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 정적 지하묘에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 흑지느러미 상단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "seduction_tension",
+      "vice"
+    ],
+    "outcomeTags": [
+      "curse",
+      "loot_up",
+      "fatigue",
+      "knowledge_up"
+    ],
+    "followupSeeds": [
+      "연대기 하이라이트",
+      "장막시장 재방문",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0059",
+    "title": "검문소 돌파 · 연회 059",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "연회",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "blackreed_marsh",
+    "regionName": "검은갈대 습지",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_001",
+      "npc_014"
+    ],
+    "npcNames": [
+      "카셀 쏜",
+      "엘린 솔트"
+    ],
+    "triggerTags": [
+      "low_hp",
+      "night",
+      "travel"
+    ],
+    "summary": "자동 전투 흐름 속에서 검은갈대 습지에서 '연회' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "violence_grim",
+      "grief"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "injury",
+      "reputation_down",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "칭호 해금",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0060",
+    "title": "검은갈대 흔적 · 귀족 060",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "귀족",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_022",
+      "npc_040",
+      "npc_050"
+    ],
+    "npcNames": [
+      "코르 모트",
+      "니바 핀치",
+      "페일 마스크"
+    ],
+    "triggerTags": [
+      "night",
+      "low_hp",
+      "blessed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "seduction_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "fatigue",
+      "gold_up",
+      "trust_down",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "동료 개인 이벤트",
+      "의식 방해의 대가",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0061",
+    "title": "묘지 순찰 · 기근 061",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "기근",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "storm_cellar",
+    "regionName": "폭우 저장고",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_074"
+    ],
+    "npcNames": [
+      "나엘 크레스트"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "cursed",
+      "night"
+    ],
+    "summary": "자동 전투 흐름 속에서 폭우 저장고에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "seduction_tension",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "knowledge_up",
+      "curse",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "의식 방해의 대가",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0062",
+    "title": "야영지의 속삭임 · 길드 062",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "길드",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "saintfall_stairs",
+    "regionName": "성락 계단구",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_073"
+    ],
+    "npcNames": [
+      "도브 쏜"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "rainstorm",
+      "travel"
+    ],
+    "summary": "탐험 로그가 이어지던 중 성락 계단구에서 '길드' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "등불 교회회의의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "merciful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "grief",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "reputation_down",
+      "corruption_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "동료 개인 이벤트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0063",
+    "title": "묘지 순찰 · 연애 긴장 063",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "연애 긴장",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_070",
+      "npc_010",
+      "npc_045"
+    ],
+    "npcNames": [
+      "테르 쏜",
+      "브람 쏜",
+      "소린 브레이"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "faction_favor",
+      "cursed"
+    ],
+    "summary": "자동 전투 흐름 속에서 장막시장에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "grief",
+      "body_horror_mild"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "gold_up",
+      "knowledge_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "계승용 기억",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0064",
+    "title": "빚 문서의 제안 · 유물 064",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "유물",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "ash_crown_gate",
+    "regionName": "재관문",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_017",
+      "npc_018",
+      "npc_008"
+    ],
+    "npcNames": [
+      "리엔 솔트",
+      "페일 페인",
+      "타린 할로"
+    ],
+    "triggerTags": [
+      "night",
+      "faction_favor",
+      "high_reputation"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 재관문에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "재관문에서 사건의 냄새가 짙어졌다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "injury",
+      "trust_down",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "연대기 하이라이트",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0065",
+    "title": "후원자의 미소 · 기근 065",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "기근",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_080"
+    ],
+    "npcNames": [
+      "에단 스크립"
+    ],
+    "triggerTags": [
+      "romance_flag",
+      "high_reputation",
+      "faction_favor"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 탄흔 금고에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "청엽 감시단의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "power_play",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "fatigue",
+      "reputation_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "계승용 기억",
+      "장비 잠금 추천",
+      "동료 개인 이벤트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0066",
+    "title": "잿길 매복 · 치유 066",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "치유",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "cinder_guild"
+    ],
+    "factionNames": [
+      "잿불 길드"
+    ],
+    "npcRefs": [
+      "npc_072"
+    ],
+    "npcNames": [
+      "벨트 리드"
+    ],
+    "triggerTags": [
+      "debt",
+      "blessed",
+      "low_hp"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 잿불 길드 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "잿불 길드의 손길이 로그 사이로 스며든다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "romance_tension",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "trust_down",
+      "trust_up",
+      "loot_up",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "연대기 하이라이트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0067",
+    "title": "비밀 증언 · 치유 067",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "치유",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_048",
+      "npc_016"
+    ],
+    "npcNames": [
+      "아셴 바인",
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "blessed",
+      "night",
+      "cursed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 잿망치 제련소에서 '치유' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "담담",
+    "maturityTags": [
+      "vice",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "curse",
+      "knowledge_up",
+      "trust_down"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "장비 잠금 추천",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0068",
+    "title": "습지의 불빛 · 신앙 068",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "신앙",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "char_vault",
+    "regionName": "탄흔 금고",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_057",
+      "npc_002"
+    ],
+    "npcNames": [
+      "셀루 드레이크",
+      "카셀 스톤"
+    ],
+    "triggerTags": [
+      "travel",
+      "low_gold",
+      "romance_flag"
+    ],
+    "summary": "자동 전투 흐름 속에서 탄흔 금고에서 '신앙' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "trust_down",
+      "injury",
+      "blessing"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "의식 방해의 대가",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0069",
+    "title": "후원자의 미소 · 귀족 069",
+    "tier": "T0",
+    "pillar": "social",
+    "theme": "귀족",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_053"
+    ],
+    "npcNames": [
+      "코르 바인"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "high_reputation",
+      "cursed"
+    ],
+    "summary": "도시와 관계의 소문이 겹치던 순간 정적 지하묘에서 '귀족' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "grief",
+      "violence_grim"
+    ],
+    "outcomeTags": [
+      "curse",
+      "fatigue",
+      "blessing",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "연대기 하이라이트",
+      "장비 잠금 추천"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0070",
+    "title": "쓰러진 감시대 · 밀수 070",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "밀수",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "sunken_archive",
+    "regionName": "침수기록고",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_044",
+      "npc_078"
+    ],
+    "npcNames": [
+      "라일 할로",
+      "페일 스텝"
+    ],
+    "triggerTags": [
+      "cursed",
+      "high_reputation",
+      "romance_flag"
+    ],
+    "summary": "탐험 로그가 이어지던 중 침수기록고에서 '밀수' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "피로",
+    "maturityTags": [
+      "vice",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "blessing",
+      "trust_up",
+      "injury",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "의식 방해의 대가",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0071",
+    "title": "봉인된 문턱 · 기근 071",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "기근",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "salt_chapel",
+    "regionName": "소금예배당",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_013",
+      "npc_038"
+    ],
+    "npcNames": [
+      "세라 워드",
+      "오렐 바인"
+    ],
+    "triggerTags": [
+      "night",
+      "cursed",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 소금예배당에서 '기근' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "grief",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "injury",
+      "blessing",
+      "gold_down"
+    ],
+    "followupSeeds": [
+      "칭호 해금",
+      "장비 잠금 추천",
+      "계승용 기억"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0072",
+    "title": "항구 난투 · 감시 072",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "감시",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "veil_collectors"
+    ],
+    "factionNames": [
+      "장막 수집회"
+    ],
+    "npcRefs": [
+      "npc_026"
+    ],
+    "npcNames": [
+      "페일 할로"
+    ],
+    "triggerTags": [
+      "low_gold",
+      "corruption_2",
+      "debt"
+    ],
+    "summary": "자동 전투 흐름 속에서 장막시장에서 '감시' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 장막 수집회 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "greedy",
+    "portraitMood": "헌신",
+    "maturityTags": [
+      "seduction_tension",
+      "grief"
+    ],
+    "outcomeTags": [
+      "reputation_down",
+      "gold_down",
+      "knowledge_up",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "장막시장 재방문",
+      "연대기 하이라이트",
+      "의식 방해의 대가"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "사소한 자원"
+  },
+  {
+    "id": "event_0073",
+    "title": "무너진 저장고 · 유물 073",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "유물",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "cinder_forge",
+    "regionName": "잿망치 제련소",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_045",
+      "npc_053"
+    ],
+    "npcNames": [
+      "소린 브레이",
+      "코르 바인"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "night",
+      "blessed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 잿망치 제련소에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "유혹",
+    "maturityTags": [
+      "grief",
+      "seduction_tension"
+    ],
+    "outcomeTags": [
+      "trust_up",
+      "gold_down",
+      "reputation_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "연대기 하이라이트",
+      "세력 재접촉"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0074",
+    "title": "침수된 서고 · 연애 긴장 074",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "연애 긴장",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "hush_catacombs",
+    "regionName": "정적 지하묘",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_073",
+      "npc_046"
+    ],
+    "npcNames": [
+      "도브 쏜",
+      "유나 할로"
+    ],
+    "triggerTags": [
+      "cursed",
+      "rainstorm",
+      "blessed"
+    ],
+    "summary": "탐험 로그가 이어지던 중 정적 지하묘에서 '연애 긴장' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "seduction_tension",
+      "religious_pressure"
+    ],
+    "outcomeTags": [
+      "gold_down",
+      "gold_up",
+      "fatigue",
+      "reputation_down"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "칭호 해금",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0075",
+    "title": "무너진 저장고 · 폭우 075",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "폭우",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "pale_harbor",
+    "regionName": "창백항",
+    "factionIds": [
+      "iron_oath_company"
+    ],
+    "factionNames": [
+      "철맹 용병단"
+    ],
+    "npcRefs": [
+      "npc_006",
+      "npc_016"
+    ],
+    "npcNames": [
+      "카일 워드",
+      "도브 차펠"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "blessed",
+      "low_gold"
+    ],
+    "summary": "탐험 로그가 이어지던 중 창백항에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 철맹 용병단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "safe",
+    "portraitMood": "경계",
+    "maturityTags": [
+      "religious_pressure",
+      "grief"
+    ],
+    "outcomeTags": [
+      "knowledge_up",
+      "injury",
+      "trust_down",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "동료 개인 이벤트",
+      "연대기 하이라이트"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0076",
+    "title": "잿길 매복 · 폭우 076",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "폭우",
+    "act": 1,
+    "actName": "검은비의 변경",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "lantern_synod"
+    ],
+    "factionNames": [
+      "등불 교회회의"
+    ],
+    "npcRefs": [
+      "npc_044"
+    ],
+    "npcNames": [
+      "라일 할로"
+    ],
+    "triggerTags": [
+      "cursed",
+      "rainstorm",
+      "faction_favor"
+    ],
+    "summary": "자동 전투 흐름 속에서 묘행 골목에서 '폭우' 테마와 얽힌 사건이 발생한다. 이 사건은 검은비의 변경 단계의 분위기를 반영하며, 등불 교회회의 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "짧은 정적 뒤에 사건의 값이 드러났다.",
+    "autoBehavior": "faithful",
+    "portraitMood": "결의",
+    "maturityTags": [
+      "religious_pressure",
+      "romance_tension"
+    ],
+    "outcomeTags": [
+      "gold_up",
+      "reputation_down",
+      "curse",
+      "corruption_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "동료 개인 이벤트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0077",
+    "title": "화물 강탈 · 화재 077",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "화재",
+    "act": 2,
+    "actName": "도시의 속살",
+    "regionId": "prayer_cellars",
+    "regionName": "기도 저장굴",
+    "factionIds": [
+      "salt_tribunal"
+    ],
+    "factionNames": [
+      "소금 재판단"
+    ],
+    "npcRefs": [
+      "npc_056",
+      "npc_070",
+      "npc_022"
+    ],
+    "npcNames": [
+      "라일 쏜",
+      "테르 쏜",
+      "코르 모트"
+    ],
+    "triggerTags": [
+      "faction_favor",
+      "debt",
+      "blessed"
+    ],
+    "summary": "자동 전투 흐름 속에서 기도 저장굴에서 '화재' 테마와 얽힌 사건이 발생한다. 이 사건은 도시의 속살 단계의 분위기를 반영하며, 소금 재판단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "ambitious",
+    "portraitMood": "차분",
+    "maturityTags": [
+      "violence_grim",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "loot_up",
+      "blessing",
+      "gold_up"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "연대기 하이라이트",
+      "후원 계약"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "전리품과 시간"
+  },
+  {
+    "id": "event_0078",
+    "title": "항구 난투 · 황무지 078",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "황무지",
+    "act": 3,
+    "actName": "금지된 문",
+    "regionId": "grave_step",
+    "regionName": "묘행 골목",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_068",
+      "npc_007"
+    ],
+    "npcNames": [
+      "레브 모트",
+      "타린 쏜"
+    ],
+    "triggerTags": [
+      "night",
+      "corruption_2",
+      "low_hp"
+    ],
+    "summary": "자동 전투 흐름 속에서 묘행 골목에서 '황무지' 테마와 얽힌 사건이 발생한다. 이 사건은 금지된 문 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "분노",
+    "maturityTags": [
+      "vice",
+      "grief"
+    ],
+    "outcomeTags": [
+      "loot_up",
+      "corruption_up",
+      "curse",
+      "reputation_up"
+    ],
+    "followupSeeds": [
+      "후원 계약",
+      "세력 재접촉",
+      "칭호 해금"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  },
+  {
+    "id": "event_0079",
+    "title": "쓰러진 감시대 · 배신 079",
+    "tier": "T0",
+    "pillar": "exploration",
+    "theme": "배신",
+    "act": 4,
+    "actName": "왕관 없는 전쟁",
+    "regionId": "veil_market",
+    "regionName": "장막시장",
+    "factionIds": [
+      "verdant_wardens"
+    ],
+    "factionNames": [
+      "청엽 감시단"
+    ],
+    "npcRefs": [
+      "npc_058",
+      "npc_056"
+    ],
+    "npcNames": [
+      "데른 워드",
+      "라일 쏜"
+    ],
+    "triggerTags": [
+      "travel",
+      "low_hp",
+      "corruption_2"
+    ],
+    "summary": "탐험 로그가 이어지던 중 장막시장에서 '배신' 테마와 얽힌 사건이 발생한다. 이 사건은 왕관 없는 전쟁 단계의 분위기를 반영하며, 청엽 감시단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "선택을 미뤄도 세계는 기록을 남긴다.",
+    "autoBehavior": "safe",
+    "portraitMood": "망설임",
+    "maturityTags": [
+      "body_horror_mild",
+      "grief"
+    ],
+    "outcomeTags": [
+      "corruption_up",
+      "fatigue",
+      "loot_up",
+      "injury"
+    ],
+    "followupSeeds": [
+      "의식 방해의 대가",
+      "동료 개인 이벤트",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "경미한 명성"
+  },
+  {
+    "id": "event_0080",
+    "title": "빗물 속 칼끝 · 유물 080",
+    "tier": "T0",
+    "pillar": "combat",
+    "theme": "유물",
+    "act": 5,
+    "actName": "계승과 이름",
+    "regionId": "mourn_bridge",
+    "regionName": "애가교",
+    "factionIds": [
+      "hollow_choir"
+    ],
+    "factionNames": [
+      "공동의 합창단"
+    ],
+    "npcRefs": [
+      "npc_011",
+      "npc_074",
+      "npc_058"
+    ],
+    "npcNames": [
+      "데른 펜",
+      "나엘 크레스트",
+      "데른 워드"
+    ],
+    "triggerTags": [
+      "corruption_2",
+      "blessed",
+      "debt"
+    ],
+    "summary": "자동 전투 흐름 속에서 애가교에서 '유물' 테마와 얽힌 사건이 발생한다. 이 사건은 계승과 이름 단계의 분위기를 반영하며, 공동의 합창단 또는 그 반대편 세력이 개입할 여지가 있다.",
+    "logLine": "누가 먼저 이름을 부르느냐에 따라 결말이 달라질 수 있다.",
+    "autoBehavior": "secretive",
+    "portraitMood": "침잠",
+    "maturityTags": [
+      "grief",
+      "power_play"
+    ],
+    "outcomeTags": [
+      "reputation_up",
+      "reputation_down",
+      "corruption_up",
+      "trust_up"
+    ],
+    "followupSeeds": [
+      "장비 잠금 추천",
+      "의식 방해의 대가",
+      "장막시장 재방문"
+    ],
+    "choiceModel": "automatic",
+    "options": [],
+    "mustPause": false,
+    "defaultTimeoutSec": null,
+    "stakes": "피로와 소문"
+  }
+]

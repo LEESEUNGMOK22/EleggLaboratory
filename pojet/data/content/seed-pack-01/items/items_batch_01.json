@@ -1,0 +1,842 @@
+[
+  {
+    "id": "item_001",
+    "displayName": "침묵의 팔토시",
+    "slot": "relic",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "luck",
+      "healing",
+      "corruption"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_002",
+    "displayName": "불씨 부적",
+    "slot": "cloak",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "damage",
+      "healing",
+      "social"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_003",
+    "displayName": "성유 부적",
+    "slot": "relic",
+    "rarity": "common",
+    "mechanicalTags": [
+      "luck",
+      "faith",
+      "social"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_004",
+    "displayName": "순례자의 방패",
+    "slot": "relic",
+    "rarity": "common",
+    "mechanicalTags": [
+      "ritual",
+      "social",
+      "defense"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_005",
+    "displayName": "철맹 방패",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "faith",
+      "healing",
+      "resource"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_006",
+    "displayName": "흑유리 기도서",
+    "slot": "armor",
+    "rarity": "common",
+    "mechanicalTags": [
+      "social",
+      "damage",
+      "arcane"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_007",
+    "displayName": "붉은등잔 서판",
+    "slot": "armor",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "defense",
+      "ritual",
+      "faith"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_008",
+    "displayName": "황혼 활",
+    "slot": "tool",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "defense",
+      "healing",
+      "arcane"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_009",
+    "displayName": "불씨 묵주",
+    "slot": "amulet",
+    "rarity": "common",
+    "mechanicalTags": [
+      "corruption",
+      "resource",
+      "luck"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_010",
+    "displayName": "황혼 장검",
+    "slot": "offhand",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "faith",
+      "healing",
+      "resource"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_011",
+    "displayName": "침묵의 묵주",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "faith",
+      "stealth",
+      "corruption"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_012",
+    "displayName": "장송 서판",
+    "slot": "offhand",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "healing",
+      "luck",
+      "resource"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_013",
+    "displayName": "순례자의 지팡이",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "damage",
+      "defense",
+      "ritual"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "가슴 장식 강조",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_014",
+    "displayName": "비전 지팡이",
+    "slot": "tool",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "damage",
+      "social",
+      "corruption"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_015",
+    "displayName": "붉은등잔 성배",
+    "slot": "tool",
+    "rarity": "common",
+    "mechanicalTags": [
+      "defense",
+      "damage",
+      "healing"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_016",
+    "displayName": "붉은등잔 기도서",
+    "slot": "amulet",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "arcane",
+      "ritual",
+      "resource"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_017",
+    "displayName": "황혼 서판",
+    "slot": "offhand",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "social",
+      "defense",
+      "faith"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_018",
+    "displayName": "흑유리 장검",
+    "slot": "ring",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "luck",
+      "mobility",
+      "stealth"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "가슴 장식 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_019",
+    "displayName": "가시문양 망토",
+    "slot": "relic",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "social",
+      "ritual",
+      "faith"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_020",
+    "displayName": "장막의 묵주",
+    "slot": "relic",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "stealth",
+      "luck",
+      "arcane"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_021",
+    "displayName": "붉은등잔 붕대",
+    "slot": "relic",
+    "rarity": "common",
+    "mechanicalTags": [
+      "damage",
+      "defense",
+      "mobility"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "가슴 장식 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_022",
+    "displayName": "비전 인장",
+    "slot": "amulet",
+    "rarity": "common",
+    "mechanicalTags": [
+      "damage",
+      "luck",
+      "corruption"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "가슴 장식 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_023",
+    "displayName": "흑유리 인장",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "corruption",
+      "faith",
+      "luck"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_024",
+    "displayName": "침묵의 장화",
+    "slot": "consumable",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "healing",
+      "stealth",
+      "luck"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_025",
+    "displayName": "재빛 장검",
+    "slot": "armor",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "social",
+      "corruption",
+      "ritual"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_026",
+    "displayName": "침묵의 붕대",
+    "slot": "amulet",
+    "rarity": "common",
+    "mechanicalTags": [
+      "luck",
+      "faith",
+      "ritual"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_027",
+    "displayName": "철맹 지팡이",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "damage",
+      "arcane",
+      "resource"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_028",
+    "displayName": "비전 단검",
+    "slot": "focus",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "resource",
+      "luck",
+      "ritual"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_029",
+    "displayName": "장송 향로",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "ritual",
+      "luck",
+      "mobility"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_030",
+    "displayName": "재빛 지팡이",
+    "slot": "offhand",
+    "rarity": "common",
+    "mechanicalTags": [
+      "social",
+      "arcane",
+      "mobility"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_031",
+    "displayName": "비전 붕대",
+    "slot": "relic",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "ritual",
+      "damage",
+      "healing"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_032",
+    "displayName": "불씨 향로",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "healing",
+      "social",
+      "corruption"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_033",
+    "displayName": "가시문양 성배",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "stealth",
+      "faith",
+      "resource"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_034",
+    "displayName": "침묵의 향로",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "ritual",
+      "faith",
+      "resource"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_035",
+    "displayName": "오염된 인장",
+    "slot": "amulet",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "healing",
+      "faith",
+      "damage"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_036",
+    "displayName": "침묵의 석판",
+    "slot": "ring",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "stealth",
+      "ritual",
+      "corruption"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_037",
+    "displayName": "은소금 목걸이",
+    "slot": "focus",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "stealth",
+      "ritual",
+      "damage"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_038",
+    "displayName": "재빛 목걸이",
+    "slot": "tool",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "social",
+      "defense",
+      "healing"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_039",
+    "displayName": "장막의 향로",
+    "slot": "relic",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "faith",
+      "arcane",
+      "ritual"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_040",
+    "displayName": "오염된 망토",
+    "slot": "tool",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "healing",
+      "damage",
+      "mobility"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_041",
+    "displayName": "오염된 장검",
+    "slot": "weapon",
+    "rarity": "common",
+    "mechanicalTags": [
+      "luck",
+      "defense",
+      "arcane"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_042",
+    "displayName": "오염된 반지",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "stealth",
+      "defense",
+      "arcane"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_043",
+    "displayName": "철맹 망토",
+    "slot": "weapon",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "faith",
+      "luck",
+      "stealth"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_044",
+    "displayName": "순례자의 활",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "mobility",
+      "resource",
+      "defense"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_045",
+    "displayName": "침묵의 성배",
+    "slot": "weapon",
+    "rarity": "common",
+    "mechanicalTags": [
+      "stealth",
+      "social",
+      "faith"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "가슴 장식 강조",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_046",
+    "displayName": "성유 팔토시",
+    "slot": "cloak",
+    "rarity": "common",
+    "mechanicalTags": [
+      "defense",
+      "social",
+      "faith"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_047",
+    "displayName": "철맹 목걸이",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "stealth",
+      "ritual",
+      "healing"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_048",
+    "displayName": "철맹 붕대",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "corruption",
+      "social",
+      "ritual"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_049",
+    "displayName": "황혼 석판",
+    "slot": "consumable",
+    "rarity": "rare",
+    "mechanicalTags": [
+      "defense",
+      "luck",
+      "ritual"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_050",
+    "displayName": "은소금 망토",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "social",
+      "defense",
+      "stealth"
+    ],
+    "summary": "소지한 것만으로 특정 집단의 시선을 끌 수 있다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_051",
+    "displayName": "오염된 묵주",
+    "slot": "relic",
+    "rarity": "very_rare",
+    "mechanicalTags": [
+      "social",
+      "healing",
+      "corruption"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_052",
+    "displayName": "불씨 등잔",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "damage",
+      "stealth",
+      "luck"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_053",
+    "displayName": "침묵의 방패",
+    "slot": "consumable",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "defense",
+      "social",
+      "damage"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "등 뒤 무기 실루엣",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_054",
+    "displayName": "비전 반지",
+    "slot": "tool",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "mobility",
+      "social",
+      "ritual"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_055",
+    "displayName": "불씨 팔토시",
+    "slot": "offhand",
+    "rarity": "common",
+    "mechanicalTags": [
+      "corruption",
+      "mobility",
+      "ritual"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "얼굴 하이라이트",
+    "caution": "잠금 추천"
+  },
+  {
+    "id": "item_056",
+    "displayName": "순례자의 단검",
+    "slot": "weapon",
+    "rarity": "unique",
+    "mechanicalTags": [
+      "social",
+      "resource",
+      "corruption"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_057",
+    "displayName": "순례자의 성배",
+    "slot": "cloak",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "healing",
+      "faith",
+      "stealth"
+    ],
+    "summary": "평범해 보이지만 특정 상황에서만 진짜 가치가 드러난다.",
+    "portraitOverlayHint": "어깨 실루엣 변화",
+    "caution": "희귀품 확인 팝업 권장"
+  },
+  {
+    "id": "item_058",
+    "displayName": "장송 단검",
+    "slot": "cloak",
+    "rarity": "common",
+    "mechanicalTags": [
+      "defense",
+      "luck",
+      "damage"
+    ],
+    "summary": "수치보다 분위기와 후속 사건의 문을 여는 쪽에 가깝다.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "일반 자동 장비 교체 허용"
+  },
+  {
+    "id": "item_059",
+    "displayName": "가시문양 장검",
+    "slot": "tool",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "corruption",
+      "stealth",
+      "damage"
+    ],
+    "summary": "착용자의 태도와 명성에 따라 반응이 달라지는 장비.",
+    "portraitOverlayHint": "허리 장비 추가",
+    "caution": "선택 이벤트와 연동 가능"
+  },
+  {
+    "id": "item_060",
+    "displayName": "가시문양 지팡이",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "mechanicalTags": [
+      "resource",
+      "arcane",
+      "stealth"
+    ],
+    "summary": "자동 전투에서는 미세한 효율을, 선택 이벤트에서는 강한 상징성을 준다.",
+    "portraitOverlayHint": "손 장신구 강조",
+    "caution": "잠금 추천"
+  }
+]

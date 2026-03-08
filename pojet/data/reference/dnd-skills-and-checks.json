@@ -1,0 +1,12 @@
+﻿[
+  {"id":"athletics","displayName":"Athletics","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"STR 기반 신체 수행","mechanicalTags":["str","physical"],"gameUse":"등반/밀치기/강행","caution":""},
+  {"id":"acrobatics","displayName":"Acrobatics","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"DEX 기반 균형/회피","mechanicalTags":["dex","mobility"],"gameUse":"함정 회피/낙하 완화","caution":""},
+  {"id":"stealth","displayName":"Stealth","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"은밀 이동","mechanicalTags":["dex","exploration","combat-entry"],"gameUse":"선제/기습 확률","caution":""},
+  {"id":"perception","displayName":"Perception","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"주변 감지","mechanicalTags":["wis","passive"],"gameUse":"패시브 감지 루프 핵심","caution":""},
+  {"id":"investigation","displayName":"Investigation","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"단서 분석","mechanicalTags":["int","exploration"],"gameUse":"숨겨진 경로/장치 분석","caution":""},
+  {"id":"survival","displayName":"Survival","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"자연 생존/추적","mechanicalTags":["wis","travel"],"gameUse":"여행 위험 감소","caution":""},
+  {"id":"insight","displayName":"Insight","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"의도 파악","mechanicalTags":["wis","social"],"gameUse":"기만 탐지/관계 분기","caution":""},
+  {"id":"persuasion","displayName":"Persuasion","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"설득","mechanicalTags":["cha","social"],"gameUse":"협상/중재 성공률","caution":""},
+  {"id":"deception","displayName":"Deception","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"기만","mechanicalTags":["cha","social","risk"],"gameUse":"위험 회피/은폐","caution":""},
+  {"id":"intimidation","displayName":"Intimidation","srdVersion":"5.1","sourceUrl":"https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf","shortSummary":"협박","mechanicalTags":["cha","social","fear"],"gameUse":"강압 선택지 성공률","caution":"반동(평판 하락) 모델 필요"}
+]

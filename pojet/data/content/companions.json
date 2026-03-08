@@ -1,0 +1,236 @@
+[
+  {
+    "id": "cmp-01",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "fighter",
+    "combatAi": "stable_frontline",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "black-gate-guild",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 42,
+      "intimacy": 9,
+      "tension": 16,
+      "desire": 4,
+      "respect": 44,
+      "fear": 9
+    },
+    "preferredChecks": [
+      "athletics",
+      "perception"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "resolved",
+      "bloodied"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t2-013"
+    ]
+  },
+  {
+    "id": "cmp-02",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "rogue",
+    "combatAi": "opportunity_burst",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "red-night-syndicate",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 31,
+      "intimacy": 21,
+      "tension": 24,
+      "desire": 19,
+      "respect": 26,
+      "fear": 12
+    },
+    "preferredChecks": [
+      "stealth",
+      "deception"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "rain_soaked",
+      "tempted"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t2-014"
+    ]
+  },
+  {
+    "id": "cmp-03",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "cleric",
+    "combatAi": "support_guardian",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "lamp-sanctum",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 40,
+      "intimacy": 17,
+      "tension": 18,
+      "desire": 11,
+      "respect": 39,
+      "fear": 8
+    },
+    "preferredChecks": [
+      "medicine",
+      "insight"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "blessed",
+      "grieving"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t2-015"
+    ]
+  },
+  {
+    "id": "cmp-04",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "ranger",
+    "combatAi": "hunter_skirmish",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "black-gate-guild",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 37,
+      "intimacy": 8,
+      "tension": 20,
+      "desire": 5,
+      "respect": 34,
+      "fear": 10
+    },
+    "preferredChecks": [
+      "survival",
+      "perception"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "hunted",
+      "rain_soaked"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t2-016"
+    ]
+  },
+  {
+    "id": "cmp-05",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "wizard",
+    "combatAi": "control_caster",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "glass-reliquary",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 25,
+      "intimacy": 13,
+      "tension": 27,
+      "desire": 12,
+      "respect": 33,
+      "fear": 20
+    },
+    "preferredChecks": [
+      "arcana",
+      "investigation"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "spellglow_arcane",
+      "tainted"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t3-008"
+    ]
+  },
+  {
+    "id": "cmp-06",
+    "name": "이름 미정",
+    "role": "역할 미정",
+    "classRole": "bard",
+    "combatAi": "support_disrupt",
+    "publicFace": "겉으로는 침착한 인상",
+    "hiddenAngle": "숨은 의도가 있다.",
+    "faction": "gray-edict-office",
+    "firstImpression": "첫인상은 강렬하다.",
+    "relationshipAxes": {
+      "trust": 33,
+      "intimacy": 23,
+      "tension": 19,
+      "desire": 21,
+      "respect": 29,
+      "fear": 11
+    },
+    "preferredChecks": [
+      "persuasion",
+      "insight"
+    ],
+    "trustHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "conflictHooks": [
+      "정리 문구 1",
+      "정리 문구 2"
+    ],
+    "portraitMoodTags": [
+      "noble_favor",
+      "intimate_afterglow"
+    ],
+    "routePotential": "동맹/갈등 루트",
+    "eventLinks": [
+      "evt-t2-017"
+    ]
+  }
+]

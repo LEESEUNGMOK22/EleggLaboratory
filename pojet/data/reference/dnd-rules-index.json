@@ -1,0 +1,47 @@
+﻿{
+  "lastVerified": "2026-03-09",
+  "primaryBaseline": "srd-5.1",
+  "comparisonBaseline": "srd-5.2.1",
+  "sources": [
+    {
+      "id": "srd-5.1-pdf",
+      "displayName": "SRD 5.1 PDF (CC)",
+      "srdVersion": "5.1",
+      "sourceUrl": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+      "shortSummary": "2014 계열 기준 규칙 공개본",
+      "mechanicalTags": ["core", "character", "combat", "spells"],
+      "gameUse": "주 구현 기준",
+      "caution": "정확한 attribution 문구는 원문 재확인"
+    },
+    {
+      "id": "srd-5.2.1-pdf",
+      "displayName": "SRD 5.2.1 PDF",
+      "srdVersion": "5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/SRD_v5.2.1_CC.pdf",
+      "shortSummary": "최신 공개본, 비교 연구용",
+      "mechanicalTags": ["core", "comparison"],
+      "gameUse": "장기 업데이트 후보",
+      "caution": "초기 릴리즈는 5.1 우선"
+    },
+    {
+      "id": "srd-hub",
+      "displayName": "SRD Hub / FAQ / Conversion",
+      "srdVersion": "mixed",
+      "sourceUrl": "https://www.dndbeyond.com/resources/1781-systems-reference-document-srd",
+      "shortSummary": "공식 FAQ 및 변환가이드 접근점",
+      "mechanicalTags": ["guidance"],
+      "gameUse": "정책/차이 해석",
+      "caution": "허브 텍스트 자체 복제 금지"
+    },
+    {
+      "id": "fan-content-policy",
+      "displayName": "Wizards Fan Content Policy",
+      "srdVersion": "n/a",
+      "sourceUrl": "https://company.wizards.com/en/legal/fancontentpolicy",
+      "shortSummary": "팬콘텐츠 허용 범위와 제한",
+      "mechanicalTags": ["legal", "branding"],
+      "gameUse": "브랜드/표기 가이드",
+      "caution": "오인 유발 표현 금지"
+    }
+  ]
+}

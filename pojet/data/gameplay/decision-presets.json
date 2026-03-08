@@ -1,0 +1,65 @@
+﻿{
+  "신중형": {
+    "t2DefaultChoice": "safest",
+    "resourceUse": 0.35,
+    "riskTolerance": 0.3,
+    "reputationVsReward": 0.7,
+    "combatConservation": 0.8,
+    "relationshipTone": "calm",
+    "forbiddenPowerBias": 0.1
+  },
+  "대담형": {
+    "t2DefaultChoice": "bold",
+    "resourceUse": 0.65,
+    "riskTolerance": 0.75,
+    "reputationVsReward": 0.45,
+    "combatConservation": 0.35,
+    "relationshipTone": "direct",
+    "forbiddenPowerBias": 0.5
+  },
+  "탐욕형": {
+    "t2DefaultChoice": "profit",
+    "resourceUse": 0.55,
+    "riskTolerance": 0.6,
+    "reputationVsReward": 0.15,
+    "combatConservation": 0.5,
+    "relationshipTone": "transactional",
+    "forbiddenPowerBias": 0.65
+  },
+  "자비형": {
+    "t2DefaultChoice": "mercy",
+    "resourceUse": 0.6,
+    "riskTolerance": 0.4,
+    "reputationVsReward": 0.8,
+    "combatConservation": 0.55,
+    "relationshipTone": "empathetic",
+    "forbiddenPowerBias": 0.2
+  },
+  "권력지향형": {
+    "t2DefaultChoice": "dominance",
+    "resourceUse": 0.7,
+    "riskTolerance": 0.7,
+    "reputationVsReward": 0.35,
+    "combatConservation": 0.3,
+    "relationshipTone": "assertive",
+    "forbiddenPowerBias": 0.8
+  },
+  "관계중시형": {
+    "t2DefaultChoice": "bond",
+    "resourceUse": 0.5,
+    "riskTolerance": 0.45,
+    "reputationVsReward": 0.75,
+    "combatConservation": 0.6,
+    "relationshipTone": "warm",
+    "forbiddenPowerBias": 0.25
+  },
+  "신앙중시형": {
+    "t2DefaultChoice": "oath",
+    "resourceUse": 0.45,
+    "riskTolerance": 0.35,
+    "reputationVsReward": 0.7,
+    "combatConservation": 0.7,
+    "relationshipTone": "principled",
+    "forbiddenPowerBias": 0.15
+  }
+}

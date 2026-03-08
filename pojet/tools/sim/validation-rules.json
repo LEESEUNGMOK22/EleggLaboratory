@@ -1,0 +1,32 @@
+﻿{
+  "schemaVersion": "1.0.0",
+  "targets": {
+    "t2IntervalTicks": { "min": 8, "max": 18 },
+    "t3IntervalTicks": { "min": 18, "max": 40 },
+    "combatShare": { "min": 0.28, "max": 0.5 },
+    "explorationShare": { "min": 0.2, "max": 0.42 },
+    "socialShare": { "min": 0.15, "max": 0.35 },
+    "relationshipEventShare": { "min": 0.08, "max": 0.3 },
+    "firstLevelupMinutes": { "min": 4, "max": 16 },
+    "firstT3Minutes": { "min": 8, "max": 30 },
+    "runDurationMinutes": { "min": 18, "max": 55 },
+    "earlyDeathRate": { "min": 0.05, "max": 0.35 }
+  },
+  "dataRules": {
+    "maxLogLineLength": 95,
+    "maxDuplicateNarrativeRatio": 0.35,
+    "bannedProperNouns": [
+      "Forgotten Realms",
+      "Waterdeep",
+      "Baldur",
+      "Drizzt",
+      "Avernus",
+      "Neverwinter",
+      "Faerûn"
+    ],
+    "requireChronicleImpactForT3": true,
+    "requireRelationshipAxisDeltaForRelationshipEvents": true,
+    "requireValidFollowUpEventIds": true,
+    "requireKnownFactionNpcIds": true
+  }
+}

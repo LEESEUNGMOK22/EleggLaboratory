@@ -1,0 +1,17 @@
+﻿{
+  "effects": [
+    {"id":"gain_gold","target":"resources.gold","mode":"add","valueType":"number"},
+    {"id":"gain_xp","target":"character.xp","mode":"add","valueType":"number"},
+    {"id":"change_hp","target":"character.hp","mode":"addClamp","valueType":"number"},
+    {"id":"gain_item","target":"character.inventory","mode":"append","valueType":"itemRef"},
+    {"id":"auto_equip","target":"character.gear","mode":"equipBest","valueType":"itemRef"},
+    {"id":"relation_delta","target":"relationships.npcRelations","mode":"delta","valueType":"relationBundle"},
+    {"id":"faction_delta","target":"factions.reputation","mode":"delta","valueType":"map"},
+    {"id":"renown_delta","target":"resources.renown","mode":"add","valueType":"number"},
+    {"id":"infamy_delta","target":"resources.infamy","mode":"add","valueType":"number"},
+    {"id":"taint_delta","target":"resources.taint","mode":"addClamp","valueType":"number"},
+    {"id":"quest_progress","target":"world.quests","mode":"progress","valueType":"questProgress"},
+    {"id":"chronicle_tag","target":"chronicle.entries","mode":"tag","valueType":"string"},
+    {"id":"legacy_flag","target":"chronicle.legacyFlags","mode":"appendUnique","valueType":"string"}
+  ]
+}

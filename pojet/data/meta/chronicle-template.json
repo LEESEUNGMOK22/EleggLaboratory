@@ -1,0 +1,16 @@
+﻿{
+  "templateVersion": 1,
+  "entryTemplate": {
+    "id": "chr-{timestamp}",
+    "runId": "run-{id}",
+    "title": "{name}의 마지막 장",
+    "tone": "{tone}",
+    "summary": "{classId} / 막 {act} / 명성 {renown}",
+    "majorChoices": [],
+    "completedQuests": [],
+    "relationshipNotes": [],
+    "portraitSnapshotTags": [],
+    "legacyRewardId": "",
+    "createdAt": ""
+  }
+}
